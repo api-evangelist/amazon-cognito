@@ -1,0 +1,823 @@
+openapi: 3.1.0
+info:
+  title: Amazon Cognito User Pools API
+  description: >-
+    Amazon Cognito User Pools API provides user directory management, sign-up,
+    sign-in, and token-based authentication for web and mobile applications.
+  version: "2016-04-18"
+  contact:
+    name: Amazon Web Services
+    url: https://aws.amazon.com/cognito/
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+servers:
+  - url: https://cognito-idp.{region}.amazonaws.com
+    variables:
+      region:
+        default: us-east-1
+        description: AWS region
+paths:
+  /:
+    post:
+      operationId: CreateUserPool
+      summary: Create a new user pool
+      description: Creates a new Amazon Cognito user pool and sets the password policy for the pool.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - PoolName
+              properties:
+                PoolName:
+                  type: string
+                  description: Name of the user pool.
+                Policies:
+                  $ref: "#/components/schemas/UserPoolPolicyType"
+                AutoVerifiedAttributes:
+                  type: array
+                  items:
+                    type: string
+                    enum:
+                      - phone_number
+                      - email
+                MfaConfiguration:
+                  type: string
+                  enum:
+                    - "OFF"
+                    - "ON"
+                    - OPTIONAL
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/x-amz-json-1.1:
+              schema:
+                type: object
+                properties:
+                  UserPool:
+                    $ref: "#/components/schemas/UserPool"
+        "400":
+          description: Bad request
+        "403":
+          description: Forbidden
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.CreateUserPool
+  /DescribeUserPool:
+    post:
+      operationId: DescribeUserPool
+      summary: Describe a user pool
+      description: Returns the configuration information and metadata of the specified user pool.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - UserPoolId
+              properties:
+                UserPoolId:
+                  type: string
+                  description: The user pool ID.
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/x-amz-json-1.1:
+              schema:
+                type: object
+                properties:
+                  UserPool:
+                    $ref: "#/components/schemas/UserPool"
+        "404":
+          description: Resource not found
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.DescribeUserPool
+  /ListUserPools:
+    post:
+      operationId: ListUserPools
+      summary: List user pools
+      description: Lists the user pools associated with an AWS account.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - MaxResults
+              properties:
+                MaxResults:
+                  type: integer
+                  minimum: 1
+                  maximum: 60
+                NextToken:
+                  type: string
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/x-amz-json-1.1:
+              schema:
+                type: object
+                properties:
+                  UserPools:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/UserPool"
+                  NextToken:
+                    type: string
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.ListUserPools
+  /DeleteUserPool:
+    post:
+      operationId: DeleteUserPool
+      summary: Delete a user pool
+      description: Deletes the specified Amazon Cognito user pool.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - UserPoolId
+              properties:
+                UserPoolId:
+                  type: string
+      responses:
+        "200":
+          description: Successful response
+        "404":
+          description: Resource not found
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.DeleteUserPool
+  /AdminCreateUser:
+    post:
+      operationId: AdminCreateUser
+      summary: Create a user as an administrator
+      description: Creates a new user in the specified user pool as an administrator.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - UserPoolId
+                - Username
+              properties:
+                UserPoolId:
+                  type: string
+                Username:
+                  type: string
+                TemporaryPassword:
+                  type: string
+                UserAttributes:
+                  type: array
+                  items:
+                    $ref: "#/components/schemas/AttributeType"
+                DesiredDeliveryMediums:
+                  type: array
+                  items:
+                    type: string
+                    enum:
+                      - SMS
+                      - EMAIL
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/x-amz-json-1.1:
+              schema:
+                type: object
+                properties:
+                  User:
+                    $ref: "#/components/schemas/User"
+        "400":
+          description: Bad request
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.AdminCreateUser
+  /AdminGetUser:
+    post:
+      operationId: AdminGetUser
+      summary: Get a user as an administrator
+      description: Gets the specified user by user name in a user pool as an administrator.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - UserPoolId
+                - Username
+              properties:
+                UserPoolId:
+                  type: string
+                Username:
+                  type: string
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/x-amz-json-1.1:
+              schema:
+                $ref: "#/components/schemas/User"
+        "404":
+          description: User not found
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.AdminGetUser
+  /AdminDeleteUser:
+    post:
+      operationId: AdminDeleteUser
+      summary: Delete a user as an administrator
+      description: Deletes a user as an administrator from the specified user pool.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - UserPoolId
+                - Username
+              properties:
+                UserPoolId:
+                  type: string
+                Username:
+                  type: string
+      responses:
+        "200":
+          description: Successful response
+        "404":
+          description: User not found
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.AdminDeleteUser
+  /SignUp:
+    post:
+      operationId: SignUp
+      summary: Register a new user
+      description: Registers a user in the specified user pool and creates a user name, password, and user attributes.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - ClientId
+                - Username
+                - Password
+              properties:
+                ClientId:
+                  type: string
+                Username:
+                  type: string
+                Password:
+                  type: string
+                  format: password
+                UserAttributes:
+                  type: array
+                  items:
+                    $ref: "#/components/schemas/AttributeType"
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/x-amz-json-1.1:
+              schema:
+                type: object
+                properties:
+                  UserConfirmed:
+                    type: boolean
+                  UserSub:
+                    type: string
+        "400":
+          description: Bad request
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.SignUp
+  /InitiateAuth:
+    post:
+      operationId: InitiateAuth
+      summary: Initiate authentication
+      description: Initiates the authentication flow for sign-in of a user.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - AuthFlow
+                - ClientId
+              properties:
+                AuthFlow:
+                  type: string
+                  enum:
+                    - USER_SRP_AUTH
+                    - REFRESH_TOKEN_AUTH
+                    - REFRESH_TOKEN
+                    - CUSTOM_AUTH
+                    - USER_PASSWORD_AUTH
+                ClientId:
+                  type: string
+                AuthParameters:
+                  type: object
+                  additionalProperties:
+                    type: string
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/x-amz-json-1.1:
+              schema:
+                type: object
+                properties:
+                  ChallengeName:
+                    type: string
+                  Session:
+                    type: string
+                  ChallengeParameters:
+                    type: object
+                    additionalProperties:
+                      type: string
+                  AuthenticationResult:
+                    $ref: "#/components/schemas/AuthenticationResultType"
+        "400":
+          description: Bad request
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.InitiateAuth
+  /RespondToAuthChallenge:
+    post:
+      operationId: RespondToAuthChallenge
+      summary: Respond to an authentication challenge
+      description: Responds to the authentication challenge.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - ClientId
+                - ChallengeName
+              properties:
+                ClientId:
+                  type: string
+                ChallengeName:
+                  type: string
+                  enum:
+                    - SMS_MFA
+                    - SOFTWARE_TOKEN_MFA
+                    - NEW_PASSWORD_REQUIRED
+                    - MFA_SETUP
+                Session:
+                  type: string
+                ChallengeResponses:
+                  type: object
+                  additionalProperties:
+                    type: string
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/x-amz-json-1.1:
+              schema:
+                type: object
+                properties:
+                  ChallengeName:
+                    type: string
+                  Session:
+                    type: string
+                  AuthenticationResult:
+                    $ref: "#/components/schemas/AuthenticationResultType"
+        "400":
+          description: Bad request
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.RespondToAuthChallenge
+  /ConfirmSignUp:
+    post:
+      operationId: ConfirmSignUp
+      summary: Confirm user registration
+      description: Confirms registration of a user and handles the existing alias from a previous user.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - ClientId
+                - Username
+                - ConfirmationCode
+              properties:
+                ClientId:
+                  type: string
+                Username:
+                  type: string
+                ConfirmationCode:
+                  type: string
+      responses:
+        "200":
+          description: Successful response
+        "400":
+          description: Bad request
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.ConfirmSignUp
+  /ForgotPassword:
+    post:
+      operationId: ForgotPassword
+      summary: Initiate forgot password flow
+      description: Calling this API causes a message to be sent to the end user with a confirmation code that is required to change the user's password.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - ClientId
+                - Username
+              properties:
+                ClientId:
+                  type: string
+                Username:
+                  type: string
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/x-amz-json-1.1:
+              schema:
+                type: object
+                properties:
+                  CodeDeliveryDetails:
+                    type: object
+                    properties:
+                      Destination:
+                        type: string
+                      DeliveryMedium:
+                        type: string
+                      AttributeName:
+                        type: string
+        "400":
+          description: Bad request
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.ForgotPassword
+  /ConfirmForgotPassword:
+    post:
+      operationId: ConfirmForgotPassword
+      summary: Confirm a new password with a confirmation code
+      description: Allows a user to enter a confirmation code to reset a forgotten password.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - ClientId
+                - Username
+                - ConfirmationCode
+                - Password
+              properties:
+                ClientId:
+                  type: string
+                Username:
+                  type: string
+                ConfirmationCode:
+                  type: string
+                Password:
+                  type: string
+                  format: password
+      responses:
+        "200":
+          description: Successful response
+        "400":
+          description: Bad request
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.ConfirmForgotPassword
+  /CreateUserPoolClient:
+    post:
+      operationId: CreateUserPoolClient
+      summary: Create a user pool client
+      description: Creates the user pool client for the specified user pool.
+      parameters:
+        - $ref: "#/components/parameters/XAmzTarget"
+      requestBody:
+        required: true
+        content:
+          application/x-amz-json-1.1:
+            schema:
+              type: object
+              required:
+                - UserPoolId
+                - ClientName
+              properties:
+                UserPoolId:
+                  type: string
+                ClientName:
+                  type: string
+                GenerateSecret:
+                  type: boolean
+                ExplicitAuthFlows:
+                  type: array
+                  items:
+                    type: string
+                    enum:
+                      - ADMIN_NO_SRP_AUTH
+                      - CUSTOM_AUTH_FLOW_ONLY
+                      - USER_PASSWORD_AUTH
+                      - ALLOW_ADMIN_USER_PASSWORD_AUTH
+                      - ALLOW_CUSTOM_AUTH
+                      - ALLOW_USER_PASSWORD_AUTH
+                      - ALLOW_USER_SRP_AUTH
+                      - ALLOW_REFRESH_TOKEN_AUTH
+                CallbackURLs:
+                  type: array
+                  items:
+                    type: string
+                LogoutURLs:
+                  type: array
+                  items:
+                    type: string
+                AllowedOAuthFlows:
+                  type: array
+                  items:
+                    type: string
+                    enum:
+                      - code
+                      - implicit
+                      - client_credentials
+                AllowedOAuthScopes:
+                  type: array
+                  items:
+                    type: string
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/x-amz-json-1.1:
+              schema:
+                type: object
+                properties:
+                  UserPoolClient:
+                    $ref: "#/components/schemas/UserPoolClient"
+        "400":
+          description: Bad request
+        "500":
+          description: Internal server error
+      x-amz-target: AWSCognitoIdentityProviderService.CreateUserPoolClient
+components:
+  parameters:
+    XAmzTarget:
+      name: X-Amz-Target
+      in: header
+      required: true
+      schema:
+        type: string
+      description: The target service action (e.g., AWSCognitoIdentityProviderService.CreateUserPool).
+  schemas:
+    UserPool:
+      type: object
+      description: A container for information about the user pool.
+      properties:
+        Id:
+          type: string
+          description: The ID of the user pool.
+        Name:
+          type: string
+          description: The name of the user pool.
+        Status:
+          type: string
+          description: The status of the user pool.
+        CreationDate:
+          type: string
+          format: date-time
+          description: The date and time the user pool was created.
+        LastModifiedDate:
+          type: string
+          format: date-time
+          description: The date and time the user pool was last modified.
+        MfaConfiguration:
+          type: string
+          enum:
+            - "OFF"
+            - "ON"
+            - OPTIONAL
+        EstimatedNumberOfUsers:
+          type: integer
+          description: A number estimating the size of the user pool.
+        Policies:
+          $ref: "#/components/schemas/UserPoolPolicyType"
+        SchemaAttributes:
+          type: array
+          items:
+            $ref: "#/components/schemas/SchemaAttributeType"
+        Arn:
+          type: string
+          description: The Amazon Resource Name (ARN) for the user pool.
+    User:
+      type: object
+      description: A user profile in a Cognito user pool.
+      properties:
+        Username:
+          type: string
+          description: The user name of the user.
+        UserStatus:
+          type: string
+          description: The user status.
+          enum:
+            - UNCONFIRMED
+            - CONFIRMED
+            - ARCHIVED
+            - COMPROMISED
+            - UNKNOWN
+            - RESET_REQUIRED
+            - FORCE_CHANGE_PASSWORD
+        UserCreateDate:
+          type: string
+          format: date-time
+          description: The creation date of the user.
+        UserLastModifiedDate:
+          type: string
+          format: date-time
+          description: The date the user was last modified.
+        Enabled:
+          type: boolean
+          description: Specifies whether the user is enabled.
+        Attributes:
+          type: array
+          items:
+            $ref: "#/components/schemas/AttributeType"
+        MFAOptions:
+          type: array
+          items:
+            type: object
+            properties:
+              DeliveryMedium:
+                type: string
+              AttributeName:
+                type: string
+    UserPoolClient:
+      type: object
+      description: Contains information about a user pool client.
+      properties:
+        UserPoolId:
+          type: string
+          description: The user pool ID for the user pool client.
+        ClientName:
+          type: string
+          description: The client name.
+        ClientId:
+          type: string
+          description: The ID of the client associated with the user pool.
+        ClientSecret:
+          type: string
+          description: The client secret.
+        CreationDate:
+          type: string
+          format: date-time
+        LastModifiedDate:
+          type: string
+          format: date-time
+        ExplicitAuthFlows:
+          type: array
+          items:
+            type: string
+        AllowedOAuthFlows:
+          type: array
+          items:
+            type: string
+        AllowedOAuthScopes:
+          type: array
+          items:
+            type: string
+        CallbackURLs:
+          type: array
+          items:
+            type: string
+        LogoutURLs:
+          type: array
+          items:
+            type: string
+    AttributeType:
+      type: object
+      description: Specifies whether the attribute is standard or custom.
+      required:
+        - Name
+      properties:
+        Name:
+          type: string
+          description: The name of the attribute.
+        Value:
+          type: string
+          description: The value of the attribute.
+    UserPoolPolicyType:
+      type: object
+      description: The policy associated with a user pool.
+      properties:
+        PasswordPolicy:
+          type: object
+          properties:
+            MinimumLength:
+              type: integer
+              minimum: 6
+              maximum: 99
+            RequireUppercase:
+              type: boolean
+            RequireLowercase:
+              type: boolean
+            RequireNumbers:
+              type: boolean
+            RequireSymbols:
+              type: boolean
+            TemporaryPasswordValidityDays:
+              type: integer
+    SchemaAttributeType:
+      type: object
+      description: A schema attribute of a user pool.
+      properties:
+        Name:
+          type: string
+        AttributeDataType:
+          type: string
+          enum:
+            - String
+            - Number
+            - DateTime
+            - Boolean
+        Mutable:
+          type: boolean
+        Required:
+          type: boolean
+    AuthenticationResultType:
+      type: object
+      description: The authentication result.
+      properties:
+        AccessToken:
+          type: string
+          description: A valid access token.
+        ExpiresIn:
+          type: integer
+          description: The expiration period of the authentication result in seconds.
+        TokenType:
+          type: string
+          description: The token type.
+        RefreshToken:
+          type: string
+          description: The refresh token.
+        IdToken:
+          type: string
+          description: The ID token.
+        NewDeviceMetadata:
+          type: object
+          properties:
+            DeviceKey:
+              type: string
+            DeviceGroupKey:
+              type: string

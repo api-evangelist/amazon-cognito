@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://amazon-cognito.apis.io/json-schema/amazon-cognito-user-pool-schema.json",
+  "title": "Amazon Cognito User Pool",
+  "description": "Schema representing an Amazon Cognito user pool configuration and its properties.",
+  "type": "object",
+  "properties": {
+    "Id": {
+      "type": "string",
+      "description": "The unique identifier for the user pool."
+    },
+    "Name": {
+      "type": "string",
+      "description": "The name of the user pool."
+    },
+    "Status": {
+      "type": "string",
+      "description": "The status of the user pool.",
+      "enum": ["Enabled", "Disabled"]
+    },
+    "Arn": {
+      "type": "string",
+      "description": "The Amazon Resource Name (ARN) for the user pool.",
+      "pattern": "^arn:aws:cognito-idp:[a-z0-9-]+:[0-9]+:userpool/[a-zA-Z0-9_-]+$"
+    },
+    "CreationDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the user pool was created."
+    },
+    "LastModifiedDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the user pool was last modified."
+    },
+    "EstimatedNumberOfUsers": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "A number estimating the size of the user pool."
+    },
+    "MfaConfiguration": {
+      "type": "string",
+      "enum": ["OFF", "ON", "OPTIONAL"],
+      "description": "The multi-factor authentication (MFA) configuration."
+    },
+    "Policies": {
+      "type": "object",
+      "description": "The policies associated with the user pool.",
+      "properties": {
+        "PasswordPolicy": {
+          "type": "object",
+          "description": "The password policy for the user pool.",
+          "properties": {
+            "MinimumLength": {
+              "type": "integer",
+              "minimum": 6,
+              "maximum": 99,
+              "description": "The minimum length of the password."
+            },
+            "RequireUppercase": {
+              "type": "boolean",
+              "description": "Whether the password must contain at least one uppercase letter."
+            },
+            "RequireLowercase": {
+              "type": "boolean",
+              "description": "Whether the password must contain at least one lowercase letter."
+            },
+            "RequireNumbers": {
+              "type": "boolean",
+              "description": "Whether the password must contain at least one number."
+            },
+            "RequireSymbols": {
+              "type": "boolean",
+              "description": "Whether the password must contain at least one symbol."
+            },
+            "TemporaryPasswordValidityDays": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 365,
+              "description": "The number of days a temporary password is valid."
+            }
+          }
+        }
+      }
+    },
+    "AutoVerifiedAttributes": {
+      "type": "array",
+      "description": "The attributes that are automatically verified.",
+      "items": {
+        "type": "string",
+        "enum": ["phone_number", "email"]
+      }
+    },
+    "UsernameAttributes": {
+      "type": "array",
+      "description": "Specifies whether email addresses or phone numbers can be used as user names when a user signs up.",
+      "items": {
+        "type": "string",
+        "enum": ["phone_number", "email"]
+      }
+    },
+    "SchemaAttributes": {
+      "type": "array",
+      "description": "The schema attributes for the user pool.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "The name of the attribute."
+          },
+          "AttributeDataType": {
+            "type": "string",
+            "enum": ["String", "Number", "DateTime", "Boolean"],
+            "description": "The data type of the attribute."
+          },
+          "Mutable": {
+            "type": "boolean",
+            "description": "Whether the attribute can be changed after creation."
+          },
+          "Required": {
+            "type": "boolean",
+            "description": "Whether the attribute is required during user registration."
+          },
+          "StringAttributeConstraints": {
+            "type": "object",
+            "properties": {
+              "MinLength": {
+                "type": "string",
+                "description": "The minimum length."
+              },
+              "MaxLength": {
+                "type": "string",
+                "description": "The maximum length."
+              }
+            }
+          },
+          "NumberAttributeConstraints": {
+            "type": "object",
+            "properties": {
+              "MinValue": {
+                "type": "string",
+                "description": "The minimum value."
+              },
+              "MaxValue": {
+                "type": "string",
+                "description": "The maximum value."
+              }
+            }
+          }
+        },
+        "required": ["Name"]
+      }
+    },
+    "EmailConfiguration": {
+      "type": "object",
+      "description": "The email configuration for the user pool.",
+      "properties": {
+        "SourceArn": {
+          "type": "string",
+          "description": "The ARN of a verified email address in Amazon SES."
+        },
+        "ReplyToEmailAddress": {
+          "type": "string",
+          "format": "email",
+          "description": "The destination to which the receiver of the email should reply."
+        },
+        "EmailSendingAccount": {
+          "type": "string",
+          "enum": ["COGNITO_DEFAULT", "DEVELOPER"],
+          "description": "Specifies whether Amazon Cognito emails your users by using its built-in email functionality or your Amazon SES email configuration."
+        }
+      }
+    },
+    "SmsConfiguration": {
+      "type": "object",
+      "description": "The SMS configuration for the user pool.",
+      "properties": {
+        "SnsCallerArn": {
+          "type": "string",
+          "description": "The Amazon Resource Name (ARN) of the Amazon SNS caller."
+        },
+        "ExternalId": {
+          "type": "string",
+          "description": "The external ID."
+        },
+        "SnsRegion": {
+          "type": "string",
+          "description": "The AWS Region to use with Amazon SNS integration."
+        }
+      },
+      "required": ["SnsCallerArn"]
+    },
+    "UserPoolTags": {
+      "type": "object",
+      "description": "The tags that are assigned to the user pool.",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "AdminCreateUserConfig": {
+      "type": "object",
+      "description": "The configuration for AdminCreateUser requests.",
+      "properties": {
+        "AllowAdminCreateUserOnly": {
+          "type": "boolean",
+          "description": "Set to true if only the administrator is allowed to create user profiles."
+        },
+        "UnusedAccountValidityDays": {
+          "type": "integer",
+          "description": "The user account expiration limit, in days, after which the account is no longer usable."
+        },
+        "InviteMessageTemplate": {
+          "type": "object",
+          "properties": {
+            "SMSMessage": {
+              "type": "string"
+            },
+            "EmailMessage": {
+              "type": "string"
+            },
+            "EmailSubject": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": ["Name"]
+}

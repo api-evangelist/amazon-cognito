@@ -1,0 +1,121 @@
+name: Amazon Cognito API
+description: >-
+  Amazon Cognito is a fully managed user identity and authentication service
+  that enables developers to add sign-up, sign-in, and access control to web
+  and mobile applications. It supports OAuth 2.0, SAML 2.0, and OpenID Connect
+  standards, providing secure user directories that scale to millions of users.
+  Cognito offers user pools for authentication and identity pools for
+  authorization, allowing integration with social identity providers and
+  enterprise identity systems.
+url: https://aws.amazon.com/cognito/
+baseURL: https://cognito-idp.amazonaws.com
+created: "2016-04-18"
+modified: "2026-03-13"
+tags:
+  - Identity
+  - Authentication
+  - User Management
+  - OAuth
+  - AWS
+apis:
+  - name: Cognito User Pools API
+    description: >-
+      Amazon Cognito User Pools API provides user directory management,
+      sign-up, sign-in, and token-based authentication for web and mobile
+      applications. It supports multi-factor authentication, account recovery,
+      and customizable authentication flows.
+    baseURL: https://cognito-idp.amazonaws.com
+    properties:
+      - type: Documentation
+        url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html
+      - type: OpenAPI
+        url: openapi/amazon-cognito-user-pools-openapi.yml
+      - type: OpenAPI
+        url: https://api.apis.guru/v2/specs/amazonaws.com/cognito-idp/2016-04-18/openapi.yaml
+      - type: JSONSchema
+        url: json-schema/amazon-cognito-user-pool-schema.json
+      - type: JSONLD
+        url: json-ld/amazon-cognito-context.jsonld
+      - type: Pricing
+        url: https://aws.amazon.com/cognito/pricing/
+      - type: Getting Started
+        url: https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-with-cognito-user-pools.html
+      - type: FAQ
+        url: https://aws.amazon.com/cognito/faqs/
+      - type: User Guide
+        url: https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html
+      - type: API Reference
+        url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
+      - type: CLI Reference
+        url: https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/index.html
+      - type: Security
+        url: https://docs.aws.amazon.com/cognito/latest/developerguide/security.html
+  - name: Cognito Identity Pools API
+    description: >-
+      Amazon Cognito Identity Pools (Federated Identities) API enables
+      developers to create unique identities for users and federate them with
+      identity providers. It provides temporary, limited-privilege AWS
+      credentials to access AWS services.
+    baseURL: https://cognito-identity.amazonaws.com
+    properties:
+      - type: Documentation
+        url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
+      - type: OpenAPI
+        url: https://api.apis.guru/v2/specs/amazonaws.com/cognito-identity/2014-06-30/openapi.yaml
+      - type: JSONSchema
+        url: json-schema/amazon-cognito-user-pool-schema.json
+      - type: JSONLD
+        url: json-ld/amazon-cognito-context.jsonld
+      - type: Pricing
+        url: https://aws.amazon.com/cognito/pricing/
+      - type: Getting Started
+        url: https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-with-identity-pools.html
+      - type: FAQ
+        url: https://aws.amazon.com/cognito/faqs/
+      - type: User Guide
+        url: https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html
+      - type: API Reference
+        url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.html
+      - type: CLI Reference
+        url: https://docs.aws.amazon.com/cli/latest/reference/cognito-identity/index.html
+      - type: Security
+        url: https://docs.aws.amazon.com/cognito/latest/developerguide/security.html
+common:
+  - type: Portal
+    url: https://aws.amazon.com/
+  - type: Website
+    url: https://aws.amazon.com/cognito/
+  - type: Docs
+    url: https://docs.aws.amazon.com/cognito/
+  - type: Terms
+    url: https://aws.amazon.com/service-terms/
+  - type: Privacy
+    url: https://aws.amazon.com/privacy/
+  - type: Support
+    url: https://aws.amazon.com/premiumsupport/
+  - type: Blog
+    url: https://aws.amazon.com/blogs/security/
+  - type: GitHub
+    url: https://github.com/aws
+  - type: Console
+    url: https://console.aws.amazon.com/cognito/
+  - type: Sign Up
+    url: https://portal.aws.amazon.com/billing/signup
+  - type: Login
+    url: https://signin.aws.amazon.com/
+  - type: Status
+    url: https://status.aws.amazon.com/
+  - type: Knowledge Center
+    url: https://repost.aws/knowledge-center
+  - type: YouTube
+    url: https://www.youtube.com/user/AmazonWebServices
+  - type: Stack Overflow
+    url: https://stackoverflow.com/questions/tagged/amazon-cognito
+  - type: Contact
+    url: https://aws.amazon.com/contact-us/
+  - type: Security
+    url: https://aws.amazon.com/security/
+  - type: Compliance
+    url: https://aws.amazon.com/compliance/
+maintainer:
+  name: Kin Lane

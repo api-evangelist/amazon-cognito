@@ -1,0 +1,123 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "aws": "https://aws.amazon.com/ns/cognito#",
+    "cognito": "https://docs.aws.amazon.com/cognito/latest/developerguide/",
+    "UserPool": {
+      "@id": "aws:UserPool",
+      "@context": {
+        "Id": {
+          "@id": "aws:UserPool/Id",
+          "@type": "xsd:string"
+        },
+        "Name": {
+          "@id": "aws:UserPool/Name",
+          "@type": "xsd:string"
+        },
+        "Status": {
+          "@id": "aws:UserPool/Status",
+          "@type": "xsd:string"
+        },
+        "Arn": {
+          "@id": "aws:UserPool/Arn",
+          "@type": "@id"
+        },
+        "CreationDate": {
+          "@id": "aws:UserPool/CreationDate",
+          "@type": "xsd:dateTime"
+        },
+        "LastModifiedDate": {
+          "@id": "aws:UserPool/LastModifiedDate",
+          "@type": "xsd:dateTime"
+        },
+        "MfaConfiguration": {
+          "@id": "aws:UserPool/MfaConfiguration",
+          "@type": "xsd:string"
+        },
+        "EstimatedNumberOfUsers": {
+          "@id": "aws:UserPool/EstimatedNumberOfUsers",
+          "@type": "xsd:integer"
+        },
+        "Policies": {
+          "@id": "aws:UserPool/Policies",
+          "@type": "@id"
+        },
+        "SchemaAttributes": {
+          "@id": "aws:UserPool/SchemaAttributes",
+          "@container": "@list"
+        }
+      }
+    },
+    "User": {
+      "@id": "aws:User",
+      "@context": {
+        "Username": {
+          "@id": "aws:User/Username",
+          "@type": "xsd:string"
+        },
+        "UserStatus": {
+          "@id": "aws:User/UserStatus",
+          "@type": "xsd:string"
+        },
+        "UserCreateDate": {
+          "@id": "aws:User/UserCreateDate",
+          "@type": "xsd:dateTime"
+        },
+        "UserLastModifiedDate": {
+          "@id": "aws:User/UserLastModifiedDate",
+          "@type": "xsd:dateTime"
+        },
+        "Enabled": {
+          "@id": "aws:User/Enabled",
+          "@type": "xsd:boolean"
+        },
+        "Attributes": {
+          "@id": "aws:User/Attributes",
+          "@container": "@list"
+        },
+        "MFAOptions": {
+          "@id": "aws:User/MFAOptions",
+          "@container": "@list"
+        }
+      }
+    },
+    "IdentityPool": {
+      "@id": "aws:IdentityPool",
+      "@context": {
+        "IdentityPoolId": {
+          "@id": "aws:IdentityPool/IdentityPoolId",
+          "@type": "xsd:string"
+        },
+        "IdentityPoolName": {
+          "@id": "aws:IdentityPool/IdentityPoolName",
+          "@type": "xsd:string"
+        },
+        "AllowUnauthenticatedIdentities": {
+          "@id": "aws:IdentityPool/AllowUnauthenticatedIdentities",
+          "@type": "xsd:boolean"
+        },
+        "CognitoIdentityProviders": {
+          "@id": "aws:IdentityPool/CognitoIdentityProviders",
+          "@container": "@list"
+        },
+        "SupportedLoginProviders": {
+          "@id": "aws:IdentityPool/SupportedLoginProviders",
+          "@type": "@id"
+        },
+        "OpenIdConnectProviderARNs": {
+          "@id": "aws:IdentityPool/OpenIdConnectProviderARNs",
+          "@container": "@list"
+        },
+        "SamlProviderARNs": {
+          "@id": "aws:IdentityPool/SamlProviderARNs",
+          "@container": "@list"
+        },
+        "IdentityPoolTags": {
+          "@id": "aws:IdentityPool/IdentityPoolTags",
+          "@type": "@id"
+        }
+      }
+    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+}
