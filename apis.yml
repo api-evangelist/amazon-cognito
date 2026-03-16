@@ -1,7 +1,7 @@
 aid: amazon-cognito
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/apis.yml
-name: Amazon Cognito API
+name: Amazon Cognito
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 specificationVersion: '0.19'
