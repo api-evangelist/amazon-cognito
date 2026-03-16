@@ -1,4 +1,10 @@
+aid: amazon-cognito
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/apis.yml
 name: Amazon Cognito API
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+specificationVersion: '0.19'
 description: >-
   Amazon Cognito is a fully managed user identity and authentication service
   that enables developers to add sign-up, sign-in, and access control to web
@@ -7,10 +13,8 @@ description: >-
   Cognito offers user pools for authentication and identity pools for
   authorization, allowing integration with social identity providers and
   enterprise identity systems.
-url: https://aws.amazon.com/cognito/
-baseURL: https://cognito-idp.amazonaws.com
-created: "2016-04-18"
-modified: "2026-03-13"
+created: '2016-04-18'
+modified: '2026-03-16'
 tags:
   - Identity
   - Authentication
@@ -117,5 +121,6 @@ common:
     url: https://aws.amazon.com/security/
   - type: Compliance
     url: https://aws.amazon.com/compliance/
-maintainer:
-  name: Kin Lane
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
