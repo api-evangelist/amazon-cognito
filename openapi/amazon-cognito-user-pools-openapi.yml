@@ -103,6 +103,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.DescribeUserPool
+      tags:
+        - DescribeUserPool
   /ListUserPools:
     post:
       operationId: ListUserPools
@@ -142,6 +144,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.ListUserPools
+      tags:
+        - ListUserPools
   /DeleteUserPool:
     post:
       operationId: DeleteUserPool
@@ -168,6 +172,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.DeleteUserPool
+      tags:
+        - DeleteUserPool
   /AdminCreateUser:
     post:
       operationId: AdminCreateUser
@@ -217,6 +223,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.AdminCreateUser
+      tags:
+        - AdminCreateUser
   /AdminGetUser:
     post:
       operationId: AdminGetUser
@@ -250,6 +258,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.AdminGetUser
+      tags:
+        - AdminGetUser
   /AdminDeleteUser:
     post:
       operationId: AdminDeleteUser
@@ -279,6 +289,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.AdminDeleteUser
+      tags:
+        - AdminDeleteUser
   /SignUp:
     post:
       operationId: SignUp
@@ -325,6 +337,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.SignUp
+      tags:
+        - SignUp
   /InitiateAuth:
     post:
       operationId: InitiateAuth
@@ -379,6 +393,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.InitiateAuth
+      tags:
+        - InitiateAuth
   /RespondToAuthChallenge:
     post:
       operationId: RespondToAuthChallenge
@@ -430,6 +446,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.RespondToAuthChallenge
+      tags:
+        - RespondToAuthChallenge
   /ConfirmSignUp:
     post:
       operationId: ConfirmSignUp
@@ -462,6 +480,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.ConfirmSignUp
+      tags:
+        - ConfirmSignUp
   /ForgotPassword:
     post:
       operationId: ForgotPassword
@@ -505,6 +525,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.ForgotPassword
+      tags:
+        - ForgotPassword
   /ConfirmForgotPassword:
     post:
       operationId: ConfirmForgotPassword
@@ -541,6 +563,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.ConfirmForgotPassword
+      tags:
+        - ConfirmForgotPassword
   /CreateUserPoolClient:
     post:
       operationId: CreateUserPoolClient
@@ -612,6 +636,8 @@ paths:
         "500":
           description: Internal server error
       x-amz-target: AWSCognitoIdentityProviderService.CreateUserPoolClient
+      tags:
+        - CreateUserPoolClient
 components:
   parameters:
     XAmzTarget:
@@ -821,3 +847,17 @@ components:
               type: string
             DeviceGroupKey:
               type: string
+tags:
+  - name: AdminCreateUser
+  - name: AdminDeleteUser
+  - name: AdminGetUser
+  - name: ConfirmForgotPassword
+  - name: ConfirmSignUp
+  - name: CreateUserPoolClient
+  - name: DeleteUserPool
+  - name: DescribeUserPool
+  - name: ForgotPassword
+  - name: InitiateAuth
+  - name: ListUserPools
+  - name: RespondToAuthChallenge
+  - name: SignUp
