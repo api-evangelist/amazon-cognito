@@ -21,7 +21,7 @@ paths:
   /:
     post:
       operationId: CreateUserPool
-      summary: Create a new user pool
+      summary: Amazon Cognito Create a new user pool
       description: Creates a new Amazon Cognito user pool and sets the password policy for the pool.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -72,7 +72,7 @@ paths:
   /DescribeUserPool:
     post:
       operationId: DescribeUserPool
-      summary: Describe a user pool
+      summary: Amazon Cognito Describe a user pool
       description: Returns the configuration information and metadata of the specified user pool.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -106,7 +106,7 @@ paths:
   /ListUserPools:
     post:
       operationId: ListUserPools
-      summary: List user pools
+      summary: Amazon Cognito List user pools
       description: Lists the user pools associated with an AWS account.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -145,7 +145,7 @@ paths:
   /DeleteUserPool:
     post:
       operationId: DeleteUserPool
-      summary: Delete a user pool
+      summary: Amazon Cognito Delete a user pool
       description: Deletes the specified Amazon Cognito user pool.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -171,7 +171,7 @@ paths:
   /AdminCreateUser:
     post:
       operationId: AdminCreateUser
-      summary: Create a user as an administrator
+      summary: Amazon Cognito Create a user as an administrator
       description: Creates a new user in the specified user pool as an administrator.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -220,7 +220,7 @@ paths:
   /AdminGetUser:
     post:
       operationId: AdminGetUser
-      summary: Get a user as an administrator
+      summary: Amazon Cognito Get a user as an administrator
       description: Gets the specified user by user name in a user pool as an administrator.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -253,7 +253,7 @@ paths:
   /AdminDeleteUser:
     post:
       operationId: AdminDeleteUser
-      summary: Delete a user as an administrator
+      summary: Amazon Cognito Delete a user as an administrator
       description: Deletes a user as an administrator from the specified user pool.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -282,7 +282,7 @@ paths:
   /SignUp:
     post:
       operationId: SignUp
-      summary: Register a new user
+      summary: Amazon Cognito Register a new user
       description: Registers a user in the specified user pool and creates a user name, password, and user attributes.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -328,7 +328,7 @@ paths:
   /InitiateAuth:
     post:
       operationId: InitiateAuth
-      summary: Initiate authentication
+      summary: Amazon Cognito Initiate authentication
       description: Initiates the authentication flow for sign-in of a user.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -382,7 +382,7 @@ paths:
   /RespondToAuthChallenge:
     post:
       operationId: RespondToAuthChallenge
-      summary: Respond to an authentication challenge
+      summary: Amazon Cognito Respond to an authentication challenge
       description: Responds to the authentication challenge.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -433,7 +433,7 @@ paths:
   /ConfirmSignUp:
     post:
       operationId: ConfirmSignUp
-      summary: Confirm user registration
+      summary: Amazon Cognito Confirm user registration
       description: Confirms registration of a user and handles the existing alias from a previous user.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -465,7 +465,7 @@ paths:
   /ForgotPassword:
     post:
       operationId: ForgotPassword
-      summary: Initiate forgot password flow
+      summary: Amazon Cognito Initiate forgot password flow
       description: Calling this API causes a message to be sent to the end user with a confirmation code that is required to change the user's password.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -508,7 +508,7 @@ paths:
   /ConfirmForgotPassword:
     post:
       operationId: ConfirmForgotPassword
-      summary: Confirm a new password with a confirmation code
+      summary: Amazon Cognito Confirm a new password with a confirmation code
       description: Allows a user to enter a confirmation code to reset a forgotten password.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
@@ -544,7 +544,7 @@ paths:
   /CreateUserPoolClient:
     post:
       operationId: CreateUserPoolClient
-      summary: Create a user pool client
+      summary: Amazon Cognito Create a user pool client
       description: Creates the user pool client for the specified user pool.
       parameters:
         - $ref: "#/components/parameters/XAmzTarget"
