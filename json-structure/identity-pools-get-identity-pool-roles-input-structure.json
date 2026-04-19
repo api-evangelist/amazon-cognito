@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/identity-pools-get-identity-pool-roles-input-structure.json",
+  "name": "GetIdentityPoolRolesInput",
+  "description": "Input to the <code>GetIdentityPoolRoles</code> action.",
+  "type": "object",
+  "properties": {
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "An identity pool ID in the format REGION:GUID."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityPoolId"
+  ]
+}

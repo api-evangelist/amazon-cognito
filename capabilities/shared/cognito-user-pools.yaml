@@ -1,0 +1,243 @@
+naftiko: "1.0.0-alpha1"
+
+info:
+  label: "Amazon Cognito User Pools API"
+  description: "Shared per-API capability definition for Amazon Cognito User Pools covering user management, authentication, MFA, and token operations."
+  tags:
+    - Amazon
+    - AWS
+    - Authentication
+    - Identity
+    - User Management
+    - OAuth
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+binds:
+  - namespace: env
+    keys:
+      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+      AWS_REGION: AWS_REGION
+      COGNITO_USER_POOL_ID: COGNITO_USER_POOL_ID
+      COGNITO_CLIENT_ID: COGNITO_CLIENT_ID
+
+capability:
+  consumes:
+    - type: http
+      namespace: cognito-user-pools
+      baseUri: https://cognito-idp.{region}.amazonaws.com
+      description: "Amazon Cognito User Pools API for user authentication and directory management."
+      authentication:
+        type: bearer
+        token: "{{AWS_ACCESS_KEY_ID}}"
+      resources:
+        - name: user-pools
+          path: /
+          description: "User pool management operations."
+          operations:
+            - name: create-user-pool
+              method: POST
+              description: "Creates a new Amazon Cognito user pool."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+              body:
+                type: json
+                data:
+                  PoolName: "{{tools.pool_name}}"
+
+            - name: list-user-pools
+              method: POST
+              description: "Lists the user pools associated with an AWS account."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+
+            - name: describe-user-pool
+              method: POST
+              description: "Returns the configuration information and metadata of the specified user pool."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+              body:
+                type: json
+                data:
+                  UserPoolId: "{{tools.user_pool_id}}"
+
+            - name: delete-user-pool
+              method: POST
+              description: "Deletes the specified Amazon Cognito user pool."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+              body:
+                type: json
+                data:
+                  UserPoolId: "{{tools.user_pool_id}}"
+
+        - name: users
+          path: /
+          description: "User management operations within a user pool."
+          operations:
+            - name: admin-create-user
+              method: POST
+              description: "Creates a new user in the specified user pool."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+              body:
+                type: json
+                data:
+                  UserPoolId: "{{tools.user_pool_id}}"
+                  Username: "{{tools.username}}"
+
+            - name: admin-get-user
+              method: POST
+              description: "Gets the specified user by user name in a user pool as an administrator."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+              body:
+                type: json
+                data:
+                  UserPoolId: "{{tools.user_pool_id}}"
+                  Username: "{{tools.username}}"
+
+            - name: list-users
+              method: POST
+              description: "Lists the users in the Amazon Cognito user pool."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+              body:
+                type: json
+                data:
+                  UserPoolId: "{{tools.user_pool_id}}"
+
+            - name: admin-delete-user
+              method: POST
+              description: "Deletes a user as an administrator."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+              body:
+                type: json
+                data:
+                  UserPoolId: "{{tools.user_pool_id}}"
+                  Username: "{{tools.username}}"
+
+        - name: authentication
+          path: /
+          description: "Authentication and token operations."
+          operations:
+            - name: initiate-auth
+              method: POST
+              description: "Initiates the authentication flow."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+              body:
+                type: json
+                data:
+                  AuthFlow: "{{tools.auth_flow}}"
+                  ClientId: "{{tools.client_id}}"
+
+            - name: respond-to-auth-challenge
+              method: POST
+              description: "Responds to the authentication challenge."
+              outputRawFormat: json
+              outputParameters:
+                - name: result
+                  type: object
+                  value: "$."
+              body:
+                type: json
+                data:
+                  ClientId: "{{tools.client_id}}"
+                  ChallengeName: "{{tools.challenge_name}}"
+
+  exposes:
+    - type: rest
+      port: 8100
+      namespace: cognito-user-pools-rest
+      resources:
+        - path: /v1/user-pools
+          name: user-pools
+          description: "User pool management."
+          operations:
+            - method: GET
+              name: list-user-pools
+              description: "List all Cognito user pools."
+              call: "cognito-user-pools.list-user-pools"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+
+        - path: /v1/users
+          name: users
+          description: "User management."
+          operations:
+            - method: GET
+              name: list-users
+              description: "List users in a user pool."
+              call: "cognito-user-pools.list-users"
+              with:
+                user_pool_id: "rest.user_pool_id"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+
+    - type: mcp
+      port: 9100
+      namespace: cognito-user-pools-mcp
+      transport: http
+      tools:
+        - name: list-user-pools
+          description: "List all Amazon Cognito user pools."
+          hints:
+            readOnly: true
+          call: "cognito-user-pools.list-user-pools"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: describe-user-pool
+          description: "Get details of a specific Cognito user pool."
+          hints:
+            readOnly: true
+          call: "cognito-user-pools.describe-user-pool"
+          with:
+            user_pool_id: "tools.user_pool_id"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: list-users
+          description: "List users in a Cognito user pool."
+          hints:
+            readOnly: true
+          call: "cognito-user-pools.list-users"
+          with:
+            user_pool_id: "tools.user_pool_id"
+          outputParameters:
+            - type: object
+              mapping: "$."

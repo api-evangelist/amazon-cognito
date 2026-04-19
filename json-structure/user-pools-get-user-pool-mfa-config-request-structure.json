@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-get-user-pool-mfa-config-request-structure.json",
+  "name": "GetUserPoolMfaConfigRequest",
+  "description": "GetUserPoolMfaConfigRequest schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId"
+  ]
+}

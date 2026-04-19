@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/identity-pools-unprocessed-identity-id-list-structure.json",
+  "name": "UnprocessedIdentityIdList",
+  "description": "UnprocessedIdentityIdList schema from Amazon Cognito API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/UnprocessedIdentityId"
+  },
+  "maxItems": 60
+}

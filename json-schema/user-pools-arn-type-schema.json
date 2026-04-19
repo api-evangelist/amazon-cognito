@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-arn-type-schema.json",
+  "title": "ArnType",
+  "description": "ArnType schema from Amazon Cognito API",
+  "type": "string",
+  "pattern": "arn:[\\w+=/,.@-]+:[\\w+=/,.@-]+:([\\w+=/,.@-]*)?:[0-9]+:[\\w+=/,.@-]+(:[\\w+=/,.@-]+)?(:[\\w+=/,.@-]+)?",
+  "minLength": 20,
+  "maxLength": 2048
+}

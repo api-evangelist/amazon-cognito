@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-hex-string-type-schema.json",
+  "title": "HexStringType",
+  "description": "HexStringType schema from Amazon Cognito API",
+  "type": "string",
+  "pattern": "^[0-9a-fA-F]+$"
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-token-model-type-structure.json",
+  "name": "TokenModelType",
+  "description": "TokenModelType schema from Amazon Cognito API",
+  "type": "string",
+  "format": "password",
+  "pattern": "[A-Za-z0-9-_=.]+"
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/identity-pools-account-id-schema.json",
+  "title": "AccountId",
+  "description": "AccountId schema from Amazon Cognito API",
+  "type": "string",
+  "pattern": "\\d+",
+  "minLength": 1,
+  "maxLength": 15
+}

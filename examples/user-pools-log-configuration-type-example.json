@@ -1,0 +1,5 @@
+{
+  "LogLevel": "example-string",
+  "EventSource": "example-string",
+  "CloudWatchLogsConfiguration": "example-string"
+}

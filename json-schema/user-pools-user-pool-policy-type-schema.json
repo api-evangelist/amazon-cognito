@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-user-pool-policy-type-schema.json",
+  "title": "UserPoolPolicyType",
+  "description": "The policy associated with a user pool.",
+  "type": "object",
+  "properties": {
+    "PasswordPolicy": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PasswordPolicyType"
+        },
+        {
+          "description": "The password policy."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-list-tags-for-resource-response-structure.json",
+  "name": "ListTagsForResourceResponse",
+  "description": "ListTagsForResourceResponse schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolTagsType"
+        },
+        {
+          "description": "The tags that are assigned to the user pool."
+        }
+      ]
+    }
+  }
+}

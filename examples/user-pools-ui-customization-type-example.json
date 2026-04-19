@@ -1,0 +1,9 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "ClientId": "example-string",
+  "ImageUrl": "example-string",
+  "CSS": "example-string",
+  "CSSVersion": "example-string",
+  "LastModifiedDate": "example-string",
+  "CreationDate": "example-string"
+}

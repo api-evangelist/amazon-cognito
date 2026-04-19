@@ -1,0 +1,237 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: "Amazon Cognito"
+  description: "Vocabulary and taxonomy for Amazon Cognito covering user authentication, identity pools, and federated identity dimensions."
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis:
+    - name: Cognito User Pools API
+      namespace: cognito-user-pools
+      version: "2016-04-18"
+      baseUrl: https://cognito-idp.{region}.amazonaws.com
+      status: active
+    - name: Cognito Identity Pools API
+      namespace: cognito-identity-pools
+      version: "2014-06-30"
+      baseUrl: https://cognito-identity.{region}.amazonaws.com
+      status: active
+
+  resources:
+    - name: user-pools
+      description: "Managed user directories for authentication."
+      api: cognito-user-pools
+      actions: [create, describe, list, update, delete]
+    - name: users
+      description: "Individual users within a user pool."
+      api: cognito-user-pools
+      actions: [create, get, list, update, delete, disable, enable]
+    - name: user-pool-clients
+      description: "App clients associated with user pools."
+      api: cognito-user-pools
+      actions: [create, describe, list, update, delete]
+    - name: groups
+      description: "Groups of users within a user pool."
+      api: cognito-user-pools
+      actions: [create, get, list, update, delete]
+    - name: identity-pools
+      description: "Federated identity pools for AWS credential management."
+      api: cognito-identity-pools
+      actions: [create, describe, list, update, delete]
+    - name: identities
+      description: "Individual federated identity entries."
+      api: cognito-identity-pools
+      actions: [get, list, delete]
+    - name: credentials
+      description: "Temporary AWS credentials for federated identities."
+      api: cognito-identity-pools
+      actions: [get]
+
+  actions:
+    - name: create
+      httpMethods: [POST]
+      pattern: write
+    - name: describe
+      httpMethods: [POST]
+      pattern: read
+    - name: list
+      httpMethods: [POST]
+      pattern: read
+    - name: get
+      httpMethods: [POST]
+      pattern: read
+    - name: update
+      httpMethods: [POST]
+      pattern: write
+    - name: delete
+      httpMethods: [POST]
+      pattern: destructive
+    - name: enable
+      httpMethods: [POST]
+      pattern: write
+    - name: disable
+      httpMethods: [POST]
+      pattern: write
+
+  schemas:
+    core:
+      - name: UserPoolType
+        description: "A user pool."
+        properties: [Id, Name, Status, CreationDate, LastModifiedDate, Policies, Schema]
+      - name: UserType
+        description: "A user in a user pool."
+        properties: [Username, Attributes, UserCreateDate, Enabled, UserStatus]
+      - name: GroupType
+        description: "A user group in a pool."
+        properties: [GroupName, UserPoolId, Description, RoleArn, Precedence]
+      - name: IdentityPoolShortDescription
+        description: "Summary of a Cognito identity pool."
+        properties: [IdentityPoolId, IdentityPoolName]
+      - name: Credentials
+        description: "Temporary AWS credentials."
+        properties: [AccessKeyId, SecretKey, SessionToken, Expiration]
+
+  parameters:
+    pagination:
+      - NextToken
+      - PaginationToken
+      - Limit
+      - MaxResults
+    identifiers:
+      - UserPoolId
+      - Username
+      - IdentityPoolId
+      - IdentityId
+      - ClientId
+    filters:
+      - Filter
+      - AttributesToGet
+
+  enums:
+    auth_flows:
+      - USER_PASSWORD_AUTH
+      - ADMIN_NO_SRP_AUTH
+      - CUSTOM_AUTH
+      - REFRESH_TOKEN_AUTH
+      - USER_SRP_AUTH
+    user_status:
+      - UNCONFIRMED
+      - CONFIRMED
+      - ARCHIVED
+      - COMPROMISED
+      - UNKNOWN
+      - RESET_REQUIRED
+      - FORCE_CHANGE_PASSWORD
+    challenge_names:
+      - SMS_MFA
+      - SOFTWARE_TOKEN_MFA
+      - SELECT_MFA_TYPE
+      - MFA_SETUP
+      - PASSWORD_VERIFIER
+      - CUSTOM_CHALLENGE
+      - DEVICE_SRP_AUTH
+      - DEVICE_PASSWORD_VERIFIER
+      - ADMIN_NO_SRP_AUTH
+      - NEW_PASSWORD_REQUIRED
+
+  authentication:
+    schemes:
+      - type: AWS SigV4
+        description: AWS Signature Version 4 for admin operations
+      - type: Bearer JWT
+        description: Cognito-issued JWT tokens for user-facing operations
+
+capability:
+  workflows:
+    - name: User Authentication
+      file: capabilities/user-authentication.yaml
+      description: "End-to-end user authentication using User Pools and Identity Pools."
+      apis: [cognito-user-pools, cognito-identity-pools]
+      toolCount: 12
+      personas:
+        - Application Developer
+        - Platform Administrator
+
+  personas:
+    - id: app-developer
+      name: Application Developer
+      description: "Integrates Cognito authentication into web and mobile applications."
+      workflows: [user-authentication]
+    - id: platform-admin
+      name: Platform Administrator
+      description: "Manages user pools, groups, and identity pool configurations."
+      workflows: [user-authentication]
+
+  domains:
+    - name: Authentication
+      resources: [user-pools, users, authentication]
+      workflows: [user-authentication]
+    - name: Federated Identity
+      resources: [identity-pools, identities, credentials]
+      workflows: [user-authentication]
+
+  namespaces:
+    - name: cognito-user-pools
+      type: consumed
+      baseUri: https://cognito-idp.{region}.amazonaws.com
+    - name: cognito-identity-pools
+      type: consumed
+      baseUri: https://cognito-identity.{region}.amazonaws.com
+    - name: user-auth-api
+      type: rest-exposed
+      port: 8080
+    - name: user-auth-mcp
+      type: mcp-exposed
+      port: 9090
+
+  binds:
+    - name: AWS_ACCESS_KEY_ID
+      workflows: [user-authentication]
+    - name: AWS_SECRET_ACCESS_KEY
+      workflows: [user-authentication]
+    - name: COGNITO_USER_POOL_ID
+      workflows: [user-authentication]
+    - name: COGNITO_CLIENT_ID
+      workflows: [user-authentication]
+    - name: COGNITO_IDENTITY_POOL_ID
+      workflows: [user-authentication]
+
+crossReference:
+  - resource: user-pools
+    operations:
+      - CreateUserPool
+      - DescribeUserPool
+      - ListUserPools
+      - UpdateUserPool
+      - DeleteUserPool
+    workflows: [user-authentication]
+    personas: [app-developer, platform-admin]
+
+  - resource: users
+    operations:
+      - AdminCreateUser
+      - AdminGetUser
+      - ListUsers
+      - AdminDeleteUser
+      - AdminEnableUser
+      - AdminDisableUser
+    workflows: [user-authentication]
+    personas: [platform-admin]
+
+  - resource: identity-pools
+    operations:
+      - CreateIdentityPool
+      - DescribeIdentityPool
+      - ListIdentityPools
+      - DeleteIdentityPool
+    workflows: [user-authentication]
+    personas: [app-developer, platform-admin]
+
+  - resource: credentials
+    operations:
+      - GetCredentialsForIdentity
+      - GetId
+    workflows: [user-authentication]
+    personas: [app-developer]

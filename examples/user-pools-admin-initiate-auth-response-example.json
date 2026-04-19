@@ -1,0 +1,6 @@
+{
+  "ChallengeName": "example-name",
+  "Session": "example-string",
+  "ChallengeParameters": "example-string",
+  "AuthenticationResult": "example-string"
+}

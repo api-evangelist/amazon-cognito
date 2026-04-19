@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-update-device-status-request-structure.json",
+  "name": "UpdateDeviceStatusRequest",
+  "description": "Represents the request to update the device status.",
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user whose device status you want to update."
+        }
+      ]
+    },
+    "DeviceKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceKeyType"
+        },
+        {
+          "description": "The device key."
+        }
+      ]
+    },
+    "DeviceRememberedStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceRememberedStatusType"
+        },
+        {
+          "description": "The status of whether a device is remembered."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccessToken",
+    "DeviceKey"
+  ]
+}

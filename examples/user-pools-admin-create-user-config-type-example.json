@@ -1,0 +1,5 @@
+{
+  "AllowAdminCreateUserOnly": "example-string",
+  "UnusedAccountValidityDays": "example-string",
+  "InviteMessageTemplate": "example-string"
+}

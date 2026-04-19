@@ -1,0 +1,5 @@
+{
+  "RiskDecision": "example-string",
+  "RiskLevel": "example-string",
+  "CompromisedCredentialsDetected": "example-string"
+}

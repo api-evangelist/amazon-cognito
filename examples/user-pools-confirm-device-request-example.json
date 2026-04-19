@@ -1,0 +1,6 @@
+{
+  "AccessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example",
+  "DeviceKey": "example-string",
+  "DeviceSecretVerifierConfig": "example-string",
+  "DeviceName": "example-name"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/identity-pools-list-identities-response-schema.json",
+  "title": "ListIdentitiesResponse",
+  "description": "The response to a ListIdentities request.",
+  "type": "object",
+  "properties": {
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "An identity pool ID in the format REGION:GUID."
+        }
+      ]
+    },
+    "Identities": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentitiesList"
+        },
+        {
+          "description": "An object containing a set of identities and associated mappings."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKey"
+        },
+        {
+          "description": "A pagination token."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/identity-pools-delete-identities-input-structure.json",
+  "name": "DeleteIdentitiesInput",
+  "description": "Input to the <code>DeleteIdentities</code> action.",
+  "type": "object",
+  "properties": {
+    "IdentityIdsToDelete": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityIdList"
+        },
+        {
+          "description": "A list of 1-60 identities that you want to delete."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityIdsToDelete"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "AWSAccountId": "example-string",
+  "Domain": "example-string",
+  "S3Bucket": "example-string",
+  "CloudFrontDistribution": "example-string",
+  "Version": "example-string",
+  "Status": "ACTIVE",
+  "CustomDomainConfig": "example-string"
+}

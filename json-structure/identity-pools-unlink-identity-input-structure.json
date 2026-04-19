@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/identity-pools-unlink-identity-input-structure.json",
+  "name": "UnlinkIdentityInput",
+  "description": "Input to the UnlinkIdentity action.",
+  "type": "object",
+  "properties": {
+    "IdentityId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityId"
+        },
+        {
+          "description": "A unique identifier in the format REGION:GUID."
+        }
+      ]
+    },
+    "Logins": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LoginsMap"
+        },
+        {
+          "description": "A set of optional name-value pairs that map provider names to provider tokens."
+        }
+      ]
+    },
+    "LoginsToRemove": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LoginsList"
+        },
+        {
+          "description": "Provider names to unlink from this identity."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityId",
+    "Logins",
+    "LoginsToRemove"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-o-auth-flows-type-structure.json",
+  "name": "OAuthFlowsType",
+  "description": "OAuthFlowsType schema from Amazon Cognito API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/OAuthFlowType"
+  },
+  "minItems": 0,
+  "maxItems": 3
+}

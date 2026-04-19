@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-client-metadata-type-structure.json",
+  "name": "ClientMetadataType",
+  "description": "ClientMetadataType schema from Amazon Cognito API",
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/components/schemas/StringType"
+  }
+}

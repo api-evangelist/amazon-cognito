@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-recovery-mechanisms-type-schema.json",
+  "title": "RecoveryMechanismsType",
+  "description": "RecoveryMechanismsType schema from Amazon Cognito API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/RecoveryOptionType"
+  },
+  "minItems": 1,
+  "maxItems": 2
+}

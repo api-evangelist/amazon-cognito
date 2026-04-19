@@ -1,0 +1,10 @@
+{
+  "EventId": "example-string",
+  "EventType": "example-string",
+  "CreationDate": "example-string",
+  "EventResponse": "example-string",
+  "EventRisk": "example-string",
+  "ChallengeResponses": "example-string",
+  "EventContextData": "example-string",
+  "EventFeedback": "example-string"
+}

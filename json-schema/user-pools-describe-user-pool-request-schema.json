@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-describe-user-pool-request-schema.json",
+  "title": "DescribeUserPoolRequest",
+  "description": "Represents the request to describe the user pool.",
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool you want to describe."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId"
+  ]
+}

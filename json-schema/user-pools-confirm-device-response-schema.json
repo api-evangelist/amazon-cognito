@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-confirm-device-response-schema.json",
+  "title": "ConfirmDeviceResponse",
+  "description": "Confirms the device response.",
+  "type": "object",
+  "properties": {
+    "UserConfirmationNecessary": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BooleanType"
+        },
+        {
+          "description": "Indicates whether the user confirmation must confirm the device response."
+        }
+      ]
+    }
+  }
+}

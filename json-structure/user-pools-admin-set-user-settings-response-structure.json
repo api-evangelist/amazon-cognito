@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-admin-set-user-settings-response-structure.json",
+  "name": "AdminSetUserSettingsResponse",
+  "description": "Represents the response from the server to set user settings as an administrator.",
+  "type": "object",
+  "properties": {}
+}

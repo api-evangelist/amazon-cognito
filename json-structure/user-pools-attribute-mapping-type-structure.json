@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-attribute-mapping-type-structure.json",
+  "name": "AttributeMappingType",
+  "description": "AttributeMappingType schema from Amazon Cognito API",
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/components/schemas/StringType"
+  }
+}

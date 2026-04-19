@@ -1,0 +1,11 @@
+{
+  "IdentityPoolName": "us-east-1_example",
+  "AllowUnauthenticatedIdentities": "example-string",
+  "AllowClassicFlow": "example-string",
+  "SupportedLoginProviders": "example-string",
+  "DeveloperProviderName": "example-name",
+  "OpenIdConnectProviderARNs": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example",
+  "CognitoIdentityProviders": "example-string",
+  "SamlProviderARNs": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example",
+  "IdentityPoolTags": "us-east-1_example"
+}

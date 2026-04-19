@@ -1,0 +1,5 @@
+{
+  "JobName": "example-name",
+  "UserPoolId": "us-east-1_example",
+  "CloudWatchLogsRoleArn": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example"
+}

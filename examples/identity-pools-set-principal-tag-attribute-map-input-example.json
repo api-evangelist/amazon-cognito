@@ -1,0 +1,6 @@
+{
+  "IdentityPoolId": "us-east-1_example",
+  "IdentityProviderName": "example-name",
+  "UseDefaults": "example-string",
+  "PrincipalTags": "example-string"
+}

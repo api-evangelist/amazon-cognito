@@ -1,0 +1,15 @@
+{
+  "JobName": "example-name",
+  "JobId": "example-string",
+  "UserPoolId": "us-east-1_example",
+  "PreSignedUrl": "example-string",
+  "CreationDate": "example-string",
+  "StartDate": "example-string",
+  "CompletionDate": "example-string",
+  "Status": "ACTIVE",
+  "CloudWatchLogsRoleArn": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example",
+  "ImportedUsers": "example-string",
+  "SkippedUsers": "example-string",
+  "FailedUsers": "example-string",
+  "CompletionMessage": "example-string"
+}

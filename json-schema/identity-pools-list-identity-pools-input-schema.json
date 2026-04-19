@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/identity-pools-list-identity-pools-input-schema.json",
+  "title": "ListIdentityPoolsInput",
+  "description": "Input to the ListIdentityPools action.",
+  "type": "object",
+  "properties": {
+    "MaxResults": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/QueryLimit"
+        },
+        {
+          "description": "The maximum number of identities to return."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKey"
+        },
+        {
+          "description": "A pagination token."
+        }
+      ]
+    }
+  },
+  "required": [
+    "MaxResults"
+  ]
+}

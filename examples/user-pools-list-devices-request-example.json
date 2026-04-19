@@ -1,0 +1,5 @@
+{
+  "AccessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example",
+  "Limit": "example-string",
+  "PaginationToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example"
+}

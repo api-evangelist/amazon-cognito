@@ -1,0 +1,7 @@
+{
+  "ApplicationId": "example-string",
+  "ApplicationArn": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example",
+  "RoleArn": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example",
+  "ExternalId": "example-string",
+  "UserDataShared": "example-string"
+}

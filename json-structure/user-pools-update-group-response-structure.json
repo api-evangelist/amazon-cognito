@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-update-group-response-structure.json",
+  "name": "UpdateGroupResponse",
+  "description": "UpdateGroupResponse schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "Group": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/GroupType"
+        },
+        {
+          "description": "The group object for the group."
+        }
+      ]
+    }
+  }
+}

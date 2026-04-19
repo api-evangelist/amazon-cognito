@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-client-id-type-schema.json",
+  "title": "ClientIdType",
+  "description": "ClientIdType schema from Amazon Cognito API",
+  "type": "string",
+  "format": "password",
+  "pattern": "[\\w+]+",
+  "minLength": 1,
+  "maxLength": 128
+}

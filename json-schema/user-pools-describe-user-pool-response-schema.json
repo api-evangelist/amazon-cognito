@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-describe-user-pool-response-schema.json",
+  "title": "DescribeUserPoolResponse",
+  "description": "Represents the response to describe the user pool.",
+  "type": "object",
+  "properties": {
+    "UserPool": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolType"
+        },
+        {
+          "description": "The container of metadata returned by the server to describe the pool."
+        }
+      ]
+    }
+  }
+}

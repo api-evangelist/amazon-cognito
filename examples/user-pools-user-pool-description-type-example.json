@@ -1,0 +1,8 @@
+{
+  "Id": "example-string",
+  "Name": "example-name",
+  "LambdaConfig": "example-string",
+  "Status": "ACTIVE",
+  "LastModifiedDate": "example-string",
+  "CreationDate": "example-string"
+}

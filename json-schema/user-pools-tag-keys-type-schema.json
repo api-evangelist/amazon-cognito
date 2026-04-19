@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-tag-keys-type-schema.json",
+  "title": "TagKeysType",
+  "description": "TagKeysType schema from Amazon Cognito API",
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 128
+}

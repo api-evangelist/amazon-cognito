@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-create-user-import-job-response-schema.json",
+  "title": "CreateUserImportJobResponse",
+  "description": "Represents the response from the server to the request to create the user import job.",
+  "type": "object",
+  "properties": {
+    "UserImportJob": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserImportJobType"
+        },
+        {
+          "description": "The job object that represents the user import job."
+        }
+      ]
+    }
+  }
+}

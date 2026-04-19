@@ -1,0 +1,7 @@
+{
+  "IdentityPoolId": "us-east-1_example",
+  "IdentityId": "example-string",
+  "DeveloperUserIdentifier": "example-string",
+  "MaxResults": "example-string",
+  "NextToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example"
+}

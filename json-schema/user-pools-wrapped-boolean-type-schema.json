@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-wrapped-boolean-type-schema.json",
+  "title": "WrappedBooleanType",
+  "description": "WrappedBooleanType schema from Amazon Cognito API",
+  "type": "boolean"
+}

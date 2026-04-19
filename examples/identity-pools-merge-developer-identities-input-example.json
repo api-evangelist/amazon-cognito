@@ -1,0 +1,6 @@
+{
+  "SourceUserIdentifier": "example-string",
+  "DestinationUserIdentifier": "example-string",
+  "DeveloperProviderName": "example-name",
+  "IdentityPoolId": "us-east-1_example"
+}

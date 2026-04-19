@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-email-sending-account-type-structure.json",
+  "name": "EmailSendingAccountType",
+  "description": "EmailSendingAccountType schema from Amazon Cognito API",
+  "type": "string",
+  "enum": [
+    "COGNITO_DEFAULT",
+    "DEVELOPER"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-string-attribute-constraints-type-structure.json",
+  "name": "StringAttributeConstraintsType",
+  "description": "The constraints associated with a string attribute.",
+  "type": "object",
+  "properties": {
+    "MinLength": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The minimum length."
+        }
+      ]
+    },
+    "MaxLength": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The maximum length."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-delete-user-pool-domain-response-schema.json",
+  "title": "DeleteUserPoolDomainResponse",
+  "description": "DeleteUserPoolDomainResponse schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {}
+}

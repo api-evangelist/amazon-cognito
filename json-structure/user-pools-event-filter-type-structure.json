@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-event-filter-type-structure.json",
+  "name": "EventFilterType",
+  "description": "EventFilterType schema from Amazon Cognito API",
+  "type": "string",
+  "enum": [
+    "SIGN_IN",
+    "PASSWORD_CHANGE",
+    "SIGN_UP"
+  ]
+}

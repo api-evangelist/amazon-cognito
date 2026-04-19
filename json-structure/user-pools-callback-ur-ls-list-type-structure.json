@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-callback-ur-ls-list-type-structure.json",
+  "name": "CallbackURLsListType",
+  "description": "CallbackURLsListType schema from Amazon Cognito API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/RedirectUrlType"
+  },
+  "minItems": 0,
+  "maxItems": 100
+}

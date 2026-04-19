@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-add-custom-attributes-response-structure.json",
+  "name": "AddCustomAttributesResponse",
+  "description": "Represents the response from the server for the request to add custom attributes.",
+  "type": "object",
+  "properties": {}
+}

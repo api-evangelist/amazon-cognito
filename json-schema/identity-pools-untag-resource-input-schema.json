@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/identity-pools-untag-resource-input-schema.json",
+  "title": "UntagResourceInput",
+  "description": "UntagResourceInput schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "ResourceArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ARNString"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the identity pool."
+        }
+      ]
+    },
+    "TagKeys": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolTagsListType"
+        },
+        {
+          "description": "The keys of the tags to remove from the user pool."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceArn",
+    "TagKeys"
+  ]
+}

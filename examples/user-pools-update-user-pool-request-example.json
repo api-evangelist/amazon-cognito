@@ -1,0 +1,21 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "Policies": "example-string",
+  "DeletionProtection": "example-string",
+  "LambdaConfig": "example-string",
+  "AutoVerifiedAttributes": "example-string",
+  "SmsVerificationMessage": "example-string",
+  "EmailVerificationMessage": "user@example.com",
+  "EmailVerificationSubject": "user@example.com",
+  "VerificationMessageTemplate": "example-string",
+  "SmsAuthenticationMessage": "example-string",
+  "UserAttributeUpdateSettings": "example-string",
+  "MfaConfiguration": "example-string",
+  "DeviceConfiguration": "example-string",
+  "EmailConfiguration": "user@example.com",
+  "SmsConfiguration": "example-string",
+  "UserPoolTags": "example-string",
+  "AdminCreateUserConfig": "example-string",
+  "UserPoolAddOns": "example-string",
+  "AccountRecoverySetting": "example-string"
+}

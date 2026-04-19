@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-redirect-url-type-schema.json",
+  "title": "RedirectUrlType",
+  "description": "RedirectUrlType schema from Amazon Cognito API",
+  "type": "string",
+  "pattern": "[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}]+",
+  "minLength": 1,
+  "maxLength": 1024
+}

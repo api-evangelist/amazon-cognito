@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/identity-pools-mapping-rules-list-schema.json",
+  "title": "MappingRulesList",
+  "description": "MappingRulesList schema from Amazon Cognito API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/MappingRule"
+  },
+  "minItems": 1,
+  "maxItems": 400
+}

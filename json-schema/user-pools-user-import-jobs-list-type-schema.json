@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-user-import-jobs-list-type-schema.json",
+  "title": "UserImportJobsListType",
+  "description": "UserImportJobsListType schema from Amazon Cognito API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/UserImportJobType"
+  },
+  "minItems": 1,
+  "maxItems": 50
+}

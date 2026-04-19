@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-update-user-pool-response-structure.json",
+  "name": "UpdateUserPoolResponse",
+  "description": "Represents the response from the server when you make a request to update the user pool.",
+  "type": "object",
+  "properties": {}
+}

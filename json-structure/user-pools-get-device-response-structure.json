@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-get-device-response-structure.json",
+  "name": "GetDeviceResponse",
+  "description": "Gets the device response.",
+  "type": "object",
+  "properties": {
+    "Device": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceType"
+        },
+        {
+          "description": "The device."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Device"
+  ]
+}

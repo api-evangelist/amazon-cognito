@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/identity-pools-get-open-id-token-response-structure.json",
+  "name": "GetOpenIdTokenResponse",
+  "description": "Returned in response to a successful GetOpenIdToken request.",
+  "type": "object",
+  "properties": {
+    "IdentityId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityId"
+        },
+        {
+          "description": "A unique identifier in the format REGION:GUID. Note that the IdentityId returned may not match the one passed on input."
+        }
+      ]
+    },
+    "Token": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OIDCToken"
+        },
+        {
+          "description": "An OpenID token, valid for 10 minutes."
+        }
+      ]
+    }
+  }
+}

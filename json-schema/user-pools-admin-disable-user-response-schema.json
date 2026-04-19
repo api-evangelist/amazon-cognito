@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-admin-disable-user-response-schema.json",
+  "title": "AdminDisableUserResponse",
+  "description": "Represents the response received from the server to disable the user as an administrator.",
+  "type": "object",
+  "properties": {}
+}

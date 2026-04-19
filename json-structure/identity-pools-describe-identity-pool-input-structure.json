@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/identity-pools-describe-identity-pool-input-structure.json",
+  "name": "DescribeIdentityPoolInput",
+  "description": "Input to the DescribeIdentityPool action.",
+  "type": "object",
+  "properties": {
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "An identity pool ID in the format REGION:GUID."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityPoolId"
+  ]
+}

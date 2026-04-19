@@ -1,0 +1,5 @@
+{
+  "IdentityPoolId": "us-east-1_example",
+  "Roles": "example-string",
+  "RoleMappings": "example-string"
+}

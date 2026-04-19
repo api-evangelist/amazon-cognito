@@ -1,0 +1,15 @@
+{
+  "PreSignUp": "example-string",
+  "CustomMessage": "example-string",
+  "PostConfirmation": "example-string",
+  "PreAuthentication": "example-string",
+  "PostAuthentication": "example-string",
+  "DefineAuthChallenge": "example-string",
+  "CreateAuthChallenge": "example-string",
+  "VerifyAuthChallengeResponse": "example-string",
+  "PreTokenGeneration": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example",
+  "UserMigration": "example-string",
+  "CustomSMSSender": "example-string",
+  "CustomEmailSender": "user@example.com",
+  "KMSKeyID": "example-string"
+}

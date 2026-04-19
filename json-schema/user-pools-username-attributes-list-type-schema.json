@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-username-attributes-list-type-schema.json",
+  "title": "UsernameAttributesListType",
+  "description": "UsernameAttributesListType schema from Amazon Cognito API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/UsernameAttributeType"
+  }
+}

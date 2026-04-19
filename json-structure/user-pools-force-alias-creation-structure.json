@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-force-alias-creation-structure.json",
+  "name": "ForceAliasCreation",
+  "description": "ForceAliasCreation schema from Amazon Cognito API",
+  "type": "boolean"
+}

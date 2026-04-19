@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-providers-list-type-structure.json",
+  "name": "ProvidersListType",
+  "description": "ProvidersListType schema from Amazon Cognito API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/ProviderDescription"
+  },
+  "minItems": 0,
+  "maxItems": 50
+}

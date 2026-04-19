@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-admin-update-user-attributes-response-structure.json",
+  "name": "AdminUpdateUserAttributesResponse",
+  "description": "Represents the response from the server for the request to update user attributes as an administrator.",
+  "type": "object",
+  "properties": {}
+}

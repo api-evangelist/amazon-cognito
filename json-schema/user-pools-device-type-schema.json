@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-device-type-schema.json",
+  "title": "DeviceType",
+  "description": "The device type.",
+  "type": "object",
+  "properties": {
+    "DeviceKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceKeyType"
+        },
+        {
+          "description": "The device key."
+        }
+      ]
+    },
+    "DeviceAttributes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeListType"
+        },
+        {
+          "description": "The device attributes."
+        }
+      ]
+    },
+    "DeviceCreateDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The creation date of the device."
+        }
+      ]
+    },
+    "DeviceLastModifiedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date and time, in <a href=\"https://www.iso.org/iso-8601-date-and-time-format.html\">ISO 8601</a> format, when the item was modified."
+        }
+      ]
+    },
+    "DeviceLastAuthenticatedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date when the device was last authenticated."
+        }
+      ]
+    }
+  }
+}

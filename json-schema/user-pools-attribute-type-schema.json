@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-attribute-type-schema.json",
+  "title": "AttributeType",
+  "description": "Specifies whether the attribute is standard or custom.",
+  "type": "object",
+  "properties": {
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeNameType"
+        },
+        {
+          "description": "The name of the attribute."
+        }
+      ]
+    },
+    "Value": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeValueType"
+        },
+        {
+          "description": "The value of the attribute."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Name"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "DestinationUser": "example-string",
+  "SourceUser": "example-string"
+}

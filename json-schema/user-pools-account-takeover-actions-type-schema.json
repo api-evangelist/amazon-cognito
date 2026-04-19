@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-account-takeover-actions-type-schema.json",
+  "title": "AccountTakeoverActionsType",
+  "description": "Account takeover actions type.",
+  "type": "object",
+  "properties": {
+    "LowAction": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccountTakeoverActionType"
+        },
+        {
+          "description": "Action to take for a low risk."
+        }
+      ]
+    },
+    "MediumAction": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccountTakeoverActionType"
+        },
+        {
+          "description": "Action to take for a medium risk."
+        }
+      ]
+    },
+    "HighAction": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccountTakeoverActionType"
+        },
+        {
+          "description": "Action to take for a high risk."
+        }
+      ]
+    }
+  }
+}

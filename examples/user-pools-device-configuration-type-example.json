@@ -1,0 +1,4 @@
+{
+  "ChallengeRequiredOnNewDevice": "example-string",
+  "DeviceOnlyRememberedOnUserPrompt": "example-string"
+}

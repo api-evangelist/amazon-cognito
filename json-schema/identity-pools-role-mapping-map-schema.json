@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/identity-pools-role-mapping-map-schema.json",
+  "title": "RoleMappingMap",
+  "description": "RoleMappingMap schema from Amazon Cognito API",
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/components/schemas/RoleMapping"
+  }
+}

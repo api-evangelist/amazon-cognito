@@ -1,0 +1,7 @@
+{
+  "IpAddress": "example-string",
+  "DeviceName": "example-name",
+  "Timezone": "example-string",
+  "City": "example-string",
+  "Country": "example-string"
+}

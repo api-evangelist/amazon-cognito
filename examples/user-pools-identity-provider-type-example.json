@@ -1,0 +1,10 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "ProviderName": "example-name",
+  "ProviderType": "example-string",
+  "ProviderDetails": "example-string",
+  "AttributeMapping": "example-string",
+  "IdpIdentifiers": "example-string",
+  "LastModifiedDate": "example-string",
+  "CreationDate": "example-string"
+}

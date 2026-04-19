@@ -1,0 +1,7 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "AttributesToGet": "example-string",
+  "Limit": "example-string",
+  "PaginationToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example",
+  "Filter": "example-string"
+}

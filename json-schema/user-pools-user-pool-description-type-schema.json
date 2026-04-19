@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-user-pool-description-type-schema.json",
+  "title": "UserPoolDescriptionType",
+  "description": "A user pool description.",
+  "type": "object",
+  "properties": {
+    "Id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The ID in a user pool description."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolNameType"
+        },
+        {
+          "description": "The name in a user pool description."
+        }
+      ]
+    },
+    "LambdaConfig": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LambdaConfigType"
+        },
+        {
+          "description": "The Lambda configuration information in a user pool description."
+        }
+      ]
+    },
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StatusType"
+        },
+        {
+          "description": "The user pool status in a user pool description."
+        }
+      ]
+    },
+    "LastModifiedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date and time, in <a href=\"https://www.iso.org/iso-8601-date-and-time-format.html\">ISO 8601</a> format, when the item was modified."
+        }
+      ]
+    },
+    "CreationDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date and time, in <a href=\"https://www.iso.org/iso-8601-date-and-time-format.html\">ISO 8601</a> format, when the item was created."
+        }
+      ]
+    }
+  }
+}

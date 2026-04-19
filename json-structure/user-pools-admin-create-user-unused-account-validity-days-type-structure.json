@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-admin-create-user-unused-account-validity-days-type-structure.json",
+  "name": "AdminCreateUserUnusedAccountValidityDaysType",
+  "description": "AdminCreateUserUnusedAccountValidityDaysType schema from Amazon Cognito API",
+  "type": "integer",
+  "minimum": 0,
+  "maximum": 365
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-admin-get-user-request-schema.json",
+  "title": "AdminGetUserRequest",
+  "description": "Represents the request to get the specified user as an administrator.",
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool where you want to get information about the user."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The user name of the user you want to retrieve."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "Username"
+  ]
+}

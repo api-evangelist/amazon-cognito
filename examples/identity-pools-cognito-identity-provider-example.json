@@ -1,0 +1,5 @@
+{
+  "ProviderName": "example-name",
+  "ClientId": "example-string",
+  "ServerSideTokenCheck": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-delete-user-pool-request-schema.json",
+  "title": "DeleteUserPoolRequest",
+  "description": "Represents the request to delete a user pool.",
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool you want to delete."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId"
+  ]
+}

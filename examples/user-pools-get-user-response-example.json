@@ -1,0 +1,7 @@
+{
+  "Username": "jsmith",
+  "UserAttributes": "example-string",
+  "MFAOptions": "example-string",
+  "PreferredMfaSetting": "example-string",
+  "UserMFASettingList": "example-string"
+}

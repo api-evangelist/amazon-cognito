@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-verify-user-attribute-request-structure.json",
+  "name": "VerifyUserAttributeRequest",
+  "description": "Represents the request to verify user attributes.",
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user whose user attributes you want to verify."
+        }
+      ]
+    },
+    "AttributeName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeNameType"
+        },
+        {
+          "description": "The attribute name in the request to verify user attributes."
+        }
+      ]
+    },
+    "Code": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConfirmationCodeType"
+        },
+        {
+          "description": "The verification code in the request to verify user attributes."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccessToken",
+    "AttributeName",
+    "Code"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-resource-server-scope-description-type-schema.json",
+  "title": "ResourceServerScopeDescriptionType",
+  "description": "ResourceServerScopeDescriptionType schema from Amazon Cognito API",
+  "type": "string",
+  "minLength": 1,
+  "maxLength": 256
+}

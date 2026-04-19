@@ -1,0 +1,11 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "Username": "jsmith",
+  "UserAttributes": "example-string",
+  "ValidationData": "example-string",
+  "TemporaryPassword": "example-string",
+  "ForceAliasCreation": "example-string",
+  "MessageAction": "example-string",
+  "DesiredDeliveryMediums": "example-string",
+  "ClientMetadata": "example-string"
+}

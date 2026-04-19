@@ -1,0 +1,6 @@
+{
+  "SMSMfaSettings": "example-string",
+  "SoftwareTokenMfaSettings": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example",
+  "Username": "jsmith",
+  "UserPoolId": "us-east-1_example"
+}

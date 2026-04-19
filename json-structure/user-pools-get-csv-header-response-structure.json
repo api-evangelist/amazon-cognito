@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-get-csv-header-response-structure.json",
+  "name": "GetCSVHeaderResponse",
+  "description": "Represents the response from the server to the request to get the header information of the CSV file for the user import job.",
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool that the users are to be imported into."
+        }
+      ]
+    },
+    "CSVHeader": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ListOfStringTypes"
+        },
+        {
+          "description": "The header information of the CSV file for the user import job."
+        }
+      ]
+    }
+  }
+}

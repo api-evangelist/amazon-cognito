@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-blocked-ip-range-list-type-structure.json",
+  "name": "BlockedIPRangeListType",
+  "description": "BlockedIPRangeListType schema from Amazon Cognito API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/StringType"
+  },
+  "maxItems": 200
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-list-users-in-group-response-structure.json",
+  "name": "ListUsersInGroupResponse",
+  "description": "ListUsersInGroupResponse schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "Users": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsersListType"
+        },
+        {
+          "description": "The users returned in the request to list users."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PaginationKey"
+        },
+        {
+          "description": "An identifier that you can use in a later request to return the next set of items in the list."
+        }
+      ]
+    }
+  }
+}

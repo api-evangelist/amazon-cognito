@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-http-header-structure.json",
+  "name": "HttpHeader",
+  "description": "The HTTP header.",
+  "type": "object",
+  "properties": {
+    "headerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The header name."
+        }
+      ]
+    },
+    "headerValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The header value."
+        }
+      ]
+    }
+  }
+}

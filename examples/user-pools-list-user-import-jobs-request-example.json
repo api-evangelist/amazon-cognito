@@ -1,0 +1,5 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "MaxResults": "example-string",
+  "PaginationToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example"
+}

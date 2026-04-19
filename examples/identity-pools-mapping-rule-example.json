@@ -1,0 +1,6 @@
+{
+  "Claim": "example-string",
+  "MatchType": "example-string",
+  "Value": "example-string",
+  "RoleARN": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example"
+}

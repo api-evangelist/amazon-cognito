@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-admin-get-device-response-schema.json",
+  "title": "AdminGetDeviceResponse",
+  "description": "Gets the device response, as an administrator.",
+  "type": "object",
+  "properties": {
+    "Device": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceType"
+        },
+        {
+          "description": "The device."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Device"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-id-token-validity-type-structure.json",
+  "name": "IdTokenValidityType",
+  "description": "IdTokenValidityType schema from Amazon Cognito API",
+  "type": "integer",
+  "minimum": 1,
+  "maximum": 86400
+}

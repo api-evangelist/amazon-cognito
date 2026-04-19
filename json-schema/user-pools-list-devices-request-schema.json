@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-list-devices-request-schema.json",
+  "title": "ListDevicesRequest",
+  "description": "Represents the request to list the devices.",
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user whose list of devices you want to view."
+        }
+      ]
+    },
+    "Limit": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/QueryLimitType"
+        },
+        {
+          "description": "The limit of the device request."
+        }
+      ]
+    },
+    "PaginationToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SearchPaginationTokenType"
+        },
+        {
+          "description": "The pagination token for the list request."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccessToken"
+  ]
+}

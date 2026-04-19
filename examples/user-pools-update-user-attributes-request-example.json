@@ -1,0 +1,5 @@
+{
+  "UserAttributes": "example-string",
+  "AccessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example",
+  "ClientMetadata": "example-string"
+}

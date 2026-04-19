@@ -1,0 +1,9 @@
+{
+  "ClientId": "example-string",
+  "ChallengeName": "example-name",
+  "Session": "example-string",
+  "ChallengeResponses": "example-string",
+  "AnalyticsMetadata": "example-string",
+  "UserContextData": "example-string",
+  "ClientMetadata": "example-string"
+}

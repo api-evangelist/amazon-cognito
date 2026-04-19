@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-global-sign-out-request-structure.json",
+  "name": "GlobalSignOutRequest",
+  "description": "Represents the request to sign out all devices.",
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user who you want to sign out."
+        }
+      ]
+    }
+  },
+  "required": [
+    "AccessToken"
+  ]
+}

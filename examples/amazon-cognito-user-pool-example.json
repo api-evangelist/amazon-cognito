@@ -1,0 +1,62 @@
+{
+  "Id": "example-string",
+  "Name": "example-name",
+  "Status": "Enabled",
+  "Arn": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example",
+  "CreationDate": "2025-01-15T10:30:00Z",
+  "LastModifiedDate": "2025-01-15T10:30:00Z",
+  "EstimatedNumberOfUsers": 100,
+  "MfaConfiguration": "OFF",
+  "Policies": {
+    "PasswordPolicy": {
+      "MinimumLength": 100,
+      "RequireUppercase": true,
+      "RequireLowercase": true,
+      "RequireNumbers": true,
+      "RequireSymbols": true,
+      "TemporaryPasswordValidityDays": 100
+    }
+  },
+  "AutoVerifiedAttributes": [
+    "phone_number"
+  ],
+  "UsernameAttributes": [
+    "phone_number"
+  ],
+  "SchemaAttributes": [
+    {
+      "Name": "example-name",
+      "AttributeDataType": "String",
+      "Mutable": true,
+      "Required": true,
+      "StringAttributeConstraints": {
+        "MinLength": "example-string",
+        "MaxLength": "example-string"
+      },
+      "NumberAttributeConstraints": {
+        "MinValue": "example-string",
+        "MaxValue": "example-string"
+      }
+    }
+  ],
+  "EmailConfiguration": {
+    "SourceArn": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example",
+    "ReplyToEmailAddress": "user@example.com",
+    "EmailSendingAccount": "COGNITO_DEFAULT"
+  },
+  "SmsConfiguration": {
+    "SnsCallerArn": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example",
+    "ExternalId": "example-string",
+    "SnsRegion": "us-east-1"
+  },
+  "UserPoolTags": {},
+  "AdminCreateUserConfig": {
+    "AllowAdminCreateUserOnly": true,
+    "UnusedAccountValidityDays": 100,
+    "InviteMessageTemplate": {
+      "SMSMessage": "example-string",
+      "EmailMessage": "user@example.com",
+      "EmailSubject": "user@example.com"
+    }
+  }
+}

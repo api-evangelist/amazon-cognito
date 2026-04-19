@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-resource-server-scope-type-structure.json",
+  "name": "ResourceServerScopeType",
+  "description": "A resource server scope.",
+  "type": "object",
+  "properties": {
+    "ScopeName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerScopeNameType"
+        },
+        {
+          "description": "The name of the scope."
+        }
+      ]
+    },
+    "ScopeDescription": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerScopeDescriptionType"
+        },
+        {
+          "description": "A description of the scope."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ScopeName",
+    "ScopeDescription"
+  ]
+}

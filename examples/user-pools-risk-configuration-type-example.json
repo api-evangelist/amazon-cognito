@@ -1,0 +1,8 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "ClientId": "example-string",
+  "CompromisedCredentialsRiskConfiguration": "example-string",
+  "AccountTakeoverRiskConfiguration": "example-string",
+  "RiskExceptionConfiguration": "example-string",
+  "LastModifiedDate": "example-string"
+}

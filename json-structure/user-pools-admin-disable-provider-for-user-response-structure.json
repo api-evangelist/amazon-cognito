@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-admin-disable-provider-for-user-response-structure.json",
+  "name": "AdminDisableProviderForUserResponse",
+  "description": "AdminDisableProviderForUserResponse schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {}
+}

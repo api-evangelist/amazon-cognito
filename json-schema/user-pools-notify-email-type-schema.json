@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-notify-email-type-schema.json",
+  "title": "NotifyEmailType",
+  "description": "The notify email type.",
+  "type": "object",
+  "properties": {
+    "Subject": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailNotificationSubjectType"
+        },
+        {
+          "description": "The email subject."
+        }
+      ]
+    },
+    "HtmlBody": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailNotificationBodyType"
+        },
+        {
+          "description": "The email HTML body."
+        }
+      ]
+    },
+    "TextBody": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EmailNotificationBodyType"
+        },
+        {
+          "description": "The email text body."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Subject"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "Username": "jsmith",
+  "ClientMetadata": "example-string"
+}

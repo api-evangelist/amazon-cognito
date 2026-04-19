@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-create-user-pool-client-response-schema.json",
+  "title": "CreateUserPoolClientResponse",
+  "description": "Represents the response from the server to create a user pool client.",
+  "type": "object",
+  "properties": {
+    "UserPoolClient": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolClientType"
+        },
+        {
+          "description": "The user pool client that was just created."
+        }
+      ]
+    }
+  }
+}

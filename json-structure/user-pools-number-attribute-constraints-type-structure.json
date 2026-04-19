@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-number-attribute-constraints-type-structure.json",
+  "name": "NumberAttributeConstraintsType",
+  "description": "The minimum and maximum values of an attribute that is of the number data type.",
+  "type": "object",
+  "properties": {
+    "MinValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The minimum value of an attribute that is of the number data type."
+        }
+      ]
+    },
+    "MaxValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The maximum value of an attribute that is of the number data type."
+        }
+      ]
+    }
+  }
+}

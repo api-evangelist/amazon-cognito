@@ -1,0 +1,5 @@
+{
+  "IdentityPoolId": "us-east-1_example",
+  "Identities": "example-string",
+  "NextToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example"
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-set-user-mfa-preference-response-structure.json",
+  "name": "SetUserMFAPreferenceResponse",
+  "description": "SetUserMFAPreferenceResponse schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {}
+}

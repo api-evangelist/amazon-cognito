@@ -1,0 +1,5 @@
+{
+  "AccessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example",
+  "DeviceKey": "example-string",
+  "DeviceRememberedStatus": "ACTIVE"
+}

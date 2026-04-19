@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-global-sign-out-response-schema.json",
+  "title": "GlobalSignOutResponse",
+  "description": "The response to the request to sign out all devices.",
+  "type": "object",
+  "properties": {}
+}

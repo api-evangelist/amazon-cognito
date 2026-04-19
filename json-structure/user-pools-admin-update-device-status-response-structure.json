@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-admin-update-device-status-response-structure.json",
+  "name": "AdminUpdateDeviceStatusResponse",
+  "description": "The status response to the request to update the device, as an administrator.",
+  "type": "object",
+  "properties": {}
+}

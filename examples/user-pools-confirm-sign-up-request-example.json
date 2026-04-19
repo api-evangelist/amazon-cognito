@@ -1,0 +1,10 @@
+{
+  "ClientId": "example-string",
+  "SecretHash": "example-string",
+  "Username": "jsmith",
+  "ConfirmationCode": "example-string",
+  "ForceAliasCreation": "example-string",
+  "AnalyticsMetadata": "example-string",
+  "UserContextData": "example-string",
+  "ClientMetadata": "example-string"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-explicit-auth-flows-type-structure.json",
+  "name": "ExplicitAuthFlowsType",
+  "description": "ExplicitAuthFlowsType schema from Amazon Cognito API",
+  "type": "string",
+  "enum": [
+    "ADMIN_NO_SRP_AUTH",
+    "CUSTOM_AUTH_FLOW_ONLY",
+    "USER_PASSWORD_AUTH",
+    "ALLOW_ADMIN_USER_PASSWORD_AUTH",
+    "ALLOW_CUSTOM_AUTH",
+    "ALLOW_USER_PASSWORD_AUTH",
+    "ALLOW_USER_SRP_AUTH",
+    "ALLOW_REFRESH_TOKEN_AUTH"
+  ]
+}

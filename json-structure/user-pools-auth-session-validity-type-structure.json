@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-auth-session-validity-type-structure.json",
+  "name": "AuthSessionValidityType",
+  "description": "AuthSessionValidityType schema from Amazon Cognito API",
+  "type": "integer",
+  "minimum": 3,
+  "maximum": 15
+}

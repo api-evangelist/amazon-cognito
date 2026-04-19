@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-create-group-response-structure.json",
+  "name": "CreateGroupResponse",
+  "description": "CreateGroupResponse schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "Group": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/GroupType"
+        },
+        {
+          "description": "The group object for the group."
+        }
+      ]
+    }
+  }
+}

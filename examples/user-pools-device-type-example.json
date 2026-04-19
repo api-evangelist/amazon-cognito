@@ -1,0 +1,7 @@
+{
+  "DeviceKey": "example-string",
+  "DeviceAttributes": "example-string",
+  "DeviceCreateDate": "example-string",
+  "DeviceLastModifiedDate": "example-string",
+  "DeviceLastAuthenticatedDate": "example-string"
+}

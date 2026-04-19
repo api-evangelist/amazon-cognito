@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/identity-pools-classic-flow-structure.json",
+  "name": "ClassicFlow",
+  "description": "ClassicFlow schema from Amazon Cognito API",
+  "type": "boolean"
+}

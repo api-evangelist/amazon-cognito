@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/identity-pools-claim-name-structure.json",
+  "name": "ClaimName",
+  "description": "ClaimName schema from Amazon Cognito API",
+  "type": "string",
+  "pattern": "[\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}]+",
+  "minLength": 1,
+  "maxLength": 64
+}

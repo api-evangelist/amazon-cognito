@@ -1,0 +1,10 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "ClientId": "example-string",
+  "ChallengeName": "example-name",
+  "ChallengeResponses": "example-string",
+  "Session": "example-string",
+  "AnalyticsMetadata": "example-string",
+  "ContextData": "example-string",
+  "ClientMetadata": "example-string"
+}

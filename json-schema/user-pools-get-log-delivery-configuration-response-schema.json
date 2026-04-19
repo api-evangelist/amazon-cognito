@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-get-log-delivery-configuration-response-schema.json",
+  "title": "GetLogDeliveryConfigurationResponse",
+  "description": "GetLogDeliveryConfigurationResponse schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "LogDeliveryConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogDeliveryConfigurationType"
+        },
+        {
+          "description": "The detailed activity logging configuration of the requested user pool."
+        }
+      ]
+    }
+  }
+}

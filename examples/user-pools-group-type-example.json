@@ -1,0 +1,9 @@
+{
+  "GroupName": "example-name",
+  "UserPoolId": "us-east-1_example",
+  "Description": "example-string",
+  "RoleArn": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example",
+  "Precedence": "example-string",
+  "LastModifiedDate": "example-string",
+  "CreationDate": "example-string"
+}

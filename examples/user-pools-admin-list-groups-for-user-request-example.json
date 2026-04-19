@@ -1,0 +1,6 @@
+{
+  "Username": "jsmith",
+  "UserPoolId": "us-east-1_example",
+  "Limit": "example-string",
+  "NextToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example"
+}

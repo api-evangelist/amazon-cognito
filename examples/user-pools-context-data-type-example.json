@@ -1,0 +1,7 @@
+{
+  "IpAddress": "example-string",
+  "ServerName": "example-name",
+  "ServerPath": "example-string",
+  "HttpHeaders": "example-string",
+  "EncodedData": "example-string"
+}

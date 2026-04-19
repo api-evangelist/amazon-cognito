@@ -1,0 +1,6 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "Identifier": "example-string",
+  "Name": "example-name",
+  "Scopes": "example-string"
+}

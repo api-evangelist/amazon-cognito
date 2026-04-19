@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-verify-user-attribute-response-structure.json",
+  "name": "VerifyUserAttributeResponse",
+  "description": "A container representing the response from the server from the request to verify user attributes.",
+  "type": "object",
+  "properties": {}
+}

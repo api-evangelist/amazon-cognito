@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-recovery-option-type-structure.json",
+  "name": "RecoveryOptionType",
+  "description": "A map containing a priority as a key, and recovery method name as a value.",
+  "type": "object",
+  "properties": {
+    "Priority": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PriorityType"
+        },
+        {
+          "description": "A positive integer specifying priority of a method with 1 being the highest priority."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RecoveryOptionNameType"
+        },
+        {
+          "description": "The recovery method for a user."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Priority",
+    "Name"
+  ]
+}

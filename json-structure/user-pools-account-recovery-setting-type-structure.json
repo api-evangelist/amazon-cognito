@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-account-recovery-setting-type-structure.json",
+  "name": "AccountRecoverySettingType",
+  "description": "The data type for <code>AccountRecoverySetting</code>.",
+  "type": "object",
+  "properties": {
+    "RecoveryMechanisms": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RecoveryMechanismsType"
+        },
+        {
+          "description": "The list of <code>RecoveryOptionTypes</code>."
+        }
+      ]
+    }
+  }
+}

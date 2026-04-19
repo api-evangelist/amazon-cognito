@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-admin-get-device-request-structure.json",
+  "name": "AdminGetDeviceRequest",
+  "description": "Represents the request to get the device, as an administrator.",
+  "type": "object",
+  "properties": {
+    "DeviceKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceKeyType"
+        },
+        {
+          "description": "The device key."
+        }
+      ]
+    },
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The user name."
+        }
+      ]
+    }
+  },
+  "required": [
+    "DeviceKey",
+    "UserPoolId",
+    "Username"
+  ]
+}

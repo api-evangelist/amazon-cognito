@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-set-log-delivery-configuration-request-structure.json",
+  "name": "SetLogDeliveryConfigurationRequest",
+  "description": "SetLogDeliveryConfigurationRequest schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The ID of the user pool where you want to configure detailed activity logging ."
+        }
+      ]
+    },
+    "LogConfigurations": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogConfigurationListType"
+        },
+        {
+          "description": "A collection of all of the detailed activity logging configurations for a user pool."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "LogConfigurations"
+  ]
+}

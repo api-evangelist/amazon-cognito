@@ -1,0 +1,5 @@
+{
+  "SnsCallerArn": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example",
+  "ExternalId": "example-string",
+  "SnsRegion": "us-east-1"
+}

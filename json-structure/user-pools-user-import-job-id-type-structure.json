@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-user-import-job-id-type-structure.json",
+  "name": "UserImportJobIdType",
+  "description": "UserImportJobIdType schema from Amazon Cognito API",
+  "type": "string",
+  "pattern": "import-[0-9a-zA-Z-]+",
+  "minLength": 1,
+  "maxLength": 55
+}

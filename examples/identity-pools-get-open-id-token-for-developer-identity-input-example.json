@@ -1,0 +1,7 @@
+{
+  "IdentityPoolId": "us-east-1_example",
+  "IdentityId": "example-string",
+  "Logins": "example-string",
+  "PrincipalTags": "example-string",
+  "TokenDuration": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.example"
+}

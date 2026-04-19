@@ -1,0 +1,11 @@
+{
+  "Username": "jsmith",
+  "UserAttributes": "example-string",
+  "UserCreateDate": "example-string",
+  "UserLastModifiedDate": "example-string",
+  "Enabled": "example-string",
+  "UserStatus": "ACTIVE",
+  "MFAOptions": "example-string",
+  "PreferredMfaSetting": "example-string",
+  "UserMFASettingList": "example-string"
+}

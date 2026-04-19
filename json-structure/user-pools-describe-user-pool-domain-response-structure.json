@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-describe-user-pool-domain-response-structure.json",
+  "name": "DescribeUserPoolDomainResponse",
+  "description": "DescribeUserPoolDomainResponse schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "DomainDescription": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DomainDescriptionType"
+        },
+        {
+          "description": "A domain description object containing information about the domain."
+        }
+      ]
+    }
+  }
+}

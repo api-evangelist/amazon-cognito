@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-admin-disable-provider-for-user-request-structure.json",
+  "name": "AdminDisableProviderForUserRequest",
+  "description": "AdminDisableProviderForUserRequest schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StringType"
+        },
+        {
+          "description": "The user pool ID for the user pool."
+        }
+      ]
+    },
+    "User": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProviderUserIdentifierType"
+        },
+        {
+          "description": "The user to be disabled."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "User"
+  ]
+}

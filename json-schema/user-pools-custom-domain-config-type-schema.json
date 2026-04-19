@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-custom-domain-config-type-schema.json",
+  "title": "CustomDomainConfigType",
+  "description": "The configuration for a custom domain that hosts the sign-up and sign-in webpages for your application.",
+  "type": "object",
+  "properties": {
+    "CertificateArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of an Certificate Manager SSL certificate. You use this certificate for the subdomain of your custom domain."
+        }
+      ]
+    }
+  },
+  "required": [
+    "CertificateArn"
+  ]
+}

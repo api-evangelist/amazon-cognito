@@ -1,0 +1,9 @@
+{
+  "Name": "example-name",
+  "AttributeDataType": "example-string",
+  "DeveloperOnlyAttribute": "example-string",
+  "Mutable": "example-string",
+  "Required": "example-string",
+  "NumberAttributeConstraints": "example-string",
+  "StringAttributeConstraints": "example-string"
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-scope-type-schema.json",
+  "title": "ScopeType",
+  "description": "ScopeType schema from Amazon Cognito API",
+  "type": "string",
+  "pattern": "[\\x21\\x23-\\x5B\\x5D-\\x7E]+",
+  "minLength": 1,
+  "maxLength": 256
+}

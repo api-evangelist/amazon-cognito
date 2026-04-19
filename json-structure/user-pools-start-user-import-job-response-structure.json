@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-start-user-import-job-response-structure.json",
+  "name": "StartUserImportJobResponse",
+  "description": "Represents the response from the server to the request to start the user import job.",
+  "type": "object",
+  "properties": {
+    "UserImportJob": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserImportJobType"
+        },
+        {
+          "description": "The job object that represents the user import job."
+        }
+      ]
+    }
+  }
+}

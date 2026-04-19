@@ -1,0 +1,11 @@
+{
+  "ClientId": "example-string",
+  "SecretHash": "example-string",
+  "Username": "jsmith",
+  "Password": "example-string",
+  "UserAttributes": "example-string",
+  "ValidationData": "example-string",
+  "AnalyticsMetadata": "example-string",
+  "UserContextData": "example-string",
+  "ClientMetadata": "example-string"
+}

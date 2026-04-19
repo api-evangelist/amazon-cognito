@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-challenge-response-type-structure.json",
+  "name": "ChallengeResponseType",
+  "description": "The challenge response type.",
+  "type": "object",
+  "properties": {
+    "ChallengeName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ChallengeName"
+        },
+        {
+          "description": "The challenge name."
+        }
+      ]
+    },
+    "ChallengeResponse": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ChallengeResponse"
+        },
+        {
+          "description": "The challenge response."
+        }
+      ]
+    }
+  }
+}

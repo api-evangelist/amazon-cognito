@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-user-status-type-structure.json",
+  "name": "UserStatusType",
+  "description": "UserStatusType schema from Amazon Cognito API",
+  "type": "string",
+  "enum": [
+    "UNCONFIRMED",
+    "CONFIRMED",
+    "ARCHIVED",
+    "COMPROMISED",
+    "UNKNOWN",
+    "RESET_REQUIRED",
+    "FORCE_CHANGE_PASSWORD"
+  ]
+}

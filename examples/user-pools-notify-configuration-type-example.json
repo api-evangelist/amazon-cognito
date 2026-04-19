@@ -1,0 +1,8 @@
+{
+  "From": "example-string",
+  "ReplyTo": "example-string",
+  "SourceArn": "arn:aws:cognito-idp:us-east-1:123456789012:userpool/us-east-1_example",
+  "BlockEmail": "user@example.com",
+  "NoActionEmail": "user@example.com",
+  "MfaEmail": "user@example.com"
+}

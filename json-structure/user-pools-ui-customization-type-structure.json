@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-ui-customization-type-structure.json",
+  "name": "UICustomizationType",
+  "description": "A container for the UI customization information for a user pool's built-in app UI.",
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool."
+        }
+      ]
+    },
+    "ClientId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientIdType"
+        },
+        {
+          "description": "The client ID for the client app."
+        }
+      ]
+    },
+    "ImageUrl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ImageUrlType"
+        },
+        {
+          "description": "The logo image for the UI customization."
+        }
+      ]
+    },
+    "CSS": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CSSType"
+        },
+        {
+          "description": "The CSS values in the UI customization."
+        }
+      ]
+    },
+    "CSSVersion": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CSSVersionType"
+        },
+        {
+          "description": "The CSS version number."
+        }
+      ]
+    },
+    "LastModifiedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date and time, in <a href=\"https://www.iso.org/iso-8601-date-and-time-format.html\">ISO 8601</a> format, when the item was modified."
+        }
+      ]
+    },
+    "CreationDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date and time, in <a href=\"https://www.iso.org/iso-8601-date-and-time-format.html\">ISO 8601</a> format, when the item was created."
+        }
+      ]
+    }
+  }
+}

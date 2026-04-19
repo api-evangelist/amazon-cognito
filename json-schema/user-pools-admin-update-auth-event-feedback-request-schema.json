@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-admin-update-auth-event-feedback-request-schema.json",
+  "title": "AdminUpdateAuthEventFeedbackRequest",
+  "description": "AdminUpdateAuthEventFeedbackRequest schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The user pool username."
+        }
+      ]
+    },
+    "EventId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EventIdType"
+        },
+        {
+          "description": "The authentication event ID."
+        }
+      ]
+    },
+    "FeedbackValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FeedbackValueType"
+        },
+        {
+          "description": "The authentication event feedback value. When you provide a <code>FeedbackValue</code> value of <code>valid</code>, you tell Amazon Cognito that you trust a user session where Amazon Cognito has evaluated some level of risk. When you provide a <code>FeedbackValue</code> value of <code>invalid</code>, you tell Amazon Cognito that you don't trust a user session, or you don't believe that Amazon Cognito evaluated a high-enough risk level."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "Username",
+    "EventId",
+    "FeedbackValue"
+  ]
+}

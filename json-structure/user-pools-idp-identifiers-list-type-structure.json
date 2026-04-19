@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-idp-identifiers-list-type-structure.json",
+  "name": "IdpIdentifiersListType",
+  "description": "IdpIdentifiersListType schema from Amazon Cognito API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/IdpIdentifierType"
+  },
+  "minItems": 0,
+  "maxItems": 50
+}

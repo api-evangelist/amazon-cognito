@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-default-email-option-type-schema.json",
+  "title": "DefaultEmailOptionType",
+  "description": "DefaultEmailOptionType schema from Amazon Cognito API",
+  "type": "string",
+  "enum": [
+    "CONFIRM_WITH_LINK",
+    "CONFIRM_WITH_CODE"
+  ]
+}

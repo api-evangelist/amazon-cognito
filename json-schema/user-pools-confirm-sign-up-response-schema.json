@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-confirm-sign-up-response-schema.json",
+  "title": "ConfirmSignUpResponse",
+  "description": "Represents the response from the server for the registration confirmation.",
+  "type": "object",
+  "properties": {}
+}

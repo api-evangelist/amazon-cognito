@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-cloud-watch-logs-configuration-type-schema.json",
+  "title": "CloudWatchLogsConfigurationType",
+  "description": "The CloudWatch logging destination of a user pool detailed activity logging configuration.",
+  "type": "object",
+  "properties": {
+    "LogGroupArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ArnType"
+        },
+        {
+          "description": "The Amazon Resource Name (arn) of a CloudWatch Logs log group where your user pool sends logs. The log group must not be encrypted with Key Management Service and must be in the same Amazon Web Services account as your user pool."
+        }
+      ]
+    }
+  }
+}

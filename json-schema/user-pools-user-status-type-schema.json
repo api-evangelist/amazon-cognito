@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-user-status-type-schema.json",
+  "title": "UserStatusType",
+  "description": "UserStatusType schema from Amazon Cognito API",
+  "type": "string",
+  "enum": [
+    "UNCONFIRMED",
+    "CONFIRMED",
+    "ARCHIVED",
+    "COMPROMISED",
+    "UNKNOWN",
+    "RESET_REQUIRED",
+    "FORCE_CHANGE_PASSWORD"
+  ]
+}

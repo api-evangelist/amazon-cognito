@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-resource-server-scope-list-type-structure.json",
+  "name": "ResourceServerScopeListType",
+  "description": "ResourceServerScopeListType schema from Amazon Cognito API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/ResourceServerScopeType"
+  },
+  "maxItems": 100
+}

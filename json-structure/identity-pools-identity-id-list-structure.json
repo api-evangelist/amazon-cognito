@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/identity-pools-identity-id-list-structure.json",
+  "name": "IdentityIdList",
+  "description": "IdentityIdList schema from Amazon Cognito API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/IdentityId"
+  },
+  "minItems": 1,
+  "maxItems": 60
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-s3-bucket-type-structure.json",
+  "name": "S3BucketType",
+  "description": "S3BucketType schema from Amazon Cognito API",
+  "type": "string",
+  "pattern": "^[0-9A-Za-z\\.\\-_]*(?<!\\.)$",
+  "minLength": 3,
+  "maxLength": 1024
+}

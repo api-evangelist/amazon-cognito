@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-event-response-type-structure.json",
+  "name": "EventResponseType",
+  "description": "EventResponseType schema from Amazon Cognito API",
+  "type": "string",
+  "enum": [
+    "Pass",
+    "Fail",
+    "InProgress"
+  ]
+}

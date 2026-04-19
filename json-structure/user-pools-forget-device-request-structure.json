@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-forget-device-request-structure.json",
+  "name": "ForgetDeviceRequest",
+  "description": "Represents the request to forget the device.",
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "A valid access token that Amazon Cognito issued to the user whose registered device you want to forget."
+        }
+      ]
+    },
+    "DeviceKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceKeyType"
+        },
+        {
+          "description": "The device key."
+        }
+      ]
+    }
+  },
+  "required": [
+    "DeviceKey"
+  ]
+}

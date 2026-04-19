@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-admin-user-global-sign-out-request-structure.json",
+  "name": "AdminUserGlobalSignOutRequest",
+  "description": "The request to sign out of all devices, as an administrator.",
+  "type": "object",
+  "properties": {
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID."
+        }
+      ]
+    },
+    "Username": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UsernameType"
+        },
+        {
+          "description": "The user name."
+        }
+      ]
+    }
+  },
+  "required": [
+    "UserPoolId",
+    "Username"
+  ]
+}

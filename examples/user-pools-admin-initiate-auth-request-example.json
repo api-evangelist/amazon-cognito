@@ -1,0 +1,9 @@
+{
+  "UserPoolId": "us-east-1_example",
+  "ClientId": "example-string",
+  "AuthFlow": "example-string",
+  "AuthParameters": "example-string",
+  "ClientMetadata": "example-string",
+  "AnalyticsMetadata": "example-string",
+  "ContextData": "example-string"
+}

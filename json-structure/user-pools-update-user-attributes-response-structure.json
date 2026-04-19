@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-update-user-attributes-response-structure.json",
+  "name": "UpdateUserAttributesResponse",
+  "description": "Represents the response from the server for the request to update user attributes.",
+  "type": "object",
+  "properties": {
+    "CodeDeliveryDetailsList": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CodeDeliveryDetailsListType"
+        },
+        {
+          "description": "The code delivery details list from the server for the request to update user attributes."
+        }
+      ]
+    }
+  }
+}

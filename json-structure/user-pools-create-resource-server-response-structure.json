@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-create-resource-server-response-structure.json",
+  "name": "CreateResourceServerResponse",
+  "description": "CreateResourceServerResponse schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "ResourceServer": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceServerType"
+        },
+        {
+          "description": "The newly created resource server."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceServer"
+  ]
+}

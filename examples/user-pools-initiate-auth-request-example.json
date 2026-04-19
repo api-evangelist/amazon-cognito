@@ -1,0 +1,8 @@
+{
+  "AuthFlow": "example-string",
+  "AuthParameters": "example-string",
+  "ClientMetadata": "example-string",
+  "ClientId": "example-string",
+  "AnalyticsMetadata": "example-string",
+  "UserContextData": "example-string"
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-revoke-token-request-structure.json",
+  "name": "RevokeTokenRequest",
+  "description": "RevokeTokenRequest schema from Amazon Cognito API",
+  "type": "object",
+  "properties": {
+    "Token": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TokenModelType"
+        },
+        {
+          "description": "The refresh token that you want to revoke."
+        }
+      ]
+    },
+    "ClientId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientIdType"
+        },
+        {
+          "description": "The client ID for the token that you want to revoke."
+        }
+      ]
+    },
+    "ClientSecret": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientSecretType"
+        },
+        {
+          "description": "The secret for the client ID. This is required only if the client ID has a secret."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Token",
+    "ClientId"
+  ]
+}

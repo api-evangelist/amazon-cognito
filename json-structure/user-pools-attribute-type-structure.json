@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-attribute-type-structure.json",
+  "name": "AttributeType",
+  "description": "Specifies whether the attribute is standard or custom.",
+  "type": "object",
+  "properties": {
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeNameType"
+        },
+        {
+          "description": "The name of the attribute."
+        }
+      ]
+    },
+    "Value": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AttributeValueType"
+        },
+        {
+          "description": "The value of the attribute."
+        }
+      ]
+    }
+  },
+  "required": [
+    "Name"
+  ]
+}

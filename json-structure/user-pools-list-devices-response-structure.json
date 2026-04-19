@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-list-devices-response-structure.json",
+  "name": "ListDevicesResponse",
+  "description": "Represents the response to list devices.",
+  "type": "object",
+  "properties": {
+    "Devices": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DeviceListType"
+        },
+        {
+          "description": "The devices returned in the list devices response."
+        }
+      ]
+    },
+    "PaginationToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SearchPaginationTokenType"
+        },
+        {
+          "description": "The pagination token for the list device response."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-admin-create-user-response-structure.json",
+  "name": "AdminCreateUserResponse",
+  "description": "Represents the response from the server to the request to create the user.",
+  "type": "object",
+  "properties": {
+    "User": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserType"
+        },
+        {
+          "description": "The newly created user."
+        }
+      ]
+    }
+  }
+}

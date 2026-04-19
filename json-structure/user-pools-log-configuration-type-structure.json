@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-log-configuration-type-structure.json",
+  "name": "LogConfigurationType",
+  "description": "The logging parameters of a user pool.",
+  "type": "object",
+  "properties": {
+    "LogLevel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogLevel"
+        },
+        {
+          "description": "The <code>errorlevel</code> selection of logs that a user pool sends for detailed activity logging."
+        }
+      ]
+    },
+    "EventSource": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EventSourceName"
+        },
+        {
+          "description": "The source of events that your user pool sends for detailed activity logging."
+        }
+      ]
+    },
+    "CloudWatchLogsConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CloudWatchLogsConfigurationType"
+        },
+        {
+          "description": "The CloudWatch logging destination of a user pool."
+        }
+      ]
+    }
+  },
+  "required": [
+    "LogLevel",
+    "EventSource"
+  ]
+}

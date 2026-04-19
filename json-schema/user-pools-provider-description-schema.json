@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-provider-description-schema.json",
+  "title": "ProviderDescription",
+  "description": "A container for IdP details.",
+  "type": "object",
+  "properties": {
+    "ProviderName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProviderNameType"
+        },
+        {
+          "description": "The IdP name."
+        }
+      ]
+    },
+    "ProviderType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityProviderTypeType"
+        },
+        {
+          "description": "The IdP type."
+        }
+      ]
+    },
+    "LastModifiedDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date the provider was last modified."
+        }
+      ]
+    },
+    "CreationDate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DateType"
+        },
+        {
+          "description": "The date and time, in <a href=\"https://www.iso.org/iso-8601-date-and-time-format.html\">ISO 8601</a> format, when the item was created."
+        }
+      ]
+    }
+  }
+}

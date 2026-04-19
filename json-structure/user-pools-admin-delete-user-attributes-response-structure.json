@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-admin-delete-user-attributes-response-structure.json",
+  "name": "AdminDeleteUserAttributesResponse",
+  "description": "Represents the response received from the server for a request to delete user attributes.",
+  "type": "object",
+  "properties": {}
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-schema/user-pools-user-filter-type-schema.json",
+  "title": "UserFilterType",
+  "description": "UserFilterType schema from Amazon Cognito API",
+  "type": "string",
+  "maxLength": 256
+}

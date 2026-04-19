@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-software-token-mfa-user-code-type-structure.json",
+  "name": "SoftwareTokenMFAUserCodeType",
+  "description": "SoftwareTokenMFAUserCodeType schema from Amazon Cognito API",
+  "type": "string",
+  "pattern": "[0-9]+",
+  "minLength": 6,
+  "maxLength": 6
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-user-pool-client-description-structure.json",
+  "name": "UserPoolClientDescription",
+  "description": "The description of the user pool client.",
+  "type": "object",
+  "properties": {
+    "ClientId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientIdType"
+        },
+        {
+          "description": "The ID of the client associated with the user pool."
+        }
+      ]
+    },
+    "UserPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserPoolIdType"
+        },
+        {
+          "description": "The user pool ID for the user pool where you want to describe the user pool client."
+        }
+      ]
+    },
+    "ClientName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientNameType"
+        },
+        {
+          "description": "The client name from the user pool client description."
+        }
+      ]
+    }
+  }
+}

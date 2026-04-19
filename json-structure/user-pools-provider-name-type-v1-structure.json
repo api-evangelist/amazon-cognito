@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/user-pools-provider-name-type-v1-structure.json",
+  "name": "ProviderNameTypeV1",
+  "description": "ProviderNameTypeV1 schema from Amazon Cognito API",
+  "type": "string",
+  "pattern": "[^_][\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}][^_]+",
+  "minLength": 3,
+  "maxLength": 32
+}

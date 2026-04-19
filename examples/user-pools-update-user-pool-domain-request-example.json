@@ -1,0 +1,5 @@
+{
+  "Domain": "example-string",
+  "UserPoolId": "us-east-1_example",
+  "CustomDomainConfig": "example-string"
+}

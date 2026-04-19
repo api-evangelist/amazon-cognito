@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/json-structure/identity-pools-delete-identity-pool-input-structure.json",
+  "name": "DeleteIdentityPoolInput",
+  "description": "Input to the DeleteIdentityPool action.",
+  "type": "object",
+  "properties": {
+    "IdentityPoolId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IdentityPoolId"
+        },
+        {
+          "description": "An identity pool ID in the format REGION:GUID."
+        }
+      ]
+    }
+  },
+  "required": [
+    "IdentityPoolId"
+  ]
+}
