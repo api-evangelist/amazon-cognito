@@ -108,7 +108,7 @@ common:
     url: https://signin.aws.amazon.com/
   - type: Support
     url: https://aws.amazon.com/premiumsupport/
-  - type: Status
+  - type: StatusPage
     url: https://status.aws.amazon.com/
   - type: Blog
     url: https://aws.amazon.com/blogs/security/
