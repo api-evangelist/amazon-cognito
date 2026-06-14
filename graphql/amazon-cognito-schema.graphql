@@ -1,0 +1,1048 @@
+"""
+Amazon Cognito GraphQL Schema
+Covers User Pools, Identity Pools, authentication flows, MFA, triggers, and federated identity.
+"""
+
+scalar AWSDateTime
+scalar AWSJSON
+scalar AWSEmail
+scalar AWSPhone
+
+# ──────────────────────────────────────────────
+# Enumerations
+# ──────────────────────────────────────────────
+
+enum UserStatusType {
+  UNCONFIRMED
+  CONFIRMED
+  ARCHIVED
+  COMPROMISED
+  UNKNOWN
+  RESET_REQUIRED
+  FORCE_CHANGE_PASSWORD
+}
+
+enum MFAOptionType {
+  SMS_MFA
+  SOFTWARE_TOKEN_MFA
+  NOMFA
+}
+
+enum OAuthFlowType {
+  code
+  implicit
+  client_credentials
+}
+
+enum TokenValidityUnitsType {
+  seconds
+  minutes
+  hours
+  days
+}
+
+enum ExplicitAuthFlowsType {
+  ALLOW_USER_PASSWORD_AUTH
+  ALLOW_REFRESH_TOKEN_AUTH
+  ALLOW_CUSTOM_AUTH
+  ALLOW_USER_SRP_AUTH
+  ALLOW_ADMIN_USER_PASSWORD_AUTH
+}
+
+enum ChallengeNameType {
+  SMS_MFA
+  SOFTWARE_TOKEN_MFA
+  SELECT_MFA_TYPE
+  MFA_SETUP
+  PASSWORD_VERIFIER
+  CUSTOM_CHALLENGE
+  DEVICE_SRP_AUTH
+  DEVICE_PASSWORD_VERIFIER
+  ADMIN_NO_SRP_AUTH
+  NEW_PASSWORD_REQUIRED
+}
+
+enum VerifiedAttributeType {
+  phone_number
+  email
+}
+
+enum AliasAttributeType {
+  phone_number
+  email
+  preferred_username
+}
+
+enum UsernameAttributeType {
+  phone_number
+  email
+}
+
+enum IdentityProviderTypeType {
+  SAML
+  Facebook
+  Google
+  LoginWithAmazon
+  SignInWithApple
+  OIDC
+}
+
+enum RiskDecisionType {
+  NoRisk
+  AccountTakeover
+  Block
+}
+
+enum RiskLevelType {
+  Low
+  Medium
+  High
+}
+
+enum EventType {
+  SignIn
+  SignUp
+  ForgotPassword
+  PasswordChange
+  ResendCode
+}
+
+enum AccountTakeoverEventActionType {
+  BLOCK
+  MFA_IF_CONFIGURED
+  MFA_REQUIRED
+  NO_ACTION
+}
+
+# ──────────────────────────────────────────────
+# Password Policy
+# ──────────────────────────────────────────────
+
+type UserPoolPasswordPolicy {
+  minimumLength: Int
+  requireUppercase: Boolean
+  requireLowercase: Boolean
+  requireNumbers: Boolean
+  requireSymbols: Boolean
+  temporaryPasswordValidityDays: Int
+}
+
+input UserPoolPasswordPolicyInput {
+  minimumLength: Int
+  requireUppercase: Boolean
+  requireLowercase: Boolean
+  requireNumbers: Boolean
+  requireSymbols: Boolean
+  temporaryPasswordValidityDays: Int
+}
+
+# ──────────────────────────────────────────────
+# MFA
+# ──────────────────────────────────────────────
+
+type UserPoolMFA {
+  mfaConfiguration: String
+  softwareTokenMFAConfiguration: SoftwareTokenMFAConfig
+  smsMFAConfiguration: SmsMFAConfig
+}
+
+type SoftwareTokenMFAConfig {
+  enabled: Boolean
+}
+
+type SmsMFAConfig {
+  smsAuthenticationMessage: String
+  smsConfiguration: SmsConfiguration
+}
+
+type SmsConfiguration {
+  snsCallerArn: String
+  externalId: String
+  snsRegion: String
+}
+
+type TOTPSetup {
+  secretCode: String
+  session: String
+}
+
+type TOTPCode {
+  userCode: String
+  session: String
+  friendlyDeviceName: String
+}
+
+# ──────────────────────────────────────────────
+# Email / SMS
+# ──────────────────────────────────────────────
+
+type UserPoolEmail {
+  sourceArn: String
+  replyToEmailAddress: String
+  emailSendingAccount: String
+  from: String
+  configurationSet: String
+}
+
+type UserPoolSMS {
+  smsAuthenticationMessage: String
+  smsVerificationMessage: String
+  smsConfiguration: SmsConfiguration
+}
+
+# ──────────────────────────────────────────────
+# Lambda Triggers
+# ──────────────────────────────────────────────
+
+type LambdaTriggers {
+  preSignUp: PreSignUpTrigger
+  postConfirmation: PostConfirmation
+  preAuthentication: PreAuth
+  postAuthentication: PostAuth
+  preTokenGeneration: TokenGeneration
+  userMigration: UserMigration
+  customMessage: CustomMessage
+  verifyAuthChallengeResponse: VerifyAuthChallenge
+  createAuthChallenge: CreateAuthChallenge
+  defineAuthChallenge: DefineAuthChallenge
+  customSMSSender: String
+  customEmailSender: String
+  kmsKeyId: String
+}
+
+type PreSignUpTrigger {
+  lambdaArn: String
+  lambdaVersion: String
+}
+
+type PostConfirmation {
+  lambdaArn: String
+  lambdaVersion: String
+}
+
+type PreAuth {
+  lambdaArn: String
+  lambdaVersion: String
+}
+
+type PostAuth {
+  lambdaArn: String
+  lambdaVersion: String
+}
+
+type TokenGeneration {
+  lambdaArn: String
+  lambdaVersion: String
+}
+
+type UserMigration {
+  lambdaArn: String
+  lambdaVersion: String
+}
+
+type CustomMessage {
+  lambdaArn: String
+  lambdaVersion: String
+}
+
+type VerifyAuthChallenge {
+  lambdaArn: String
+  lambdaVersion: String
+}
+
+type CreateAuthChallenge {
+  lambdaArn: String
+  lambdaVersion: String
+}
+
+type DefineAuthChallenge {
+  lambdaArn: String
+  lambdaVersion: String
+}
+
+# ──────────────────────────────────────────────
+# User Pool Domain
+# ──────────────────────────────────────────────
+
+type UserPoolDomain {
+  domain: String
+  userPoolId: String
+  awsAccountId: String
+  cloudFrontDistribution: String
+  s3Bucket: String
+  version: String
+  status: String
+  customDomainConfig: CustomDomainConfig
+}
+
+type CustomDomainConfig {
+  certificateArn: String
+}
+
+# ──────────────────────────────────────────────
+# User Pool Config
+# ──────────────────────────────────────────────
+
+type UserPoolConfig {
+  userPoolId: String!
+  schema: [SchemaAttribute]
+  autoVerifiedAttributes: [VerifiedAttributeType]
+  aliasAttributes: [AliasAttributeType]
+  usernameAttributes: [UsernameAttributeType]
+  verificationMessageTemplate: VerificationMessageTemplate
+  deviceConfiguration: DeviceConfiguration
+  adminCreateUserConfig: AdminCreateUserConfig
+  usernameConfiguration: UsernameConfiguration
+}
+
+type VerificationMessageTemplate {
+  smsMessage: String
+  emailMessage: String
+  emailSubject: String
+  emailMessageByLink: String
+  emailSubjectByLink: String
+  defaultEmailOption: String
+}
+
+type DeviceConfiguration {
+  challengeRequiredOnNewDevice: Boolean
+  deviceOnlyRememberedOnUserPrompt: Boolean
+}
+
+type AdminCreateUserConfig {
+  allowAdminCreateUserOnly: Boolean
+  unusedAccountValidityDays: Int
+  inviteMessageTemplate: MessageTemplate
+}
+
+type MessageTemplate {
+  smsMessage: String
+  emailMessage: String
+  emailSubject: String
+}
+
+type UsernameConfiguration {
+  caseSensitive: Boolean
+}
+
+type SchemaAttribute {
+  name: String
+  attributeDataType: String
+  developerOnlyAttribute: Boolean
+  mutable: Boolean
+  required: Boolean
+  numberAttributeConstraints: NumberAttributeConstraints
+  stringAttributeConstraints: StringAttributeConstraints
+}
+
+type NumberAttributeConstraints {
+  minValue: String
+  maxValue: String
+}
+
+type StringAttributeConstraints {
+  minLength: String
+  maxLength: String
+}
+
+# ──────────────────────────────────────────────
+# User Pool
+# ──────────────────────────────────────────────
+
+type UserPool {
+  id: ID!
+  name: String!
+  status: String
+  lastModifiedDate: AWSDateTime
+  creationDate: AWSDateTime
+  estimatedNumberOfUsers: Int
+  arn: String
+  region: String
+  config: UserPoolConfig
+  passwordPolicy: UserPoolPasswordPolicy
+  mfa: UserPoolMFA
+  email: UserPoolEmail
+  sms: UserPoolSMS
+  domain: UserPoolDomain
+  lambdaTriggers: LambdaTriggers
+  riskConfiguration: RiskConfiguration
+  clients: [UserPoolClient]
+  groups: [Group]
+  resourceServers: [ResourceServer]
+}
+
+# ──────────────────────────────────────────────
+# User Pool Client
+# ──────────────────────────────────────────────
+
+type UserPoolClientTokenValidity {
+  accessToken: Int
+  idToken: Int
+  refreshToken: Int
+  tokenValidityUnits: TokenValidityUnits
+}
+
+type TokenValidityUnits {
+  accessToken: TokenValidityUnitsType
+  idToken: TokenValidityUnitsType
+  refreshToken: TokenValidityUnitsType
+}
+
+type UserPoolClientConfig {
+  generateSecret: Boolean
+  explicitAuthFlows: [ExplicitAuthFlowsType]
+  supportedIdentityProviders: [String]
+  callbackURLs: [String]
+  logoutURLs: [String]
+  allowedOAuthFlows: [OAuthFlowType]
+  allowedOAuthScopes: [String]
+  allowedOAuthFlowsUserPoolClient: Boolean
+  preventUserExistenceErrors: String
+  enableTokenRevocation: Boolean
+  enablePropagateAdditionalUserContextData: Boolean
+  authSessionValidity: Int
+}
+
+type UserPoolClient {
+  clientId: ID!
+  userPoolId: String!
+  clientName: String
+  clientSecret: String
+  lastModifiedDate: AWSDateTime
+  creationDate: AWSDateTime
+  config: UserPoolClientConfig
+  tokenValidity: UserPoolClientTokenValidity
+  analyticsConfiguration: AnalyticsMetadata
+}
+
+# ──────────────────────────────────────────────
+# Resource Server and Scopes
+# ──────────────────────────────────────────────
+
+type Scope {
+  scopeName: String!
+  scopeDescription: String
+}
+
+type ResourceServer {
+  userPoolId: String!
+  identifier: String!
+  name: String
+  scopes: [Scope]
+}
+
+# ──────────────────────────────────────────────
+# Groups
+# ──────────────────────────────────────────────
+
+type Group {
+  groupName: String!
+  userPoolId: String!
+  description: String
+  roleArn: String
+  precedence: Int
+  lastModifiedDate: AWSDateTime
+  creationDate: AWSDateTime
+}
+
+type GroupMembership {
+  groupName: String!
+  username: String!
+  userPoolId: String!
+  addedDate: AWSDateTime
+}
+
+# ──────────────────────────────────────────────
+# Users
+# ──────────────────────────────────────────────
+
+type UserAttribute {
+  name: String!
+  value: String
+}
+
+type UserDevices {
+  deviceKey: String!
+  deviceAttributes: [UserAttribute]
+  deviceCreateDate: AWSDateTime
+  deviceLastModifiedDate: AWSDateTime
+  deviceLastAuthenticatedDate: AWSDateTime
+}
+
+type CognitoUser {
+  username: String!
+  userPoolId: String!
+  attributes: [UserAttribute]
+  userCreateDate: AWSDateTime
+  userLastModifiedDate: AWSDateTime
+  enabled: Boolean
+  userStatus: UserStatusType
+  mfaOptions: [MFAOptionType]
+  preferredMfaSetting: MFAOptionType
+  groups: [Group]
+  devices: [UserDevices]
+}
+
+type AdminUser {
+  username: String!
+  userPoolId: String!
+  userStatus: UserStatusType
+  enabled: Boolean
+  userCreateDate: AWSDateTime
+  userLastModifiedDate: AWSDateTime
+  attributes: [UserAttribute]
+  mfaOptions: [MFAOptionType]
+  preferredMfaSetting: MFAOptionType
+}
+
+type AdminGroup {
+  groupName: String!
+  userPoolId: String!
+  description: String
+  roleArn: String
+  precedence: Int
+  memberCount: Int
+}
+
+# ──────────────────────────────────────────────
+# Authentication & Tokens
+# ──────────────────────────────────────────────
+
+type AccessToken {
+  jwtToken: String!
+  payload: AWSJSON
+}
+
+type IdToken {
+  jwtToken: String!
+  payload: AWSJSON
+}
+
+type RefreshToken {
+  token: String!
+}
+
+type Tokens {
+  accessToken: AccessToken
+  idToken: IdToken
+  refreshToken: RefreshToken
+  tokenType: String
+  expiresIn: Int
+  newDeviceMetadata: NewDeviceMetadata
+}
+
+type NewDeviceMetadata {
+  deviceKey: String
+  deviceGroupKey: String
+}
+
+type AuthResult {
+  authenticationResult: Tokens
+  challengeName: ChallengeNameType
+  challengeParameters: AWSJSON
+  session: String
+}
+
+type SignInResult {
+  authResult: AuthResult
+  isSignedIn: Boolean
+  nextStep: SignInNextStep
+}
+
+type SignInNextStep {
+  signInStep: ChallengeNameType
+  codeDeliveryDetails: CodeDeliveryDetails
+  additionalInfo: AWSJSON
+}
+
+type CodeDeliveryDetails {
+  destination: String
+  deliveryMedium: String
+  attributeName: String
+}
+
+# ──────────────────────────────────────────────
+# Challenge Responses
+# ──────────────────────────────────────────────
+
+type ChallengeResponse {
+  challengeName: ChallengeNameType!
+  session: String
+  challengeParameters: AWSJSON
+}
+
+type NewPasswordChallenge {
+  session: String!
+  requiredAttributes: [String]
+  userAttributes: AWSJSON
+}
+
+type MFAChallenge {
+  session: String!
+  challengeName: ChallengeNameType!
+  codeDeliveryDetails: CodeDeliveryDetails
+}
+
+type CustomChallenge {
+  session: String!
+  challengeParameters: AWSJSON
+}
+
+# ──────────────────────────────────────────────
+# Token Revocation
+# ──────────────────────────────────────────────
+
+type TokenRevocation {
+  token: String!
+  clientId: String!
+  revoked: Boolean
+  revokedAt: AWSDateTime
+}
+
+# ──────────────────────────────────────────────
+# Identity Pool
+# ──────────────────────────────────────────────
+
+type IdentityPool {
+  identityPoolId: ID!
+  identityPoolName: String!
+  allowUnauthenticatedIdentities: Boolean
+  allowClassicFlow: Boolean
+  supportedLoginProviders: AWSJSON
+  developerProviderName: String
+  openIdConnectProviderArns: [String]
+  cognitoIdentityProviders: [CognitoIdentityProviderRef]
+  samlProviderArns: [String]
+  identityPoolTags: AWSJSON
+}
+
+type CognitoIdentityProviderRef {
+  providerName: String
+  clientId: String
+  serverSideTokenCheck: Boolean
+}
+
+type FederatedIdentity {
+  identityId: ID!
+  identityPoolId: String!
+  logins: AWSJSON
+  creationDate: AWSDateTime
+  lastModifiedDate: AWSDateTime
+}
+
+type SocialIdentity {
+  provider: String!
+  userId: String!
+  identityId: String
+}
+
+# ──────────────────────────────────────────────
+# Identity Providers
+# ──────────────────────────────────────────────
+
+type IdentityProvider {
+  userPoolId: String!
+  providerName: String!
+  providerType: IdentityProviderTypeType
+  providerDetails: AWSJSON
+  attributeMapping: AWSJSON
+  idpIdentifiers: [String]
+  lastModifiedDate: AWSDateTime
+  creationDate: AWSDateTime
+}
+
+type SAMLProvider {
+  userPoolId: String!
+  providerName: String!
+  metadataURL: String
+  metadataFile: String
+  ssoRedirectBindingURI: String
+  ssoPostBindingURI: String
+  attributeMapping: AWSJSON
+  idpSignout: Boolean
+}
+
+type OIDCProvider {
+  userPoolId: String!
+  providerName: String!
+  clientId: String
+  clientSecret: String
+  attributes_request_method: String
+  oidc_issuer: String
+  authorize_scopes: String
+  authorize_url: String
+  token_url: String
+  attributes_url: String
+  jwks_uri: String
+  attributeMapping: AWSJSON
+}
+
+# ──────────────────────────────────────────────
+# Risk Configuration
+# ──────────────────────────────────────────────
+
+type AccountTakeoverRiskConfig {
+  notifyConfiguration: NotifyEmail
+  actions: AccountTakeoverActions
+}
+
+type AccountTakeoverActions {
+  lowAction: AccountTakeoverActionType
+  mediumAction: AccountTakeoverActionType
+  highAction: AccountTakeoverActionType
+}
+
+type AccountTakeoverActionType {
+  notify: Boolean
+  eventAction: AccountTakeoverEventActionType
+}
+
+type CompromisedCredentialRiskConfig {
+  eventFilter: [EventType]
+  actions: CompromisedCredentialActions
+}
+
+type CompromisedCredentialActions {
+  eventAction: String
+}
+
+type NotifyEmail {
+  subject: String
+  htmlBody: String
+  textBody: String
+  from: String
+  replyTo: String
+  sourceArn: String
+  blockEmail: NotifyEmailTemplate
+  noActionEmail: NotifyEmailTemplate
+  mfaEmail: NotifyEmailTemplate
+}
+
+type NotifyEmailTemplate {
+  subject: String
+  htmlBody: String
+  textBody: String
+}
+
+type RiskConfiguration {
+  userPoolId: String!
+  clientId: String
+  compromisedCredentialsRiskConfiguration: CompromisedCredentialRiskConfig
+  accountTakeoverRiskConfiguration: AccountTakeoverRiskConfig
+  riskExceptionConfiguration: RiskExceptionConfig
+  lastModifiedDate: AWSDateTime
+}
+
+type RiskExceptionConfig {
+  blockedIPRangeList: [String]
+  skippedIPRangeList: [String]
+}
+
+# ──────────────────────────────────────────────
+# Analytics
+# ──────────────────────────────────────────────
+
+type AnalyticsMetadata {
+  analyticsEndpointId: String
+  applicationId: String
+  applicationArn: String
+  roleArn: String
+  externalId: String
+  userDataShared: Boolean
+}
+
+type UserPoolAnalytics {
+  userPoolId: String!
+  date: AWSDateTime
+  totalActiveUsers: Int
+  dailyActiveUsers: DailyActiveUsers
+  signInTypes: SignInTypes
+}
+
+type DailyActiveUsers {
+  date: AWSDateTime
+  count: Int
+  changePercent: Float
+}
+
+type SignInTypes {
+  userPassword: Int
+  srp: Int
+  customAuth: Int
+  adminNoSRP: Int
+  refreshToken: Int
+}
+
+# ──────────────────────────────────────────────
+# API Key (for AppSync / Amplify)
+# ──────────────────────────────────────────────
+
+type APIKey {
+  id: ID!
+  description: String
+  expires: AWSDateTime
+  deletes: AWSDateTime
+}
+
+# ──────────────────────────────────────────────
+# OAuth Flow
+# ──────────────────────────────────────────────
+
+type OAuthFlow {
+  allowedOAuthFlows: [OAuthFlowType]
+  allowedOAuthScopes: [String]
+  callbackURLs: [String]
+  logoutURLs: [String]
+  allowedOAuthFlowsUserPoolClient: Boolean
+}
+
+# ──────────────────────────────────────────────
+# Queries
+# ──────────────────────────────────────────────
+
+type Query {
+  # User Pool queries
+  getUserPool(userPoolId: ID!): UserPool
+  listUserPools(maxResults: Int, nextToken: String): UserPoolConnection
+  getUserPoolConfig(userPoolId: ID!): UserPoolConfig
+  getUserPoolDomain(domain: String!): UserPoolDomain
+  getUserPoolAnalytics(userPoolId: ID!, startDate: AWSDateTime, endDate: AWSDateTime): UserPoolAnalytics
+
+  # User Pool Client queries
+  getUserPoolClient(userPoolId: ID!, clientId: ID!): UserPoolClient
+  listUserPoolClients(userPoolId: ID!, maxResults: Int, nextToken: String): UserPoolClientConnection
+
+  # User queries
+  getUser(userPoolId: ID!, username: String!): CognitoUser
+  listUsers(userPoolId: ID!, filter: String, limit: Int, nextToken: String): UserConnection
+  listUsersInGroup(userPoolId: ID!, groupName: String!, limit: Int, nextToken: String): UserConnection
+  adminGetUser(userPoolId: ID!, username: String!): AdminUser
+
+  # Group queries
+  getGroup(userPoolId: ID!, groupName: String!): Group
+  listGroups(userPoolId: ID!, limit: Int, nextToken: String): GroupConnection
+  listGroupsForUser(userPoolId: ID!, username: String!, limit: Int, nextToken: String): GroupConnection
+
+  # Identity Provider queries
+  getIdentityProvider(userPoolId: ID!, providerName: String!): IdentityProvider
+  listIdentityProviders(userPoolId: ID!, maxResults: Int, nextToken: String): IdentityProviderConnection
+  getSAMLProvider(userPoolId: ID!, providerName: String!): SAMLProvider
+  getOIDCProvider(userPoolId: ID!, providerName: String!): OIDCProvider
+
+  # Resource Server queries
+  getResourceServer(userPoolId: ID!, identifier: String!): ResourceServer
+  listResourceServers(userPoolId: ID!, maxResults: Int, nextToken: String): ResourceServerConnection
+
+  # Risk Configuration queries
+  getRiskConfiguration(userPoolId: ID!, clientId: String): RiskConfiguration
+
+  # Identity Pool queries
+  getIdentityPool(identityPoolId: ID!): IdentityPool
+  listIdentityPools(maxResults: Int, nextToken: String): IdentityPoolConnection
+  describeIdentity(identityId: ID!): FederatedIdentity
+  listIdentities(identityPoolId: ID!, maxResults: Int, nextToken: String, hideDisabled: Boolean): FederatedIdentityConnection
+}
+
+# ──────────────────────────────────────────────
+# Mutations
+# ──────────────────────────────────────────────
+
+type Mutation {
+  # User Pool mutations
+  createUserPool(name: String!, passwordPolicy: UserPoolPasswordPolicyInput): UserPool
+  updateUserPool(userPoolId: ID!, passwordPolicy: UserPoolPasswordPolicyInput): UserPool
+  deleteUserPool(userPoolId: ID!): Boolean
+  createUserPoolDomain(domain: String!, userPoolId: ID!, customDomainConfig: CustomDomainConfigInput): UserPoolDomain
+  deleteUserPoolDomain(domain: String!, userPoolId: ID!): Boolean
+
+  # User Pool Client mutations
+  createUserPoolClient(userPoolId: ID!, clientName: String!, config: UserPoolClientConfigInput): UserPoolClient
+  updateUserPoolClient(userPoolId: ID!, clientId: ID!, clientName: String): UserPoolClient
+  deleteUserPoolClient(userPoolId: ID!, clientId: ID!): Boolean
+
+  # User mutations
+  adminCreateUser(userPoolId: ID!, username: String!, userAttributes: [UserAttributeInput]): AdminUser
+  adminUpdateUserAttributes(userPoolId: ID!, username: String!, userAttributes: [UserAttributeInput]!): Boolean
+  adminDeleteUser(userPoolId: ID!, username: String!): Boolean
+  adminEnableUser(userPoolId: ID!, username: String!): Boolean
+  adminDisableUser(userPoolId: ID!, username: String!): Boolean
+  adminResetUserPassword(userPoolId: ID!, username: String!): Boolean
+  adminSetUserPassword(userPoolId: ID!, username: String!, password: String!, permanent: Boolean): Boolean
+  adminSetUserMFAPreference(userPoolId: ID!, username: String!, smsMFASettings: MFASettingsInput, softwareTokenMFASettings: MFASettingsInput): Boolean
+  adminConfirmSignUp(userPoolId: ID!, username: String!): Boolean
+
+  # Group mutations
+  createGroup(userPoolId: ID!, groupName: String!, description: String, roleArn: String, precedence: Int): Group
+  updateGroup(userPoolId: ID!, groupName: String!, description: String, roleArn: String, precedence: Int): Group
+  deleteGroup(userPoolId: ID!, groupName: String!): Boolean
+  adminAddUserToGroup(userPoolId: ID!, username: String!, groupName: String!): Boolean
+  adminRemoveUserFromGroup(userPoolId: ID!, username: String!, groupName: String!): Boolean
+
+  # Authentication mutations
+  signUp(userPoolId: ID!, clientId: ID!, username: String!, password: String!, userAttributes: [UserAttributeInput]): SignUpResult
+  confirmSignUp(userPoolId: ID!, clientId: ID!, username: String!, confirmationCode: String!): Boolean
+  resendConfirmationCode(userPoolId: ID!, clientId: ID!, username: String!): CodeDeliveryDetails
+  signIn(clientId: ID!, username: String!, password: String!): SignInResult
+  respondToAuthChallenge(clientId: ID!, challengeName: ChallengeNameType!, session: String!, challengeResponses: AWSJSON): AuthResult
+  signOut(accessToken: String!): Boolean
+  revokeToken(token: String!, clientId: ID!, clientSecret: String): TokenRevocation
+  forgotPassword(clientId: ID!, username: String!): CodeDeliveryDetails
+  confirmForgotPassword(clientId: ID!, username: String!, confirmationCode: String!, password: String!): Boolean
+  changePassword(accessToken: String!, previousPassword: String!, proposedPassword: String!): Boolean
+
+  # MFA mutations
+  associateSoftwareToken(accessToken: String): TOTPSetup
+  verifySoftwareToken(accessToken: String!, userCode: String!, friendlyDeviceName: String): TOTPCode
+  setUserMFAPreference(accessToken: String!, smsMFASettings: MFASettingsInput, softwareTokenMFASettings: MFASettingsInput): Boolean
+
+  # Identity Provider mutations
+  createIdentityProvider(userPoolId: ID!, providerName: String!, providerType: IdentityProviderTypeType!, providerDetails: AWSJSON!, attributeMapping: AWSJSON): IdentityProvider
+  updateIdentityProvider(userPoolId: ID!, providerName: String!, providerDetails: AWSJSON, attributeMapping: AWSJSON): IdentityProvider
+  deleteIdentityProvider(userPoolId: ID!, providerName: String!): Boolean
+
+  # Resource Server mutations
+  createResourceServer(userPoolId: ID!, identifier: String!, name: String!, scopes: [ScopeInput]): ResourceServer
+  updateResourceServer(userPoolId: ID!, identifier: String!, name: String!, scopes: [ScopeInput]): ResourceServer
+  deleteResourceServer(userPoolId: ID!, identifier: String!): Boolean
+
+  # Risk Configuration mutations
+  setRiskConfiguration(userPoolId: ID!, clientId: String, compromisedCredentials: CompromisedCredentialConfigInput, accountTakeover: AccountTakeoverConfigInput): RiskConfiguration
+
+  # Identity Pool mutations
+  createIdentityPool(identityPoolName: String!, allowUnauthenticatedIdentities: Boolean!): IdentityPool
+  updateIdentityPool(identityPoolId: ID!, identityPoolName: String!, allowUnauthenticatedIdentities: Boolean!): IdentityPool
+  deleteIdentityPool(identityPoolId: ID!): Boolean
+}
+
+# ──────────────────────────────────────────────
+# Subscriptions
+# ──────────────────────────────────────────────
+
+type Subscription {
+  onUserCreated(userPoolId: ID!): CognitoUser
+  onUserDeleted(userPoolId: ID!): CognitoUser
+  onUserStatusChanged(userPoolId: ID!): CognitoUser
+  onSignIn(userPoolId: ID!): SignInResult
+  onSignUp(userPoolId: ID!): CognitoUser
+  onRiskEvent(userPoolId: ID!): RiskConfiguration
+}
+
+# ──────────────────────────────────────────────
+# Input types
+# ──────────────────────────────────────────────
+
+input UserAttributeInput {
+  name: String!
+  value: String
+}
+
+input MFASettingsInput {
+  enabled: Boolean
+  preferredMfa: Boolean
+}
+
+input ScopeInput {
+  scopeName: String!
+  scopeDescription: String
+}
+
+input CustomDomainConfigInput {
+  certificateArn: String!
+}
+
+input UserPoolClientConfigInput {
+  generateSecret: Boolean
+  explicitAuthFlows: [ExplicitAuthFlowsType]
+  supportedIdentityProviders: [String]
+  callbackURLs: [String]
+  logoutURLs: [String]
+  allowedOAuthFlows: [OAuthFlowType]
+  allowedOAuthScopes: [String]
+  allowedOAuthFlowsUserPoolClient: Boolean
+  tokenValidityUnits: TokenValidityUnitsInput
+  accessTokenValidity: Int
+  idTokenValidity: Int
+  refreshTokenValidity: Int
+  preventUserExistenceErrors: String
+  enableTokenRevocation: Boolean
+}
+
+input TokenValidityUnitsInput {
+  accessToken: TokenValidityUnitsType
+  idToken: TokenValidityUnitsType
+  refreshToken: TokenValidityUnitsType
+}
+
+input CompromisedCredentialConfigInput {
+  eventFilter: [EventType]
+  eventAction: String
+}
+
+input AccountTakeoverConfigInput {
+  notifyConfiguration: NotifyEmailInput
+  lowAction: AccountTakeoverEventActionType
+  mediumAction: AccountTakeoverEventActionType
+  highAction: AccountTakeoverEventActionType
+}
+
+input NotifyEmailInput {
+  subject: String!
+  htmlBody: String
+  textBody: String
+  from: String
+  replyTo: String
+}
+
+# ──────────────────────────────────────────────
+# Connection types (pagination)
+# ──────────────────────────────────────────────
+
+type UserPoolConnection {
+  items: [UserPool]
+  nextToken: String
+}
+
+type UserPoolClientConnection {
+  items: [UserPoolClient]
+  nextToken: String
+}
+
+type UserConnection {
+  users: [CognitoUser]
+  nextToken: String
+}
+
+type GroupConnection {
+  groups: [Group]
+  nextToken: String
+}
+
+type IdentityProviderConnection {
+  providers: [IdentityProvider]
+  nextToken: String
+}
+
+type ResourceServerConnection {
+  resourceServers: [ResourceServer]
+  nextToken: String
+}
+
+type IdentityPoolConnection {
+  identityPools: [IdentityPool]
+  nextToken: String
+}
+
+type FederatedIdentityConnection {
+  identities: [FederatedIdentity]
+  nextToken: String
+}
+
+# ──────────────────────────────────────────────
+# Additional result types
+# ──────────────────────────────────────────────
+
+type SignUpResult {
+  userSub: String
+  userConfirmed: Boolean
+  codeDeliveryDetails: CodeDeliveryDetails
+}
