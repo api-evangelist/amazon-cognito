@@ -1,0 +1,5191 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Amazon Cognito Identity Provider",
+    "version": "2016-04-18"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Amazon Cognito Add Custom Attributes",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AddCustomAttributes",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Adds additional user attributes to the user pool schema.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services "
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Add User to Group",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminAddUserToGroup",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Adds the specified user to the specified group.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Reque"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Confirm Sign Up",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminConfirmSignUp",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Confirms user registration as an admin without using a confirmation code. Works on any user.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signin"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Create User",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminCreateUser",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Creates a new user in the specified user pool.</p> <p>If <code>MessageAction</code> isn't set, the default is to send a welcome message via email or phone (SMS).</p> <note> <p>This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with <a href=\"https://console.aws.amazon.co"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Delete User",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminDeleteUser",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Deletes a user as an administrator. Works on any user.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services AP"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Delete User Attributes",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminDeleteUserAttributes",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Deletes the user attributes in a user pool as an administrator. Works on any user.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Si"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Disable Provider for User",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminDisableProviderForUser",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Prevents the user from signing in with the specified external (SAML or social) identity provider (IdP). If the user that you want to deactivate is a Amazon Cognito user pools native username + password user, they can't use their password to sign in. If the user to deactivate is a linked external IdP user, any link between that user and an existing user is removed. When the external user signs in again, and the user is no longer attached to the previously linked <code>DestinationUser</code>, t"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Disable User",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminDisableUser",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Deactivates a user and revokes all access tokens for the user. A deactivated user can't sign in, but still appears in the responses to <code>GetUser</code> and <code>ListUsers</code> API requests.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn mo"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Enable User",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminEnableUser",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Enables the specified user as an administrator. Works on any user.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Forget Device",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminForgetDevice",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Forgets the device, as an administrator.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests</a>"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Get Device",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminGetDevice",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Gets the device, as an administrator.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests</a> </"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Get User",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminGetUser",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Gets the specified user by user name in a user pool as an administrator. Works on any user.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Initiate Auth",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminInitiateAuth",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Initiates the authentication flow, as an administrator.</p> <note> <p>This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with <a href=\"https://console.aws.amazon.com/pinpoint/home/\">Amazon Pinpoint</a>. Amazon Cognito uses the registered number automatically. Otherwise,"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Link Provider for User",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminLinkProviderForUser",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Links an existing user account in a user pool (<code>DestinationUser</code>) to an identity from an external IdP (<code>SourceUser</code>) based on a specified attribute name and value from the external IdP. This allows you to create a link from the existing user account to an external federated user identity that has not yet been used to sign in. You can then use the federated user identity to sign in as the existing user account. </p> <p> For example, if there is an existing user with a use"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin List Devices",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminListDevices",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Lists devices, as an administrator.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests</a> </p>"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin List Groups for User",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminListGroupsForUser",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "params": [
+          {
+            "name": "Limit",
+            "value": "",
+            "type": "query",
+            "description": "Pagination limit"
+          },
+          {
+            "name": "NextToken",
+            "value": "",
+            "type": "query",
+            "description": "Pagination token"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Lists the groups that the user belongs to.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests</"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin List User Auth Events",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminListUserAuthEvents",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "params": [
+          {
+            "name": "MaxResults",
+            "value": "",
+            "type": "query",
+            "description": "Pagination limit"
+          },
+          {
+            "name": "NextToken",
+            "value": "",
+            "type": "query",
+            "description": "Pagination token"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>A history of user activity and any risks detected as part of Amazon Cognito advanced security.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-sign"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Remove User from Group",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminRemoveUserFromGroup",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Removes the specified user from the specified group.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API "
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Reset User Password",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminResetUserPassword",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Resets the specified user's password in a user pool as an administrator. Works on any user.</p> <note> <p>This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with <a href=\"https://console.aws.amazon.com/pinpoint/home/\">Amazon Pinpoint</a>. Amazon Cognito uses the registe"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Respond to Auth Challenge",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminRespondToAuthChallenge",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Responds to an authentication challenge, as an administrator.</p> <note> <p>This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with <a href=\"https://console.aws.amazon.com/pinpoint/home/\">Amazon Pinpoint</a>. Amazon Cognito uses the registered number automatically. Othe"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Set User M F a Preference",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminSetUserMFAPreference",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>The user's multi-factor authentication (MFA) preference, including which MFA options are activated, and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are activated. If multiple options are activated and no preference is set, a challenge to choose an MFA option will be returned during sign-in.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Set User Password",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminSetUserPassword",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Sets the specified user's password in a user pool as an administrator. Works on any user. </p> <p>The password can be temporary or permanent. If it is temporary, the user status enters the <code>FORCE_CHANGE_PASSWORD</code> state. When the user next tries to sign in, the InitiateAuth/AdminInitiateAuth response will contain the <code>NEW_PASSWORD_REQUIRED</code> challenge. If the user doesn't sign in before it expires, the user won't be able to sign in, and an administrator must reset their pa"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Set User Settings",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminSetUserSettings",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p> <i>This action is no longer supported.</i> You can use it to configure only SMS MFA. You can't use it to configure time-based one-time password (TOTP) software token MFA. To configure either type of MFA, use <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminSetUserMFAPreference.html\">AdminSetUserMFAPreference</a> instead.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For thi"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Update Auth Event Feedback",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminUpdateAuthEventFeedback",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Provides feedback for an authentication event indicating if it was from a valid user. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"ti"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Update Device Status",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminUpdateDeviceStatus",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Updates the device status as an administrator.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Reques"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin Update User Attributes",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminUpdateUserAttributes",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<note> <p>This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with <a href=\"https://console.aws.amazon.com/pinpoint/home/\">Amazon Pinpoint</a>. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not b"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Admin User Global Sign Out",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AdminUserGlobalSignOut",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Signs out a user from all devices. <code>AdminUserGlobalSignOut</code> invalidates all identity, access and refresh tokens that Amazon Cognito has issued to a user. A user can still use a hosted UI cookie to retrieve new tokens for the duration of the 1-hour cookie validity period.</p> <p>Your app isn't aware that a user's access token is revoked unless it attempts to authorize a user pools API request with an access token that contains the scope <code>aws.cognito.signin.user.admin</code>. Yo"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Associate Software Token",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.AssociateSoftwareToken",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Begins setup of time-based one-time password (TOTP) multi-factor authentication (MFA) for a user, with a unique private key that Amazon Cognito generates and returns in the API response. You can authorize an <code>AssociateSoftwareToken</code> request with either the user's access token, or a session string from a challenge response that you received from Amazon Cognito.</p> <note> <p>Amazon Cognito disassociates an existing software token when you verify the new token in a <a href=\"https://d"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Change Password",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ChangePassword",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Changes the password for a specified user in a user pool.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Using the Amazon Co"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Confirm Device",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ConfirmDevice",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Confirms tracking of the device. This API call is the call that begins device tracking.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operat"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Confirm Forgot Password",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ConfirmForgotPassword",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Allows a user to enter a confirmation code to reset a forgotten password.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Usi"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Confirm Sign Up",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ConfirmSignUp",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Confirms registration of a new user.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Using the Amazon Cognito native and OIDC"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Create Group",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.CreateGroup",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Creates a new group in the specified user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Reque"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Create Identity Provider",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.CreateIdentityProvider",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Creates an IdP for a user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests</a> </p> </l"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Create Resource Server",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.CreateResourceServer",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Creates a new OAuth2.0 resource server and defines custom scopes within it.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing A"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Create User Import Job",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserImportJob",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Creates a user import job.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests</a> </p> </li> <l"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Create User Pool",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPool",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<note> <p>This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with <a href=\"https://console.aws.amazon.com/pinpoint/home/\">Amazon Pinpoint</a>. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not b"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Create User Pool Client",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPoolClient",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Creates the user pool client.</p> <p>When you create a new user pool client, token revocation is automatically activated. For more information about revoking tokens, see <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_RevokeToken.html\">RevokeToken</a>.</p> <important> <p>If you don't provide a value for an attribute, Amazon Cognito sets it to its default value.</p> </important> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) pol"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Create User Pool Domain",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPoolDomain",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Creates a new domain for a user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests</a> </"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Delete Group",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DeleteGroup",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Deletes a group.</p> <p>Calling this action requires developer credentials.</p>"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Delete Identity Provider",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DeleteIdentityProvider",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Deletes an IdP for a user pool."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Delete Resource Server",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DeleteResourceServer",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Deletes a resource server."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Delete User",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DeleteUser",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Allows a user to delete their own user profile.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Using the Amazon Cognito nati"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Delete User Attributes",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DeleteUserAttributes",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Deletes the attributes for a user.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Using the Amazon Cognito native and OIDC A"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Delete User Pool",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DeleteUserPool",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Deletes the specified Amazon Cognito user pool."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Delete User Pool Client",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DeleteUserPoolClient",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Allows the developer to delete the user pool client."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Delete User Pool Domain",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DeleteUserPoolDomain",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Deletes a domain for a user pool."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Describe Identity Provider",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DescribeIdentityProvider",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Gets information about a specific IdP."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Describe Resource Server",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DescribeResourceServer",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Describes a resource server."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Describe Risk Configuration",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DescribeRiskConfiguration",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Describes the risk configuration."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Describe User Import Job",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DescribeUserImportJob",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Describes the user import job."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Describe User Pool",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DescribeUserPool",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Returns the configuration information and metadata of the specified user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signin"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Describe User Pool Client",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DescribeUserPoolClient",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Client method for returning the configuration information and metadata of the specified user pool app client.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/ref"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Describe User Pool Domain",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.DescribeUserPoolDomain",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Gets information about a domain."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Forget Device",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ForgetDevice",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Forgets the specified device.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Using the Amazon Cognito native and OIDC APIs</"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Forgot Password",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ForgotPassword",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Calling this API causes a message to be sent to the end user with a confirmation code that is required to change the user's password. For the <code>Username</code> parameter, you can use the username or user alias. The method used to send the confirmation code is sent according to the specified AccountRecoverySetting. For more information, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/how-to-recover-a-user-account.html\">Recovering User Accounts</a> in the <i>Amazon Co"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Get C S V Header",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.GetCSVHeader",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Gets the header information for the comma-separated value (CSV) file to be used as input for the user import job."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Get Device",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.GetDevice",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Gets the device.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Using the Amazon Cognito native and OIDC APIs</a>.</p> </not"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Get Group",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.GetGroup",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Gets a group.</p> <p>Calling this action requires developer credentials.</p>"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Get Identity Provider by Identifier",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.GetIdentityProviderByIdentifier",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Gets the specified IdP."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Get Log Delivery Configuration",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.GetLogDeliveryConfiguration",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Gets the detailed activity logging configuration for a user pool."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Get Signing Certificate",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.GetSigningCertificate",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>This method takes a user pool ID, and returns the signing certificate. The issued certificate is valid for 10 years from the date of issue.</p> <p>Amazon Cognito issues and assigns a new signing certificate annually. This process returns a new value in the response to <code>GetSigningCertificate</code>, but doesn't invalidate the original certificate.</p>"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Get U I Customization",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.GetUICustomization",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Gets the user interface (UI) Customization information for a particular app client's app UI, if any such information exists for the client. If nothing is set for the particular client, but there is an existing pool level customization (the app <code>clientId</code> is <code>ALL</code>), then that information is returned. If nothing is present, then an empty shape is returned."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Get User",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.GetUser",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Gets the user attributes and metadata for a user.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Using the Amazon Cognito na"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Get User Attribute Verification Code",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.GetUserAttributeVerificationCode",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Generates a user attribute verification code for the specified attribute name. Sends a message to a user with a code that they must return in a VerifyUserAttribute request.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a "
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Get User Pool Mfa Config",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.GetUserPoolMfaConfig",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Gets the user pool multi-factor authentication (MFA) configuration."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Global Sign Out",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.GlobalSignOut",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Signs out a user from all devices. <code>GlobalSignOut</code> invalidates all identity, access and refresh tokens that Amazon Cognito has issued to a user. A user can still use a hosted UI cookie to retrieve new tokens for the duration of the 1-hour cookie validity period.</p> <p>Your app isn't aware that a user's access token is revoked unless it attempts to authorize a user pools API request with an access token that contains the scope <code>aws.cognito.signin.user.admin</code>. Your app mi"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Initiate Auth",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.InitiateAuth",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Initiates sign-in for a user in the Amazon Cognito user directory. You can't sign in a user with a federated IdP with <code>InitiateAuth</code>. For more information, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation.html\"> Adding user pool sign-in through a third party</a>.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito List Devices",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ListDevices",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Lists the sign-in devices that Amazon Cognito has registered to the current user.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.h"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito List Groups",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ListGroups",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "params": [
+          {
+            "name": "Limit",
+            "value": "",
+            "type": "query",
+            "description": "Pagination limit"
+          },
+          {
+            "name": "NextToken",
+            "value": "",
+            "type": "query",
+            "description": "Pagination token"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Lists the groups associated with a user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Request"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito List Identity Providers",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ListIdentityProviders",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "params": [
+          {
+            "name": "MaxResults",
+            "value": "",
+            "type": "query",
+            "description": "Pagination limit"
+          },
+          {
+            "name": "NextToken",
+            "value": "",
+            "type": "query",
+            "description": "Pagination token"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Lists information about all IdPs for a user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Req"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito List Resource Servers",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ListResourceServers",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "params": [
+          {
+            "name": "MaxResults",
+            "value": "",
+            "type": "query",
+            "description": "Pagination limit"
+          },
+          {
+            "name": "NextToken",
+            "value": "",
+            "type": "query",
+            "description": "Pagination token"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Lists the resource servers for a user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests<"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito List Tags for Resource",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ListTagsForResource",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Lists the tags that are assigned to an Amazon Cognito user pool.</p> <p>A tag is a label that you can apply to user pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria.</p> <p>You can use this action up to 10 times per second, per account.</p>"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito List User Import Jobs",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ListUserImportJobs",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Lists user import jobs for a user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests</a> "
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito List User Pool Clients",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ListUserPoolClients",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "params": [
+          {
+            "name": "MaxResults",
+            "value": "",
+            "type": "query",
+            "description": "Pagination limit"
+          },
+          {
+            "name": "NextToken",
+            "value": "",
+            "type": "query",
+            "description": "Pagination token"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Lists the clients that have been created for the specified user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon "
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito List User Pools",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ListUserPools",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "params": [
+          {
+            "name": "MaxResults",
+            "value": "",
+            "type": "query",
+            "description": "Pagination limit"
+          },
+          {
+            "name": "NextToken",
+            "value": "",
+            "type": "query",
+            "description": "Pagination token"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Lists the user pools associated with an Amazon Web Services account.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon W"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito List Users",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ListUsers",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "params": [
+          {
+            "name": "Limit",
+            "value": "",
+            "type": "query",
+            "description": "Pagination limit"
+          },
+          {
+            "name": "PaginationToken",
+            "value": "",
+            "type": "query",
+            "description": "Pagination token"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Lists users and their basic details in a user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API R"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito List Users in Group",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ListUsersInGroup",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "params": [
+          {
+            "name": "Limit",
+            "value": "",
+            "type": "query",
+            "description": "Pagination limit"
+          },
+          {
+            "name": "NextToken",
+            "value": "",
+            "type": "query",
+            "description": "Pagination token"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Lists the users in the specified group.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests</a> "
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Resend Confirmation Code",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.ResendConfirmationCode",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Resends the confirmation (for confirmation of registration) to a specific user in the user pool.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-A"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Respond to Auth Challenge",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.RespondToAuthChallenge",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Responds to the authentication challenge.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Using the Amazon Cognito native and"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Revoke Token",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.RevokeToken",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Revokes all of the access tokens generated by, and at the same time as, the specified refresh token. After a token is revoked, you can't use the revoked token to access Amazon Cognito user APIs, or to authorize access to your resource server.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For "
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Set Log Delivery Configuration",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.SetLogDeliveryConfiguration",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Sets up or modifies the detailed activity logging configuration of a user pool."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Set Risk Configuration",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Configures actions on detected risks. To delete the risk configuration for <code>UserPoolId</code> or <code>ClientId</code>, pass null values for all four configuration types.</p> <p>To activate Amazon Cognito advanced security features, update the user pool to include the <code>UserPoolAddOns</code> key<code>AdvancedSecurityMode</code>.</p>"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Set U I Customization",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.SetUICustomization",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Sets the user interface (UI) customization information for a user pool's built-in app UI.</p> <p>You can specify app UI customization settings for a single client (with a specific <code>clientId</code>) or for all clients (by setting the <code>clientId</code> to <code>ALL</code>). If you specify <code>ALL</code>, the default configuration is used for every client that has no previously set UI customization. If you specify UI customization settings for a particular client, it will no longer re"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Set User M F a Preference",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.SetUserMFAPreference",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Set the user's multi-factor authentication (MFA) method preference, including which MFA factors are activated and if any are preferred. Only one factor can be set as preferred. The preferred MFA factor will be used to authenticate a user if multiple factors are activated. If multiple options are activated and no preference is set, a challenge to choose an MFA option will be returned during sign-in. If an MFA type is activated for a user, the user will be prompted for MFA during all sign-in at"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Set User Pool Mfa Config",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.SetUserPoolMfaConfig",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Sets the user pool multi-factor authentication (MFA) configuration.</p> <note> <p>This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with <a href=\"https://console.aws.amazon.com/pinpoint/home/\">Amazon Pinpoint</a>. Amazon Cognito uses the registered number automatically"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Set User Settings",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.SetUserSettings",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p> <i>This action is no longer supported.</i> You can use it to configure only SMS MFA. You can't use it to configure time-based one-time password (TOTP) software token MFA. To configure either type of MFA, use <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SetUserMFAPreference.html\">SetUserMFAPreference</a> instead.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this o"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Sign Up",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.SignUp",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Registers the user in the specified user pool and creates a user name, password, and user attributes.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-po"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Start User Import Job",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.StartUserImportJob",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Starts the user import."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Stop User Import Job",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.StopUserImportJob",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Stops the user import job."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Tag Resource",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.TagResource",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Assigns a set of tags to an Amazon Cognito user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria.</p> <p>Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of a user pool, one for testing and another for production, you might assign an <code>Environment</code> tag key to both user pools."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Untag Resource",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.UntagResource",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Removes the specified tags from an Amazon Cognito user pool. You can use this action up to 5 times per second, per account."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Update Auth Event Feedback",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateAuthEventFeedback",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Provides the feedback for an authentication event, whether it was from a valid user or not. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about "
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Update Device Status",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateDeviceStatus",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Updates the device status.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Using the Amazon Cognito native and OIDC APIs</a>."
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Update Group",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateGroup",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Updates the specified group with the specified attributes.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Service"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Update Identity Provider",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Updates IdP information for a user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests</a>"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Update Resource Server",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateResourceServer",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Updates the name and scopes of resource server. All other fields are read-only.</p> <important> <p>If you don't provide a value for an attribute, it is set to the default value.</p> </important> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b>"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Update User Attributes",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserAttributes",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Allows a user to update a specific attribute (one at a time).</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information about authorization models in Amazon Cognito, see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Using the Amazo"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Update User Pool",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPool",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<note> <p>This action might generate an SMS text message. Starting June 1, 2021, US telecom carriers require you to register an origination phone number before you can send SMS messages to US phone numbers. If you use SMS text messages in Amazon Cognito, you must register a phone number with <a href=\"https://console.aws.amazon.com/pinpoint/home/\">Amazon Pinpoint</a>. Amazon Cognito uses the registered number automatically. Otherwise, Amazon Cognito users who must receive SMS messages might not b"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Update User Pool Client",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPoolClient",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Updates the specified user pool app client with the specified attributes. You can get a list of the current user pool app client settings using <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DescribeUserPoolClient.html\">DescribeUserPoolClient</a>.</p> <important> <p>If you don't provide a value for an attribute, Amazon Cognito sets it to its default value.</p> </important> <p>You can also use this operation to enable token revocation for user pool cli"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Update User Pool Domain",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateUserPoolDomain",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Updates the Secure Sockets Layer (SSL) certificate for the custom domain for your user pool.</p> <p>You can use this operation to provide the Amazon Resource Name (ARN) of a new certificate to Amazon Cognito. You can't use it to change the domain for a user pool.</p> <p>A custom domain is used to host the Amazon Cognito hosted UI, which provides sign-up and sign-in pages for your application. When you set up a custom domain, you provide a certificate that you manage with Certificate Manager ("
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Verify Software Token",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.VerifySoftwareToken",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Use this API to register a user's entered time-based one-time password (TOTP) code and mark the user's software token MFA status as \"verified\" if successful. The request takes an access token or a session string, but not both.</p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you can't use IAM credentials to authorize requests, and you can't grant IAM permissions in policies. For more information"
+    },
+    {
+      "info": {
+        "name": "Amazon Cognito Verify User Attribute",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "http://cognito-idp.{region}.amazonaws.com/#X-Amz-Target=AWSCognitoIdentityProviderService.VerifyUserAttribute",
+        "headers": [
+          {
+            "name": "X-Amz-Content-Sha256",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Date",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Algorithm",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Credential",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Security-Token",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Signature",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-SignedHeaders",
+            "value": ""
+          },
+          {
+            "name": "X-Amz-Target",
+            "value": ""
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "<p>Verifies the specified user attributes in the user pool.</p> <p> If your user pool requires verification before Amazon Cognito updates the attribute value, VerifyUserAttribute updates the affected attribute to its pending value. For more information, see <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UserAttributeUpdateSettingsType.html\"> UserAttributeUpdateSettingsType</a>. </p> <note> <p>Amazon Cognito doesn't evaluate Identity and Access Management"
+    }
+  ],
+  "bundled": true
+}
