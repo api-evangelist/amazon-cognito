@@ -92,7 +92,7 @@ common:
   url: https://docs.aws.amazon.com/cognito/
 - type: Pricing
   url: https://aws.amazon.com/cognito/pricing/
-- type: SignUp
+- type: Signup
   url: https://portal.aws.amazon.com/billing/signup
 - type: Portal
   url: https://aws.amazon.com/
