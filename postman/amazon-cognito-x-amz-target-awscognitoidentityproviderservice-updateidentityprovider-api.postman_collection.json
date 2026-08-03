@@ -1,0 +1,838 @@
+{
+  "info": {
+    "_postman_id": "476b3743-426b-4679-b81c-cec968a9a71e",
+    "name": "Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider API",
+    "description": "<fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html\">Authentication Flow</a>.</p> <p>For more information see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html\">Amazon Cognito Federated Identities</a>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:17:53.000Z",
+    "updatedAt": "2026-07-28T10:17:54.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-476b3743-426b-4679-b81c-cec968a9a71e"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider",
+      "item": [
+        {
+          "name": "Amazon Cognito Update Identity Provider",
+          "id": "2fa2e44b-2bfd-429d-95dd-c43f154f324d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"UserPoolId\": \"kqbz0orY_Fv1A8Y\",\n  \"ProviderName\": \"NMNP{\",\n  \"ProviderDetails\": {\n    \"aliqua4c9\": \"<string>\"\n  },\n  \"AttributeMapping\": {\n    \"irure_83\": \"<string>\"\n  },\n  \"IdpIdentifiers\": [\n    \"yc1@ebDF4n\u3000\",\n    \"ydO\",\n    \"z\",\n    \"\u2006a\",\n    \"\u2003\u205fv\u2003Hlz\u180e\u00a0D\",\n    \"SP\u2028D-\u2004t\\fQC\",\n    \"i\u3000M\u200aPZ\\f=c6J\",\n    \"Lyj\u200aF_PRtZ\",\n    \"\u2007z\",\n    \"t4\u2003\",\n    \"LGJ\",\n    \"cPotM\u205fw\u202f\u00a0\",\n    \"YWmn\u1680A\u1680R31\",\n    \"00\",\n    \"\u2002Kni\",\n    \"\u180eHs.0\u2006\",\n    \"\u2000NAm\u2029\u200au\\nd9\u205f\",\n    \"vg\u2004\",\n    \"+\",\n    \"jm\u205fW\u20051\u2008tY\u2001\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+            },
+            "description": "<p>Updates IdP information for a user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests</a> </p> </li> <li> <p> <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Using the Amazon Cognito user pools API and user pool endpoints</a> </p> </li> </ul> </note>"
+          },
+          "response": [
+            {
+              "id": "2ebd1c16-b23f-457d-a338-2da289b680b0",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"kqbz0orY_Fv1A8Y\",\n  \"ProviderName\": \"NMNP{\",\n  \"ProviderDetails\": {\n    \"aliqua4c9\": \"<string>\"\n  },\n  \"AttributeMapping\": {\n    \"irure_83\": \"<string>\"\n  },\n  \"IdpIdentifiers\": [\n    \"yc1@ebDF4n\u3000\",\n    \"ydO\",\n    \"z\",\n    \"\u2006a\",\n    \"\u2003\u205fv\u2003Hlz\u180e\u00a0D\",\n    \"SP\u2028D-\u2004t\\fQC\",\n    \"i\u3000M\u200aPZ\\f=c6J\",\n    \"Lyj\u200aF_PRtZ\",\n    \"\u2007z\",\n    \"t4\u2003\",\n    \"LGJ\",\n    \"cPotM\u205fw\u202f\u00a0\",\n    \"YWmn\u1680A\u1680R31\",\n    \"00\",\n    \"\u2002Kni\",\n    \"\u180eHs.0\u2006\",\n    \"\u2000NAm\u2029\u200au\\nd9\u205f\",\n    \"vg\u2004\",\n    \"+\",\n    \"jm\u205fW\u20051\u2008tY\u2001\"\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"IdentityProvider\": {\n    \"UserPoolId\": \"kIocgm_hFE\",\n    \"ProviderName\": \"P}N}{}\",\n    \"ProviderType\": \"Facebook\",\n    \"ProviderDetails\": {\n      \"id235\": \"<string>\",\n      \"voluptatee9\": \"<string>\",\n      \"Duis_8b\": \"<string>\"\n    },\n    \"AttributeMapping\": {\n      \"labore41_\": \"<string>\",\n      \"nostrud__\": \"<string>\",\n      \"exercitation81\": \"<string>\"\n    },\n    \"IdpIdentifiers\": [\n      \"b \",\n      \"_tykX.\",\n      \"\u180e\\rG.WImQ\u180e6\u2006\",\n      \"8e\u1680ooa\\t\u00a06J\\r\",\n      \"7jm\u2003v\u2001\u2003.\",\n      \"\u3000K\u2005\",\n      \"\u2003KM\",\n      \"\u200a\u2007I\\tOt\u200a\",\n      \"\u205f\",\n      \"l+\u1680XO\",\n      \"\u205f\u2028o\u00a0\\r\\t=l\u00a0V\",\n      \"6K\u200av\\u000b\",\n      \".uAb\u2008\",\n      \"\\tIq.vWoSO4v\",\n      \"2+\u202fwE3zs\",\n      \"\u180evKEdWc\",\n      \"1mT\u2000\u202f+wHA9\",\n      \"\u3000\\n2\\rfFJ5Y\",\n      \"0u\u2000s\",\n      \"3Bl\u200acmXuHF9\"\n    ],\n    \"LastModifiedDate\": \"<dateTime>\",\n    \"CreationDate\": \"<dateTime>\"\n  }\n}",
+              "createdAt": "2026-07-28T10:17:54.000Z",
+              "updatedAt": "2026-07-28T10:17:54.000Z",
+              "uid": "35240-2ebd1c16-b23f-457d-a338-2da289b680b0"
+            },
+            {
+              "id": "552d13f3-b282-4214-b436-a73f70a64516",
+              "name": "InvalidParameterException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"kqbz0orY_Fv1A8Y\",\n  \"ProviderName\": \"NMNP{\",\n  \"ProviderDetails\": {\n    \"aliqua4c9\": \"<string>\"\n  },\n  \"AttributeMapping\": {\n    \"irure_83\": \"<string>\"\n  },\n  \"IdpIdentifiers\": [\n    \"yc1@ebDF4n\u3000\",\n    \"ydO\",\n    \"z\",\n    \"\u2006a\",\n    \"\u2003\u205fv\u2003Hlz\u180e\u00a0D\",\n    \"SP\u2028D-\u2004t\\fQC\",\n    \"i\u3000M\u200aPZ\\f=c6J\",\n    \"Lyj\u200aF_PRtZ\",\n    \"\u2007z\",\n    \"t4\u2003\",\n    \"LGJ\",\n    \"cPotM\u205fw\u202f\u00a0\",\n    \"YWmn\u1680A\u1680R31\",\n    \"00\",\n    \"\u2002Kni\",\n    \"\u180eHs.0\u2006\",\n    \"\u2000NAm\u2029\u200au\\nd9\u205f\",\n    \"vg\u2004\",\n    \"+\",\n    \"jm\u205fW\u20051\u2008tY\u2001\"\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:54.000Z",
+              "updatedAt": "2026-07-28T10:17:54.000Z",
+              "uid": "35240-552d13f3-b282-4214-b436-a73f70a64516"
+            },
+            {
+              "id": "fabd3346-94dc-41e5-b910-b23528ab1013",
+              "name": "UnsupportedIdentityProviderException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"kqbz0orY_Fv1A8Y\",\n  \"ProviderName\": \"NMNP{\",\n  \"ProviderDetails\": {\n    \"aliqua4c9\": \"<string>\"\n  },\n  \"AttributeMapping\": {\n    \"irure_83\": \"<string>\"\n  },\n  \"IdpIdentifiers\": [\n    \"yc1@ebDF4n\u3000\",\n    \"ydO\",\n    \"z\",\n    \"\u2006a\",\n    \"\u2003\u205fv\u2003Hlz\u180e\u00a0D\",\n    \"SP\u2028D-\u2004t\\fQC\",\n    \"i\u3000M\u200aPZ\\f=c6J\",\n    \"Lyj\u200aF_PRtZ\",\n    \"\u2007z\",\n    \"t4\u2003\",\n    \"LGJ\",\n    \"cPotM\u205fw\u202f\u00a0\",\n    \"YWmn\u1680A\u1680R31\",\n    \"00\",\n    \"\u2002Kni\",\n    \"\u180eHs.0\u2006\",\n    \"\u2000NAm\u2029\u200au\\nd9\u205f\",\n    \"vg\u2004\",\n    \"+\",\n    \"jm\u205fW\u20051\u2008tY\u2001\"\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:54.000Z",
+              "updatedAt": "2026-07-28T10:17:54.000Z",
+              "uid": "35240-fabd3346-94dc-41e5-b910-b23528ab1013"
+            },
+            {
+              "id": "2a505d4f-d815-476a-b280-2f494b46f7da",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"kqbz0orY_Fv1A8Y\",\n  \"ProviderName\": \"NMNP{\",\n  \"ProviderDetails\": {\n    \"aliqua4c9\": \"<string>\"\n  },\n  \"AttributeMapping\": {\n    \"irure_83\": \"<string>\"\n  },\n  \"IdpIdentifiers\": [\n    \"yc1@ebDF4n\u3000\",\n    \"ydO\",\n    \"z\",\n    \"\u2006a\",\n    \"\u2003\u205fv\u2003Hlz\u180e\u00a0D\",\n    \"SP\u2028D-\u2004t\\fQC\",\n    \"i\u3000M\u200aPZ\\f=c6J\",\n    \"Lyj\u200aF_PRtZ\",\n    \"\u2007z\",\n    \"t4\u2003\",\n    \"LGJ\",\n    \"cPotM\u205fw\u202f\u00a0\",\n    \"YWmn\u1680A\u1680R31\",\n    \"00\",\n    \"\u2002Kni\",\n    \"\u180eHs.0\u2006\",\n    \"\u2000NAm\u2029\u200au\\nd9\u205f\",\n    \"vg\u2004\",\n    \"+\",\n    \"jm\u205fW\u20051\u2008tY\u2001\"\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:54.000Z",
+              "updatedAt": "2026-07-28T10:17:54.000Z",
+              "uid": "35240-2a505d4f-d815-476a-b280-2f494b46f7da"
+            },
+            {
+              "id": "71ad9508-a525-402b-9a89-c61ae294b36c",
+              "name": "ConcurrentModificationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"kqbz0orY_Fv1A8Y\",\n  \"ProviderName\": \"NMNP{\",\n  \"ProviderDetails\": {\n    \"aliqua4c9\": \"<string>\"\n  },\n  \"AttributeMapping\": {\n    \"irure_83\": \"<string>\"\n  },\n  \"IdpIdentifiers\": [\n    \"yc1@ebDF4n\u3000\",\n    \"ydO\",\n    \"z\",\n    \"\u2006a\",\n    \"\u2003\u205fv\u2003Hlz\u180e\u00a0D\",\n    \"SP\u2028D-\u2004t\\fQC\",\n    \"i\u3000M\u200aPZ\\f=c6J\",\n    \"Lyj\u200aF_PRtZ\",\n    \"\u2007z\",\n    \"t4\u2003\",\n    \"LGJ\",\n    \"cPotM\u205fw\u202f\u00a0\",\n    \"YWmn\u1680A\u1680R31\",\n    \"00\",\n    \"\u2002Kni\",\n    \"\u180eHs.0\u2006\",\n    \"\u2000NAm\u2029\u200au\\nd9\u205f\",\n    \"vg\u2004\",\n    \"+\",\n    \"jm\u205fW\u20051\u2008tY\u2001\"\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:54.000Z",
+              "updatedAt": "2026-07-28T10:17:54.000Z",
+              "uid": "35240-71ad9508-a525-402b-9a89-c61ae294b36c"
+            },
+            {
+              "id": "4fc9a402-ae36-4c4e-90ee-a842e212bab9",
+              "name": "NotAuthorizedException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"kqbz0orY_Fv1A8Y\",\n  \"ProviderName\": \"NMNP{\",\n  \"ProviderDetails\": {\n    \"aliqua4c9\": \"<string>\"\n  },\n  \"AttributeMapping\": {\n    \"irure_83\": \"<string>\"\n  },\n  \"IdpIdentifiers\": [\n    \"yc1@ebDF4n\u3000\",\n    \"ydO\",\n    \"z\",\n    \"\u2006a\",\n    \"\u2003\u205fv\u2003Hlz\u180e\u00a0D\",\n    \"SP\u2028D-\u2004t\\fQC\",\n    \"i\u3000M\u200aPZ\\f=c6J\",\n    \"Lyj\u200aF_PRtZ\",\n    \"\u2007z\",\n    \"t4\u2003\",\n    \"LGJ\",\n    \"cPotM\u205fw\u202f\u00a0\",\n    \"YWmn\u1680A\u1680R31\",\n    \"00\",\n    \"\u2002Kni\",\n    \"\u180eHs.0\u2006\",\n    \"\u2000NAm\u2029\u200au\\nd9\u205f\",\n    \"vg\u2004\",\n    \"+\",\n    \"jm\u205fW\u20051\u2008tY\u2001\"\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:54.000Z",
+              "updatedAt": "2026-07-28T10:17:54.000Z",
+              "uid": "35240-4fc9a402-ae36-4c4e-90ee-a842e212bab9"
+            },
+            {
+              "id": "a48cd415-f381-4eed-b588-71b3b06f5b8d",
+              "name": "TooManyRequestsException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"kqbz0orY_Fv1A8Y\",\n  \"ProviderName\": \"NMNP{\",\n  \"ProviderDetails\": {\n    \"aliqua4c9\": \"<string>\"\n  },\n  \"AttributeMapping\": {\n    \"irure_83\": \"<string>\"\n  },\n  \"IdpIdentifiers\": [\n    \"yc1@ebDF4n\u3000\",\n    \"ydO\",\n    \"z\",\n    \"\u2006a\",\n    \"\u2003\u205fv\u2003Hlz\u180e\u00a0D\",\n    \"SP\u2028D-\u2004t\\fQC\",\n    \"i\u3000M\u200aPZ\\f=c6J\",\n    \"Lyj\u200aF_PRtZ\",\n    \"\u2007z\",\n    \"t4\u2003\",\n    \"LGJ\",\n    \"cPotM\u205fw\u202f\u00a0\",\n    \"YWmn\u1680A\u1680R31\",\n    \"00\",\n    \"\u2002Kni\",\n    \"\u180eHs.0\u2006\",\n    \"\u2000NAm\u2029\u200au\\nd9\u205f\",\n    \"vg\u2004\",\n    \"+\",\n    \"jm\u205fW\u20051\u2008tY\u2001\"\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:54.000Z",
+              "updatedAt": "2026-07-28T10:17:54.000Z",
+              "uid": "35240-a48cd415-f381-4eed-b588-71b3b06f5b8d"
+            },
+            {
+              "id": "53943e91-46d1-44cc-bead-94144a541f17",
+              "name": "InternalErrorException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"kqbz0orY_Fv1A8Y\",\n  \"ProviderName\": \"NMNP{\",\n  \"ProviderDetails\": {\n    \"aliqua4c9\": \"<string>\"\n  },\n  \"AttributeMapping\": {\n    \"irure_83\": \"<string>\"\n  },\n  \"IdpIdentifiers\": [\n    \"yc1@ebDF4n\u3000\",\n    \"ydO\",\n    \"z\",\n    \"\u2006a\",\n    \"\u2003\u205fv\u2003Hlz\u180e\u00a0D\",\n    \"SP\u2028D-\u2004t\\fQC\",\n    \"i\u3000M\u200aPZ\\f=c6J\",\n    \"Lyj\u200aF_PRtZ\",\n    \"\u2007z\",\n    \"t4\u2003\",\n    \"LGJ\",\n    \"cPotM\u205fw\u202f\u00a0\",\n    \"YWmn\u1680A\u1680R31\",\n    \"00\",\n    \"\u2002Kni\",\n    \"\u180eHs.0\u2006\",\n    \"\u2000NAm\u2029\u200au\\nd9\u205f\",\n    \"vg\u2004\",\n    \"+\",\n    \"jm\u205fW\u20051\u2008tY\u2001\"\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:54.000Z",
+              "updatedAt": "2026-07-28T10:17:54.000Z",
+              "uid": "35240-53943e91-46d1-44cc-bead-94144a541f17"
+            }
+          ],
+          "createdAt": "2026-07-28T10:17:54.000Z",
+          "updatedAt": "2026-07-28T10:17:54.000Z",
+          "uid": "35240-2fa2e44b-2bfd-429d-95dd-c43f154f324d"
+        }
+      ],
+      "id": "20ad376d-63b8-4756-ac0d-1c4fbb27a0bf",
+      "createdAt": "2026-07-28T10:17:54.000Z",
+      "updatedAt": "2026-07-28T10:17:54.000Z",
+      "uid": "35240-20ad376d-63b8-4756-ac0d-1c4fbb27a0bf"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://cognito-identity.{{region}}.amazonaws.com"
+    }
+  ]
+}

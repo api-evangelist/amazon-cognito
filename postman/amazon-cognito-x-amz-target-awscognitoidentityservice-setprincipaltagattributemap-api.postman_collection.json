@@ -1,0 +1,662 @@
+{
+  "info": {
+    "_postman_id": "5a81039b-7948-4e5b-808b-c64082cb4b9e",
+    "name": "Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap API",
+    "description": "<fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html\">Authentication Flow</a>.</p> <p>For more information see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html\">Amazon Cognito Federated Identities</a>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:19:24.000Z",
+    "updatedAt": "2026-07-28T10:19:24.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-5a81039b-7948-4e5b-808b-c64082cb4b9e"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap",
+      "item": [
+        {
+          "name": "Amazon Cognito Set Principal Tag Attribute Map",
+          "id": "bacfb6b7-8d2a-4f0f-bbca-dc00c58b288b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"IdentityPoolId\": \"m3prwH9TuX:1\",\n  \"IdentityProviderName\": \"<string>\",\n  \"UseDefaults\": \"<boolean>\",\n  \"PrincipalTags\": {\n    \"ut_be0\": \"<string>\",\n    \"nulla_b\": \"<string>\",\n    \"consequat_9a8\": \"<string>\",\n    \"dolore\": \"<string>\",\n    \"ex_9e1\": \"<string>\",\n    \"aliqua_a\": \"<string>\",\n    \"dolore405\": \"<string>\",\n    \"dolore_0\": \"<string>\",\n    \"labore_957\": \"<string>\",\n    \"sint77\": \"<string>\",\n    \"nisie4f\": \"<string>\",\n    \"veniam16_\": \"<string>\",\n    \"minimbec\": \"<string>\",\n    \"aliquipfe\": \"<string>\",\n    \"Ut3df\": \"<string>\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+            },
+            "description": "You can use this operation to use default (username and clientID) attribute or custom attribute mappings."
+          },
+          "response": [
+            {
+              "id": "2d016fea-5ec5-413d-9d5e-ba351489b051",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"IdentityPoolId\": \"m3prwH9TuX:1\",\n  \"IdentityProviderName\": \"<string>\",\n  \"UseDefaults\": \"<boolean>\",\n  \"PrincipalTags\": {\n    \"ut_be0\": \"<string>\",\n    \"nulla_b\": \"<string>\",\n    \"consequat_9a8\": \"<string>\",\n    \"dolore\": \"<string>\",\n    \"ex_9e1\": \"<string>\",\n    \"aliqua_a\": \"<string>\",\n    \"dolore405\": \"<string>\",\n    \"dolore_0\": \"<string>\",\n    \"labore_957\": \"<string>\",\n    \"sint77\": \"<string>\",\n    \"nisie4f\": \"<string>\",\n    \"veniam16_\": \"<string>\",\n    \"minimbec\": \"<string>\",\n    \"aliquipfe\": \"<string>\",\n    \"Ut3df\": \"<string>\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"IdentityPoolId\": \"PV8PleyULD:91c1b\",\n  \"IdentityProviderName\": \"<string>\",\n  \"UseDefaults\": \"<boolean>\",\n  \"PrincipalTags\": {\n    \"cupidatat_3\": \"<string>\",\n    \"magna_ca6\": \"<string>\",\n    \"deserunt_ba3\": \"<string>\",\n    \"irure_4\": \"<string>\",\n    \"eiusmod_d2a\": \"<string>\",\n    \"ullamco3\": \"<string>\",\n    \"laborum2\": \"<string>\",\n    \"do_079\": \"<string>\",\n    \"ex_a\": \"<string>\",\n    \"autee\": \"<string>\",\n    \"occaecat_9\": \"<string>\",\n    \"enim_b\": \"<string>\",\n    \"dolore5d8\": \"<string>\",\n    \"Duis_7\": \"<string>\",\n    \"commodo_a5\": \"<string>\"\n  }\n}",
+              "createdAt": "2026-07-28T10:19:24.000Z",
+              "updatedAt": "2026-07-28T10:19:24.000Z",
+              "uid": "35240-2d016fea-5ec5-413d-9d5e-ba351489b051"
+            },
+            {
+              "id": "6d27ae60-9e57-4673-8316-e4b6f5bd07df",
+              "name": "InvalidParameterException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"IdentityPoolId\": \"m3prwH9TuX:1\",\n  \"IdentityProviderName\": \"<string>\",\n  \"UseDefaults\": \"<boolean>\",\n  \"PrincipalTags\": {\n    \"ut_be0\": \"<string>\",\n    \"nulla_b\": \"<string>\",\n    \"consequat_9a8\": \"<string>\",\n    \"dolore\": \"<string>\",\n    \"ex_9e1\": \"<string>\",\n    \"aliqua_a\": \"<string>\",\n    \"dolore405\": \"<string>\",\n    \"dolore_0\": \"<string>\",\n    \"labore_957\": \"<string>\",\n    \"sint77\": \"<string>\",\n    \"nisie4f\": \"<string>\",\n    \"veniam16_\": \"<string>\",\n    \"minimbec\": \"<string>\",\n    \"aliquipfe\": \"<string>\",\n    \"Ut3df\": \"<string>\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:19:24.000Z",
+              "updatedAt": "2026-07-28T10:19:24.000Z",
+              "uid": "35240-6d27ae60-9e57-4673-8316-e4b6f5bd07df"
+            },
+            {
+              "id": "0398d7b5-f146-48f5-a3e3-d3dce03fdae0",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"IdentityPoolId\": \"m3prwH9TuX:1\",\n  \"IdentityProviderName\": \"<string>\",\n  \"UseDefaults\": \"<boolean>\",\n  \"PrincipalTags\": {\n    \"ut_be0\": \"<string>\",\n    \"nulla_b\": \"<string>\",\n    \"consequat_9a8\": \"<string>\",\n    \"dolore\": \"<string>\",\n    \"ex_9e1\": \"<string>\",\n    \"aliqua_a\": \"<string>\",\n    \"dolore405\": \"<string>\",\n    \"dolore_0\": \"<string>\",\n    \"labore_957\": \"<string>\",\n    \"sint77\": \"<string>\",\n    \"nisie4f\": \"<string>\",\n    \"veniam16_\": \"<string>\",\n    \"minimbec\": \"<string>\",\n    \"aliquipfe\": \"<string>\",\n    \"Ut3df\": \"<string>\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:19:24.000Z",
+              "updatedAt": "2026-07-28T10:19:24.000Z",
+              "uid": "35240-0398d7b5-f146-48f5-a3e3-d3dce03fdae0"
+            },
+            {
+              "id": "62c67ebb-81ac-4532-a312-5d14ae5b0377",
+              "name": "NotAuthorizedException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"IdentityPoolId\": \"m3prwH9TuX:1\",\n  \"IdentityProviderName\": \"<string>\",\n  \"UseDefaults\": \"<boolean>\",\n  \"PrincipalTags\": {\n    \"ut_be0\": \"<string>\",\n    \"nulla_b\": \"<string>\",\n    \"consequat_9a8\": \"<string>\",\n    \"dolore\": \"<string>\",\n    \"ex_9e1\": \"<string>\",\n    \"aliqua_a\": \"<string>\",\n    \"dolore405\": \"<string>\",\n    \"dolore_0\": \"<string>\",\n    \"labore_957\": \"<string>\",\n    \"sint77\": \"<string>\",\n    \"nisie4f\": \"<string>\",\n    \"veniam16_\": \"<string>\",\n    \"minimbec\": \"<string>\",\n    \"aliquipfe\": \"<string>\",\n    \"Ut3df\": \"<string>\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:19:24.000Z",
+              "updatedAt": "2026-07-28T10:19:24.000Z",
+              "uid": "35240-62c67ebb-81ac-4532-a312-5d14ae5b0377"
+            },
+            {
+              "id": "ba87e711-0b76-44a5-b3b8-b6d76af48ae3",
+              "name": "TooManyRequestsException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"IdentityPoolId\": \"m3prwH9TuX:1\",\n  \"IdentityProviderName\": \"<string>\",\n  \"UseDefaults\": \"<boolean>\",\n  \"PrincipalTags\": {\n    \"ut_be0\": \"<string>\",\n    \"nulla_b\": \"<string>\",\n    \"consequat_9a8\": \"<string>\",\n    \"dolore\": \"<string>\",\n    \"ex_9e1\": \"<string>\",\n    \"aliqua_a\": \"<string>\",\n    \"dolore405\": \"<string>\",\n    \"dolore_0\": \"<string>\",\n    \"labore_957\": \"<string>\",\n    \"sint77\": \"<string>\",\n    \"nisie4f\": \"<string>\",\n    \"veniam16_\": \"<string>\",\n    \"minimbec\": \"<string>\",\n    \"aliquipfe\": \"<string>\",\n    \"Ut3df\": \"<string>\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:19:24.000Z",
+              "updatedAt": "2026-07-28T10:19:24.000Z",
+              "uid": "35240-ba87e711-0b76-44a5-b3b8-b6d76af48ae3"
+            },
+            {
+              "id": "043751ce-9803-41d9-b984-b8422ca44d46",
+              "name": "InternalErrorException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"IdentityPoolId\": \"m3prwH9TuX:1\",\n  \"IdentityProviderName\": \"<string>\",\n  \"UseDefaults\": \"<boolean>\",\n  \"PrincipalTags\": {\n    \"ut_be0\": \"<string>\",\n    \"nulla_b\": \"<string>\",\n    \"consequat_9a8\": \"<string>\",\n    \"dolore\": \"<string>\",\n    \"ex_9e1\": \"<string>\",\n    \"aliqua_a\": \"<string>\",\n    \"dolore405\": \"<string>\",\n    \"dolore_0\": \"<string>\",\n    \"labore_957\": \"<string>\",\n    \"sint77\": \"<string>\",\n    \"nisie4f\": \"<string>\",\n    \"veniam16_\": \"<string>\",\n    \"minimbec\": \"<string>\",\n    \"aliquipfe\": \"<string>\",\n    \"Ut3df\": \"<string>\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:19:24.000Z",
+              "updatedAt": "2026-07-28T10:19:24.000Z",
+              "uid": "35240-043751ce-9803-41d9-b984-b8422ca44d46"
+            }
+          ],
+          "createdAt": "2026-07-28T10:19:24.000Z",
+          "updatedAt": "2026-07-28T10:19:24.000Z",
+          "uid": "35240-bacfb6b7-8d2a-4f0f-bbca-dc00c58b288b"
+        }
+      ],
+      "id": "0971efb7-42e3-49c2-9df6-7a473ddfa0f7",
+      "createdAt": "2026-07-28T10:19:24.000Z",
+      "updatedAt": "2026-07-28T10:19:24.000Z",
+      "uid": "35240-0971efb7-42e3-49c2-9df6-7a473ddfa0f7"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://cognito-identity.{{region}}.amazonaws.com"
+    }
+  ]
+}

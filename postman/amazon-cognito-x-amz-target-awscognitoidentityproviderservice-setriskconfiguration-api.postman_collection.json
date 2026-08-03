@@ -1,0 +1,926 @@
+{
+  "info": {
+    "_postman_id": "ee849320-fbb3-406e-a8b5-e7c5792417da",
+    "name": "Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.SetRiskConfiguration API",
+    "description": "<fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html\">Authentication Flow</a>.</p> <p>For more information see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html\">Amazon Cognito Federated Identities</a>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:17:18.000Z",
+    "updatedAt": "2026-07-28T10:17:18.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-ee849320-fbb3-406e-a8b5-e7c5792417da"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration",
+      "item": [
+        {
+          "name": "Amazon Cognito Set Risk Configuration",
+          "id": "ea18f22f-55b8-4244-8ef1-32e303f6ce7b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "AWSCognitoIdentityProviderService.SetRiskConfiguration"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"UserPoolId\": \"wBstp0_xZ70h6F\",\n  \"ClientId\": \"Bilt\",\n  \"CompromisedCredentialsRiskConfiguration\": {\n    \"Actions\": {\n      \"EventAction\": \"BLOCK\"\n    },\n    \"EventFilter\": [\n      \"SIGN_IN\",\n      \"SIGN_IN\"\n    ]\n  },\n  \"AccountTakeoverRiskConfiguration\": {\n    \"Actions\": {\n      \"LowAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"MediumAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"HighAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"NO_ACTION\"\n      }\n    },\n    \"NotifyConfiguration\": {\n      \"SourceArn\": \"arn:HlOvl+6:,=Q4:Cqz:921887:@0bsq:xgKGnD:dgrC5N\",\n      \"From\": \"<string>\",\n      \"ReplyTo\": \"<string>\",\n      \"BlockEmail\": {\n        \"Subject\": \"\\u000b\u2002\u205f\\t\\f\",\n        \"HtmlBody\": \"\u2007\u2007\u2007\u2007\u2007\u2007\u2007\u2007\",\n        \"TextBody\": \"\u3000p\u2008\u00a0\u2000\\t\u1680\"\n      },\n      \"NoActionEmail\": {\n        \"Subject\": \"\u3000\u2003\",\n        \"HtmlBody\": \"\ufeff\u2009\u205f\u2004p\\r\u2028M\u205f\u2005\u3000\",\n        \"TextBody\": \"}\u1680\u205fSL\u205f\ufeff\"\n      },\n      \"MfaEmail\": {\n        \"Subject\": \"M\",\n        \"HtmlBody\": \"\\nM\u2003Lp\\t\u2029{\\f \\t\",\n        \"TextBody\": \"\u2000\u2006\u205f\\rP\u2005\"\n      }\n    }\n  },\n  \"RiskExceptionConfiguration\": {\n    \"BlockedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"SkippedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  }\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration"
+            },
+            "description": "<p>Configures actions on detected risks. To delete the risk configuration for <code>UserPoolId</code> or <code>ClientId</code>, pass null values for all four configuration types.</p> <p>To activate Amazon Cognito advanced security features, update the user pool to include the <code>UserPoolAddOns</code> key<code>AdvancedSecurityMode</code>.</p>"
+          },
+          "response": [
+            {
+              "id": "ee67bc91-bb6e-4fd8-9c1d-df3c38071df3",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"wBstp0_xZ70h6F\",\n  \"ClientId\": \"Bilt\",\n  \"CompromisedCredentialsRiskConfiguration\": {\n    \"Actions\": {\n      \"EventAction\": \"BLOCK\"\n    },\n    \"EventFilter\": [\n      \"SIGN_IN\",\n      \"SIGN_IN\"\n    ]\n  },\n  \"AccountTakeoverRiskConfiguration\": {\n    \"Actions\": {\n      \"LowAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"MediumAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"HighAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"NO_ACTION\"\n      }\n    },\n    \"NotifyConfiguration\": {\n      \"SourceArn\": \"arn:HlOvl+6:,=Q4:Cqz:921887:@0bsq:xgKGnD:dgrC5N\",\n      \"From\": \"<string>\",\n      \"ReplyTo\": \"<string>\",\n      \"BlockEmail\": {\n        \"Subject\": \"\\u000b\u2002\u205f\\t\\f\",\n        \"HtmlBody\": \"\u2007\u2007\u2007\u2007\u2007\u2007\u2007\u2007\",\n        \"TextBody\": \"\u3000p\u2008\u00a0\u2000\\t\u1680\"\n      },\n      \"NoActionEmail\": {\n        \"Subject\": \"\u3000\u2003\",\n        \"HtmlBody\": \"\ufeff\u2009\u205f\u2004p\\r\u2028M\u205f\u2005\u3000\",\n        \"TextBody\": \"}\u1680\u205fSL\u205f\ufeff\"\n      },\n      \"MfaEmail\": {\n        \"Subject\": \"M\",\n        \"HtmlBody\": \"\\nM\u2003Lp\\t\u2029{\\f \\t\",\n        \"TextBody\": \"\u2000\u2006\u205f\\rP\u2005\"\n      }\n    }\n  },\n  \"RiskExceptionConfiguration\": {\n    \"BlockedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"SkippedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"RiskConfiguration\": {\n    \"UserPoolId\": \"7tcU_J9OkF\",\n    \"ClientId\": \"L4wK1aRiwI4\",\n    \"CompromisedCredentialsRiskConfiguration\": {\n      \"Actions\": {\n        \"EventAction\": \"NO_ACTION\"\n      },\n      \"EventFilter\": [\n        \"PASSWORD_CHANGE\",\n        \"PASSWORD_CHANGE\"\n      ]\n    },\n    \"AccountTakeoverRiskConfiguration\": {\n      \"Actions\": {\n        \"LowAction\": {\n          \"Notify\": \"<boolean>\",\n          \"EventAction\": \"NO_ACTION\"\n        },\n        \"MediumAction\": {\n          \"Notify\": \"<boolean>\",\n          \"EventAction\": \"NO_ACTION\"\n        },\n        \"HighAction\": {\n          \"Notify\": \"<boolean>\",\n          \"EventAction\": \"NO_ACTION\"\n        }\n      },\n      \"NotifyConfiguration\": {\n        \"SourceArn\": \"arn:GD+qZN5T.X:A@v+i0::382:A9xzuayWg:at:foSVn=t23\",\n        \"From\": \"<string>\",\n        \"ReplyTo\": \"<string>\",\n        \"BlockEmail\": {\n          \"Subject\": \"\u2029 \u2002 \u2003\\r{\\u000b\\n\u3000\u00a0\",\n          \"HtmlBody\": \"\u205f\u2008\\t\ufeff\u2009*\\t\u205f\u202f\\f\\r\",\n          \"TextBody\": \"\u2028\u2005N\u205f\u2000\u2028\u2005N\u205f\u2000\"\n        },\n        \"NoActionEmail\": {\n          \"Subject\": \"\u2006\u2006\u180e\u2006\u200a\u180e \u2008\\r\\np\",\n          \"HtmlBody\": \"L\u2000\u202f\u2005\\u000bP\u205f\",\n          \"TextBody\": \" \u2008 \u2008 \u2008 \u2008\"\n        },\n        \"MfaEmail\": {\n          \"Subject\": \"\u00a0\\t\u202f\u2008\u2009{\u2003\ufeff\\t\u00a0\",\n          \"HtmlBody\": \"\u00a0\u2001M\u00a0{NM\",\n          \"TextBody\": \"\u2002\u2029\u2002\u2029\u2002\u2029\u2002\u2029\"\n        }\n      }\n    },\n    \"RiskExceptionConfiguration\": {\n      \"BlockedIPRangeList\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"SkippedIPRangeList\": [\n        \"<string>\",\n        \"<string>\"\n      ]\n    },\n    \"LastModifiedDate\": \"<dateTime>\"\n  }\n}",
+              "createdAt": "2026-07-28T10:17:18.000Z",
+              "updatedAt": "2026-07-28T10:17:18.000Z",
+              "uid": "35240-ee67bc91-bb6e-4fd8-9c1d-df3c38071df3"
+            },
+            {
+              "id": "ed007117-0005-4e06-a807-8de372496cf9",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"wBstp0_xZ70h6F\",\n  \"ClientId\": \"Bilt\",\n  \"CompromisedCredentialsRiskConfiguration\": {\n    \"Actions\": {\n      \"EventAction\": \"BLOCK\"\n    },\n    \"EventFilter\": [\n      \"SIGN_IN\",\n      \"SIGN_IN\"\n    ]\n  },\n  \"AccountTakeoverRiskConfiguration\": {\n    \"Actions\": {\n      \"LowAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"MediumAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"HighAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"NO_ACTION\"\n      }\n    },\n    \"NotifyConfiguration\": {\n      \"SourceArn\": \"arn:HlOvl+6:,=Q4:Cqz:921887:@0bsq:xgKGnD:dgrC5N\",\n      \"From\": \"<string>\",\n      \"ReplyTo\": \"<string>\",\n      \"BlockEmail\": {\n        \"Subject\": \"\\u000b\u2002\u205f\\t\\f\",\n        \"HtmlBody\": \"\u2007\u2007\u2007\u2007\u2007\u2007\u2007\u2007\",\n        \"TextBody\": \"\u3000p\u2008\u00a0\u2000\\t\u1680\"\n      },\n      \"NoActionEmail\": {\n        \"Subject\": \"\u3000\u2003\",\n        \"HtmlBody\": \"\ufeff\u2009\u205f\u2004p\\r\u2028M\u205f\u2005\u3000\",\n        \"TextBody\": \"}\u1680\u205fSL\u205f\ufeff\"\n      },\n      \"MfaEmail\": {\n        \"Subject\": \"M\",\n        \"HtmlBody\": \"\\nM\u2003Lp\\t\u2029{\\f \\t\",\n        \"TextBody\": \"\u2000\u2006\u205f\\rP\u2005\"\n      }\n    }\n  },\n  \"RiskExceptionConfiguration\": {\n    \"BlockedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"SkippedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:18.000Z",
+              "updatedAt": "2026-07-28T10:17:18.000Z",
+              "uid": "35240-ed007117-0005-4e06-a807-8de372496cf9"
+            },
+            {
+              "id": "f3e02a84-5a5c-4160-93fd-9075929f2e58",
+              "name": "InvalidParameterException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"wBstp0_xZ70h6F\",\n  \"ClientId\": \"Bilt\",\n  \"CompromisedCredentialsRiskConfiguration\": {\n    \"Actions\": {\n      \"EventAction\": \"BLOCK\"\n    },\n    \"EventFilter\": [\n      \"SIGN_IN\",\n      \"SIGN_IN\"\n    ]\n  },\n  \"AccountTakeoverRiskConfiguration\": {\n    \"Actions\": {\n      \"LowAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"MediumAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"HighAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"NO_ACTION\"\n      }\n    },\n    \"NotifyConfiguration\": {\n      \"SourceArn\": \"arn:HlOvl+6:,=Q4:Cqz:921887:@0bsq:xgKGnD:dgrC5N\",\n      \"From\": \"<string>\",\n      \"ReplyTo\": \"<string>\",\n      \"BlockEmail\": {\n        \"Subject\": \"\\u000b\u2002\u205f\\t\\f\",\n        \"HtmlBody\": \"\u2007\u2007\u2007\u2007\u2007\u2007\u2007\u2007\",\n        \"TextBody\": \"\u3000p\u2008\u00a0\u2000\\t\u1680\"\n      },\n      \"NoActionEmail\": {\n        \"Subject\": \"\u3000\u2003\",\n        \"HtmlBody\": \"\ufeff\u2009\u205f\u2004p\\r\u2028M\u205f\u2005\u3000\",\n        \"TextBody\": \"}\u1680\u205fSL\u205f\ufeff\"\n      },\n      \"MfaEmail\": {\n        \"Subject\": \"M\",\n        \"HtmlBody\": \"\\nM\u2003Lp\\t\u2029{\\f \\t\",\n        \"TextBody\": \"\u2000\u2006\u205f\\rP\u2005\"\n      }\n    }\n  },\n  \"RiskExceptionConfiguration\": {\n    \"BlockedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"SkippedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:18.000Z",
+              "updatedAt": "2026-07-28T10:17:18.000Z",
+              "uid": "35240-f3e02a84-5a5c-4160-93fd-9075929f2e58"
+            },
+            {
+              "id": "9a2c1d41-9c09-4721-bd79-91bb9044a3db",
+              "name": "TooManyRequestsException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"wBstp0_xZ70h6F\",\n  \"ClientId\": \"Bilt\",\n  \"CompromisedCredentialsRiskConfiguration\": {\n    \"Actions\": {\n      \"EventAction\": \"BLOCK\"\n    },\n    \"EventFilter\": [\n      \"SIGN_IN\",\n      \"SIGN_IN\"\n    ]\n  },\n  \"AccountTakeoverRiskConfiguration\": {\n    \"Actions\": {\n      \"LowAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"MediumAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"HighAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"NO_ACTION\"\n      }\n    },\n    \"NotifyConfiguration\": {\n      \"SourceArn\": \"arn:HlOvl+6:,=Q4:Cqz:921887:@0bsq:xgKGnD:dgrC5N\",\n      \"From\": \"<string>\",\n      \"ReplyTo\": \"<string>\",\n      \"BlockEmail\": {\n        \"Subject\": \"\\u000b\u2002\u205f\\t\\f\",\n        \"HtmlBody\": \"\u2007\u2007\u2007\u2007\u2007\u2007\u2007\u2007\",\n        \"TextBody\": \"\u3000p\u2008\u00a0\u2000\\t\u1680\"\n      },\n      \"NoActionEmail\": {\n        \"Subject\": \"\u3000\u2003\",\n        \"HtmlBody\": \"\ufeff\u2009\u205f\u2004p\\r\u2028M\u205f\u2005\u3000\",\n        \"TextBody\": \"}\u1680\u205fSL\u205f\ufeff\"\n      },\n      \"MfaEmail\": {\n        \"Subject\": \"M\",\n        \"HtmlBody\": \"\\nM\u2003Lp\\t\u2029{\\f \\t\",\n        \"TextBody\": \"\u2000\u2006\u205f\\rP\u2005\"\n      }\n    }\n  },\n  \"RiskExceptionConfiguration\": {\n    \"BlockedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"SkippedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:18.000Z",
+              "updatedAt": "2026-07-28T10:17:18.000Z",
+              "uid": "35240-9a2c1d41-9c09-4721-bd79-91bb9044a3db"
+            },
+            {
+              "id": "d8a8ec72-ee7b-4c92-89d6-4310ce6ed2ce",
+              "name": "NotAuthorizedException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"wBstp0_xZ70h6F\",\n  \"ClientId\": \"Bilt\",\n  \"CompromisedCredentialsRiskConfiguration\": {\n    \"Actions\": {\n      \"EventAction\": \"BLOCK\"\n    },\n    \"EventFilter\": [\n      \"SIGN_IN\",\n      \"SIGN_IN\"\n    ]\n  },\n  \"AccountTakeoverRiskConfiguration\": {\n    \"Actions\": {\n      \"LowAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"MediumAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"HighAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"NO_ACTION\"\n      }\n    },\n    \"NotifyConfiguration\": {\n      \"SourceArn\": \"arn:HlOvl+6:,=Q4:Cqz:921887:@0bsq:xgKGnD:dgrC5N\",\n      \"From\": \"<string>\",\n      \"ReplyTo\": \"<string>\",\n      \"BlockEmail\": {\n        \"Subject\": \"\\u000b\u2002\u205f\\t\\f\",\n        \"HtmlBody\": \"\u2007\u2007\u2007\u2007\u2007\u2007\u2007\u2007\",\n        \"TextBody\": \"\u3000p\u2008\u00a0\u2000\\t\u1680\"\n      },\n      \"NoActionEmail\": {\n        \"Subject\": \"\u3000\u2003\",\n        \"HtmlBody\": \"\ufeff\u2009\u205f\u2004p\\r\u2028M\u205f\u2005\u3000\",\n        \"TextBody\": \"}\u1680\u205fSL\u205f\ufeff\"\n      },\n      \"MfaEmail\": {\n        \"Subject\": \"M\",\n        \"HtmlBody\": \"\\nM\u2003Lp\\t\u2029{\\f \\t\",\n        \"TextBody\": \"\u2000\u2006\u205f\\rP\u2005\"\n      }\n    }\n  },\n  \"RiskExceptionConfiguration\": {\n    \"BlockedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"SkippedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:18.000Z",
+              "updatedAt": "2026-07-28T10:17:18.000Z",
+              "uid": "35240-d8a8ec72-ee7b-4c92-89d6-4310ce6ed2ce"
+            },
+            {
+              "id": "080ef002-9669-4f2d-acbe-1af77fe16f45",
+              "name": "UserPoolAddOnNotEnabledException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"wBstp0_xZ70h6F\",\n  \"ClientId\": \"Bilt\",\n  \"CompromisedCredentialsRiskConfiguration\": {\n    \"Actions\": {\n      \"EventAction\": \"BLOCK\"\n    },\n    \"EventFilter\": [\n      \"SIGN_IN\",\n      \"SIGN_IN\"\n    ]\n  },\n  \"AccountTakeoverRiskConfiguration\": {\n    \"Actions\": {\n      \"LowAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"MediumAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"HighAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"NO_ACTION\"\n      }\n    },\n    \"NotifyConfiguration\": {\n      \"SourceArn\": \"arn:HlOvl+6:,=Q4:Cqz:921887:@0bsq:xgKGnD:dgrC5N\",\n      \"From\": \"<string>\",\n      \"ReplyTo\": \"<string>\",\n      \"BlockEmail\": {\n        \"Subject\": \"\\u000b\u2002\u205f\\t\\f\",\n        \"HtmlBody\": \"\u2007\u2007\u2007\u2007\u2007\u2007\u2007\u2007\",\n        \"TextBody\": \"\u3000p\u2008\u00a0\u2000\\t\u1680\"\n      },\n      \"NoActionEmail\": {\n        \"Subject\": \"\u3000\u2003\",\n        \"HtmlBody\": \"\ufeff\u2009\u205f\u2004p\\r\u2028M\u205f\u2005\u3000\",\n        \"TextBody\": \"}\u1680\u205fSL\u205f\ufeff\"\n      },\n      \"MfaEmail\": {\n        \"Subject\": \"M\",\n        \"HtmlBody\": \"\\nM\u2003Lp\\t\u2029{\\f \\t\",\n        \"TextBody\": \"\u2000\u2006\u205f\\rP\u2005\"\n      }\n    }\n  },\n  \"RiskExceptionConfiguration\": {\n    \"BlockedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"SkippedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:18.000Z",
+              "updatedAt": "2026-07-28T10:17:18.000Z",
+              "uid": "35240-080ef002-9669-4f2d-acbe-1af77fe16f45"
+            },
+            {
+              "id": "645526b3-5412-453d-a6ee-677d0db3dc9c",
+              "name": "CodeDeliveryFailureException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"wBstp0_xZ70h6F\",\n  \"ClientId\": \"Bilt\",\n  \"CompromisedCredentialsRiskConfiguration\": {\n    \"Actions\": {\n      \"EventAction\": \"BLOCK\"\n    },\n    \"EventFilter\": [\n      \"SIGN_IN\",\n      \"SIGN_IN\"\n    ]\n  },\n  \"AccountTakeoverRiskConfiguration\": {\n    \"Actions\": {\n      \"LowAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"MediumAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"HighAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"NO_ACTION\"\n      }\n    },\n    \"NotifyConfiguration\": {\n      \"SourceArn\": \"arn:HlOvl+6:,=Q4:Cqz:921887:@0bsq:xgKGnD:dgrC5N\",\n      \"From\": \"<string>\",\n      \"ReplyTo\": \"<string>\",\n      \"BlockEmail\": {\n        \"Subject\": \"\\u000b\u2002\u205f\\t\\f\",\n        \"HtmlBody\": \"\u2007\u2007\u2007\u2007\u2007\u2007\u2007\u2007\",\n        \"TextBody\": \"\u3000p\u2008\u00a0\u2000\\t\u1680\"\n      },\n      \"NoActionEmail\": {\n        \"Subject\": \"\u3000\u2003\",\n        \"HtmlBody\": \"\ufeff\u2009\u205f\u2004p\\r\u2028M\u205f\u2005\u3000\",\n        \"TextBody\": \"}\u1680\u205fSL\u205f\ufeff\"\n      },\n      \"MfaEmail\": {\n        \"Subject\": \"M\",\n        \"HtmlBody\": \"\\nM\u2003Lp\\t\u2029{\\f \\t\",\n        \"TextBody\": \"\u2000\u2006\u205f\\rP\u2005\"\n      }\n    }\n  },\n  \"RiskExceptionConfiguration\": {\n    \"BlockedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"SkippedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:18.000Z",
+              "updatedAt": "2026-07-28T10:17:18.000Z",
+              "uid": "35240-645526b3-5412-453d-a6ee-677d0db3dc9c"
+            },
+            {
+              "id": "d0ebac48-d5d0-424b-b497-2787c4690a36",
+              "name": "InvalidEmailRoleAccessPolicyException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"wBstp0_xZ70h6F\",\n  \"ClientId\": \"Bilt\",\n  \"CompromisedCredentialsRiskConfiguration\": {\n    \"Actions\": {\n      \"EventAction\": \"BLOCK\"\n    },\n    \"EventFilter\": [\n      \"SIGN_IN\",\n      \"SIGN_IN\"\n    ]\n  },\n  \"AccountTakeoverRiskConfiguration\": {\n    \"Actions\": {\n      \"LowAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"MediumAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"HighAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"NO_ACTION\"\n      }\n    },\n    \"NotifyConfiguration\": {\n      \"SourceArn\": \"arn:HlOvl+6:,=Q4:Cqz:921887:@0bsq:xgKGnD:dgrC5N\",\n      \"From\": \"<string>\",\n      \"ReplyTo\": \"<string>\",\n      \"BlockEmail\": {\n        \"Subject\": \"\\u000b\u2002\u205f\\t\\f\",\n        \"HtmlBody\": \"\u2007\u2007\u2007\u2007\u2007\u2007\u2007\u2007\",\n        \"TextBody\": \"\u3000p\u2008\u00a0\u2000\\t\u1680\"\n      },\n      \"NoActionEmail\": {\n        \"Subject\": \"\u3000\u2003\",\n        \"HtmlBody\": \"\ufeff\u2009\u205f\u2004p\\r\u2028M\u205f\u2005\u3000\",\n        \"TextBody\": \"}\u1680\u205fSL\u205f\ufeff\"\n      },\n      \"MfaEmail\": {\n        \"Subject\": \"M\",\n        \"HtmlBody\": \"\\nM\u2003Lp\\t\u2029{\\f \\t\",\n        \"TextBody\": \"\u2000\u2006\u205f\\rP\u2005\"\n      }\n    }\n  },\n  \"RiskExceptionConfiguration\": {\n    \"BlockedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"SkippedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:18.000Z",
+              "updatedAt": "2026-07-28T10:17:18.000Z",
+              "uid": "35240-d0ebac48-d5d0-424b-b497-2787c4690a36"
+            },
+            {
+              "id": "e414a4a4-8312-4e8d-8987-bb8637debb8c",
+              "name": "InternalErrorException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"wBstp0_xZ70h6F\",\n  \"ClientId\": \"Bilt\",\n  \"CompromisedCredentialsRiskConfiguration\": {\n    \"Actions\": {\n      \"EventAction\": \"BLOCK\"\n    },\n    \"EventFilter\": [\n      \"SIGN_IN\",\n      \"SIGN_IN\"\n    ]\n  },\n  \"AccountTakeoverRiskConfiguration\": {\n    \"Actions\": {\n      \"LowAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"MediumAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"BLOCK\"\n      },\n      \"HighAction\": {\n        \"Notify\": \"<boolean>\",\n        \"EventAction\": \"NO_ACTION\"\n      }\n    },\n    \"NotifyConfiguration\": {\n      \"SourceArn\": \"arn:HlOvl+6:,=Q4:Cqz:921887:@0bsq:xgKGnD:dgrC5N\",\n      \"From\": \"<string>\",\n      \"ReplyTo\": \"<string>\",\n      \"BlockEmail\": {\n        \"Subject\": \"\\u000b\u2002\u205f\\t\\f\",\n        \"HtmlBody\": \"\u2007\u2007\u2007\u2007\u2007\u2007\u2007\u2007\",\n        \"TextBody\": \"\u3000p\u2008\u00a0\u2000\\t\u1680\"\n      },\n      \"NoActionEmail\": {\n        \"Subject\": \"\u3000\u2003\",\n        \"HtmlBody\": \"\ufeff\u2009\u205f\u2004p\\r\u2028M\u205f\u2005\u3000\",\n        \"TextBody\": \"}\u1680\u205fSL\u205f\ufeff\"\n      },\n      \"MfaEmail\": {\n        \"Subject\": \"M\",\n        \"HtmlBody\": \"\\nM\u2003Lp\\t\u2029{\\f \\t\",\n        \"TextBody\": \"\u2000\u2006\u205f\\rP\u2005\"\n      }\n    }\n  },\n  \"RiskExceptionConfiguration\": {\n    \"BlockedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"SkippedIPRangeList\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.SetRiskConfiguration"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:18.000Z",
+              "updatedAt": "2026-07-28T10:17:18.000Z",
+              "uid": "35240-e414a4a4-8312-4e8d-8987-bb8637debb8c"
+            }
+          ],
+          "createdAt": "2026-07-28T10:17:18.000Z",
+          "updatedAt": "2026-07-28T10:17:18.000Z",
+          "uid": "35240-ea18f22f-55b8-4244-8ef1-32e303f6ce7b"
+        }
+      ],
+      "id": "d3470d0d-4ae1-4be3-9e35-3f7f72785951",
+      "createdAt": "2026-07-28T10:17:18.000Z",
+      "updatedAt": "2026-07-28T10:17:18.000Z",
+      "uid": "35240-d3470d0d-4ae1-4be3-9e35-3f7f72785951"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://cognito-identity.{{region}}.amazonaws.com"
+    }
+  ]
+}
