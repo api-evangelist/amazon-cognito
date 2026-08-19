@@ -1,0 +1,1117 @@
+{
+  "item": [
+    {
+      "id": "7d7791ba-20a9-4ac0-93f9-b11f22d64f3b",
+      "name": "#X Amz Target=AWSCognitoIdentityProviderService.CreateUserPoolClient",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e1900411-35e5-4d1a-b0d9-701dd31b97e2",
+          "name": "Amazon Cognito Create User Pool Client",
+          "request": {
+            "name": "Amazon Cognito Create User Pool Client",
+            "description": {
+              "content": "<p>Creates the user pool client.</p> <p>When you create a new user pool client, token revocation is automatically activated. For more information about revoking tokens, see <a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_RevokeToken.html\">RevokeToken</a>.</p> <important> <p>If you don't provide a value for an attribute, Amazon Cognito sets it to its default value.</p> </important> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class=\"title\"> <b>Learn more</b> </p> <ul> <li> <p> <a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html\">Signing Amazon Web Services API Requests</a> </p> </li> <li> <p> <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html\">Using the Amazon Cognito user pools API and user pool endpoints</a> </p> </li> </ul> </note>",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPoolClient",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                  "type": "any",
+                  "value": "{{region}}",
+                  "key": "region"
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Date",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Algorithm",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Credential",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Security-Token",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Signature",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"UserPoolId\": \"<string>\",\n  \"ClientName\": \"<string>\",\n  \"GenerateSecret\": \"<boolean>\",\n  \"RefreshTokenValidity\": \"<integer>\",\n  \"AccessTokenValidity\": \"<integer>\",\n  \"IdTokenValidity\": \"<integer>\",\n  \"TokenValidityUnits\": {\n    \"AccessToken\": \"<string>\",\n    \"IdToken\": \"<string>\",\n    \"RefreshToken\": \"<string>\"\n  },\n  \"ReadAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"WriteAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"ExplicitAuthFlows\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"SupportedIdentityProviders\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"CallbackURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"LogoutURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"DefaultRedirectURI\": \"<string>\",\n  \"AllowedOAuthFlows\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthScopes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthFlowsUserPoolClient\": \"<boolean>\",\n  \"AnalyticsConfiguration\": {\n    \"ApplicationId\": \"<string>\",\n    \"ApplicationArn\": \"<string>\",\n    \"RoleArn\": \"<string>\",\n    \"ExternalId\": \"<string>\",\n    \"UserDataShared\": \"<boolean>\"\n  },\n  \"PreventUserExistenceErrors\": \"<string>\",\n  \"EnableTokenRevocation\": \"<boolean>\",\n  \"EnablePropagateAdditionalUserContextData\": \"<boolean>\",\n  \"AuthSessionValidity\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "5754905a-d565-444b-a245-e8d3bb8d4b8f",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPoolClient",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"<string>\",\n  \"ClientName\": \"<string>\",\n  \"GenerateSecret\": \"<boolean>\",\n  \"RefreshTokenValidity\": \"<integer>\",\n  \"AccessTokenValidity\": \"<integer>\",\n  \"IdTokenValidity\": \"<integer>\",\n  \"TokenValidityUnits\": {\n    \"AccessToken\": \"<string>\",\n    \"IdToken\": \"<string>\",\n    \"RefreshToken\": \"<string>\"\n  },\n  \"ReadAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"WriteAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"ExplicitAuthFlows\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"SupportedIdentityProviders\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"CallbackURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"LogoutURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"DefaultRedirectURI\": \"<string>\",\n  \"AllowedOAuthFlows\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthScopes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthFlowsUserPoolClient\": \"<boolean>\",\n  \"AnalyticsConfiguration\": {\n    \"ApplicationId\": \"<string>\",\n    \"ApplicationArn\": \"<string>\",\n    \"RoleArn\": \"<string>\",\n    \"ExternalId\": \"<string>\",\n    \"UserDataShared\": \"<boolean>\"\n  },\n  \"PreventUserExistenceErrors\": \"<string>\",\n  \"EnableTokenRevocation\": \"<boolean>\",\n  \"EnablePropagateAdditionalUserContextData\": \"<boolean>\",\n  \"AuthSessionValidity\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"UserPoolClient\": \"example\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b883eb3e-8b11-443f-965b-50bc868f995f",
+              "name": "InvalidParameterException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPoolClient",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"<string>\",\n  \"ClientName\": \"<string>\",\n  \"GenerateSecret\": \"<boolean>\",\n  \"RefreshTokenValidity\": \"<integer>\",\n  \"AccessTokenValidity\": \"<integer>\",\n  \"IdTokenValidity\": \"<integer>\",\n  \"TokenValidityUnits\": {\n    \"AccessToken\": \"<string>\",\n    \"IdToken\": \"<string>\",\n    \"RefreshToken\": \"<string>\"\n  },\n  \"ReadAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"WriteAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"ExplicitAuthFlows\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"SupportedIdentityProviders\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"CallbackURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"LogoutURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"DefaultRedirectURI\": \"<string>\",\n  \"AllowedOAuthFlows\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthScopes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthFlowsUserPoolClient\": \"<boolean>\",\n  \"AnalyticsConfiguration\": {\n    \"ApplicationId\": \"<string>\",\n    \"ApplicationArn\": \"<string>\",\n    \"RoleArn\": \"<string>\",\n    \"ExternalId\": \"<string>\",\n    \"UserDataShared\": \"<boolean>\"\n  },\n  \"PreventUserExistenceErrors\": \"<string>\",\n  \"EnableTokenRevocation\": \"<boolean>\",\n  \"EnablePropagateAdditionalUserContextData\": \"<boolean>\",\n  \"AuthSessionValidity\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 480,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "9706fd47-6c33-40c8-a94b-7ae3ab13ee1d",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPoolClient",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"<string>\",\n  \"ClientName\": \"<string>\",\n  \"GenerateSecret\": \"<boolean>\",\n  \"RefreshTokenValidity\": \"<integer>\",\n  \"AccessTokenValidity\": \"<integer>\",\n  \"IdTokenValidity\": \"<integer>\",\n  \"TokenValidityUnits\": {\n    \"AccessToken\": \"<string>\",\n    \"IdToken\": \"<string>\",\n    \"RefreshToken\": \"<string>\"\n  },\n  \"ReadAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"WriteAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"ExplicitAuthFlows\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"SupportedIdentityProviders\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"CallbackURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"LogoutURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"DefaultRedirectURI\": \"<string>\",\n  \"AllowedOAuthFlows\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthScopes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthFlowsUserPoolClient\": \"<boolean>\",\n  \"AnalyticsConfiguration\": {\n    \"ApplicationId\": \"<string>\",\n    \"ApplicationArn\": \"<string>\",\n    \"RoleArn\": \"<string>\",\n    \"ExternalId\": \"<string>\",\n    \"UserDataShared\": \"<boolean>\"\n  },\n  \"PreventUserExistenceErrors\": \"<string>\",\n  \"EnableTokenRevocation\": \"<boolean>\",\n  \"EnablePropagateAdditionalUserContextData\": \"<boolean>\",\n  \"AuthSessionValidity\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 481,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "eb79f9c6-ee16-4812-a258-dc73a46b76df",
+              "name": "TooManyRequestsException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPoolClient",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"<string>\",\n  \"ClientName\": \"<string>\",\n  \"GenerateSecret\": \"<boolean>\",\n  \"RefreshTokenValidity\": \"<integer>\",\n  \"AccessTokenValidity\": \"<integer>\",\n  \"IdTokenValidity\": \"<integer>\",\n  \"TokenValidityUnits\": {\n    \"AccessToken\": \"<string>\",\n    \"IdToken\": \"<string>\",\n    \"RefreshToken\": \"<string>\"\n  },\n  \"ReadAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"WriteAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"ExplicitAuthFlows\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"SupportedIdentityProviders\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"CallbackURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"LogoutURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"DefaultRedirectURI\": \"<string>\",\n  \"AllowedOAuthFlows\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthScopes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthFlowsUserPoolClient\": \"<boolean>\",\n  \"AnalyticsConfiguration\": {\n    \"ApplicationId\": \"<string>\",\n    \"ApplicationArn\": \"<string>\",\n    \"RoleArn\": \"<string>\",\n    \"ExternalId\": \"<string>\",\n    \"UserDataShared\": \"<boolean>\"\n  },\n  \"PreventUserExistenceErrors\": \"<string>\",\n  \"EnableTokenRevocation\": \"<boolean>\",\n  \"EnablePropagateAdditionalUserContextData\": \"<boolean>\",\n  \"AuthSessionValidity\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 482,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b92a6ff6-b088-464c-88e4-0e3202fc2875",
+              "name": "LimitExceededException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPoolClient",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"<string>\",\n  \"ClientName\": \"<string>\",\n  \"GenerateSecret\": \"<boolean>\",\n  \"RefreshTokenValidity\": \"<integer>\",\n  \"AccessTokenValidity\": \"<integer>\",\n  \"IdTokenValidity\": \"<integer>\",\n  \"TokenValidityUnits\": {\n    \"AccessToken\": \"<string>\",\n    \"IdToken\": \"<string>\",\n    \"RefreshToken\": \"<string>\"\n  },\n  \"ReadAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"WriteAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"ExplicitAuthFlows\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"SupportedIdentityProviders\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"CallbackURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"LogoutURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"DefaultRedirectURI\": \"<string>\",\n  \"AllowedOAuthFlows\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthScopes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthFlowsUserPoolClient\": \"<boolean>\",\n  \"AnalyticsConfiguration\": {\n    \"ApplicationId\": \"<string>\",\n    \"ApplicationArn\": \"<string>\",\n    \"RoleArn\": \"<string>\",\n    \"ExternalId\": \"<string>\",\n    \"UserDataShared\": \"<boolean>\"\n  },\n  \"PreventUserExistenceErrors\": \"<string>\",\n  \"EnableTokenRevocation\": \"<boolean>\",\n  \"EnablePropagateAdditionalUserContextData\": \"<boolean>\",\n  \"AuthSessionValidity\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 483,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "46ace35f-3ca8-4986-872c-8d3371f8153d",
+              "name": "NotAuthorizedException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPoolClient",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"<string>\",\n  \"ClientName\": \"<string>\",\n  \"GenerateSecret\": \"<boolean>\",\n  \"RefreshTokenValidity\": \"<integer>\",\n  \"AccessTokenValidity\": \"<integer>\",\n  \"IdTokenValidity\": \"<integer>\",\n  \"TokenValidityUnits\": {\n    \"AccessToken\": \"<string>\",\n    \"IdToken\": \"<string>\",\n    \"RefreshToken\": \"<string>\"\n  },\n  \"ReadAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"WriteAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"ExplicitAuthFlows\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"SupportedIdentityProviders\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"CallbackURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"LogoutURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"DefaultRedirectURI\": \"<string>\",\n  \"AllowedOAuthFlows\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthScopes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthFlowsUserPoolClient\": \"<boolean>\",\n  \"AnalyticsConfiguration\": {\n    \"ApplicationId\": \"<string>\",\n    \"ApplicationArn\": \"<string>\",\n    \"RoleArn\": \"<string>\",\n    \"ExternalId\": \"<string>\",\n    \"UserDataShared\": \"<boolean>\"\n  },\n  \"PreventUserExistenceErrors\": \"<string>\",\n  \"EnableTokenRevocation\": \"<boolean>\",\n  \"EnablePropagateAdditionalUserContextData\": \"<boolean>\",\n  \"AuthSessionValidity\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 484,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "45b181ab-2d89-47d3-a155-d076af1c4db0",
+              "name": "ScopeDoesNotExistException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPoolClient",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"<string>\",\n  \"ClientName\": \"<string>\",\n  \"GenerateSecret\": \"<boolean>\",\n  \"RefreshTokenValidity\": \"<integer>\",\n  \"AccessTokenValidity\": \"<integer>\",\n  \"IdTokenValidity\": \"<integer>\",\n  \"TokenValidityUnits\": {\n    \"AccessToken\": \"<string>\",\n    \"IdToken\": \"<string>\",\n    \"RefreshToken\": \"<string>\"\n  },\n  \"ReadAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"WriteAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"ExplicitAuthFlows\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"SupportedIdentityProviders\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"CallbackURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"LogoutURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"DefaultRedirectURI\": \"<string>\",\n  \"AllowedOAuthFlows\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthScopes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthFlowsUserPoolClient\": \"<boolean>\",\n  \"AnalyticsConfiguration\": {\n    \"ApplicationId\": \"<string>\",\n    \"ApplicationArn\": \"<string>\",\n    \"RoleArn\": \"<string>\",\n    \"ExternalId\": \"<string>\",\n    \"UserDataShared\": \"<boolean>\"\n  },\n  \"PreventUserExistenceErrors\": \"<string>\",\n  \"EnableTokenRevocation\": \"<boolean>\",\n  \"EnablePropagateAdditionalUserContextData\": \"<boolean>\",\n  \"AuthSessionValidity\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 485,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f939d4c4-12f8-4b4c-b74b-3c382ac36015",
+              "name": "InvalidOAuthFlowException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPoolClient",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"<string>\",\n  \"ClientName\": \"<string>\",\n  \"GenerateSecret\": \"<boolean>\",\n  \"RefreshTokenValidity\": \"<integer>\",\n  \"AccessTokenValidity\": \"<integer>\",\n  \"IdTokenValidity\": \"<integer>\",\n  \"TokenValidityUnits\": {\n    \"AccessToken\": \"<string>\",\n    \"IdToken\": \"<string>\",\n    \"RefreshToken\": \"<string>\"\n  },\n  \"ReadAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"WriteAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"ExplicitAuthFlows\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"SupportedIdentityProviders\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"CallbackURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"LogoutURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"DefaultRedirectURI\": \"<string>\",\n  \"AllowedOAuthFlows\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthScopes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthFlowsUserPoolClient\": \"<boolean>\",\n  \"AnalyticsConfiguration\": {\n    \"ApplicationId\": \"<string>\",\n    \"ApplicationArn\": \"<string>\",\n    \"RoleArn\": \"<string>\",\n    \"ExternalId\": \"<string>\",\n    \"UserDataShared\": \"<boolean>\"\n  },\n  \"PreventUserExistenceErrors\": \"<string>\",\n  \"EnableTokenRevocation\": \"<boolean>\",\n  \"EnablePropagateAdditionalUserContextData\": \"<boolean>\",\n  \"AuthSessionValidity\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 486,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "4d992056-3357-4c33-b60a-abb3c84e2193",
+              "name": "InternalErrorException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=AWSCognitoIdentityProviderService.CreateUserPoolClient",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"UserPoolId\": \"<string>\",\n  \"ClientName\": \"<string>\",\n  \"GenerateSecret\": \"<boolean>\",\n  \"RefreshTokenValidity\": \"<integer>\",\n  \"AccessTokenValidity\": \"<integer>\",\n  \"IdTokenValidity\": \"<integer>\",\n  \"TokenValidityUnits\": {\n    \"AccessToken\": \"<string>\",\n    \"IdToken\": \"<string>\",\n    \"RefreshToken\": \"<string>\"\n  },\n  \"ReadAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"WriteAttributes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"ExplicitAuthFlows\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"SupportedIdentityProviders\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"CallbackURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"LogoutURLs\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"DefaultRedirectURI\": \"<string>\",\n  \"AllowedOAuthFlows\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthScopes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"AllowedOAuthFlowsUserPoolClient\": \"<boolean>\",\n  \"AnalyticsConfiguration\": {\n    \"ApplicationId\": \"<string>\",\n    \"ApplicationArn\": \"<string>\",\n    \"RoleArn\": \"<string>\",\n    \"ExternalId\": \"<string>\",\n    \"UserDataShared\": \"<boolean>\"\n  },\n  \"PreventUserExistenceErrors\": \"<string>\",\n  \"EnableTokenRevocation\": \"<boolean>\",\n  \"EnablePropagateAdditionalUserContextData\": \"<boolean>\",\n  \"AuthSessionValidity\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 487,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"example\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "us-east-1",
+      "key": "region"
+    },
+    {
+      "type": "string",
+      "value": "http://cognito-identity.{{region}}.amazonaws.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "cb8188e7-6f8f-4e91-9257-ec581868596e",
+    "name": "Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.CreateUserPoolClient API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "<fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html\">Authentication Flow</a>.</p> <p>For more information see <a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html\">Amazon Cognito Federated Identities</a>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+      "type": "text/plain"
+    }
+  }
+}
