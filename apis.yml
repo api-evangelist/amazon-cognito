@@ -26,6 +26,14 @@ tags:
 - Authentication
 - AWS
 - Identity
+- OIDC
+- SAML
+- User Management
+- Federated Identity
+tags_raw:
+- Authentication
+- AWS
+- Identity
 - OAuth
 - OIDC
 - SAML
@@ -44,7 +52,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.addcustomattributes.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes'
   properties:
   - type: OpenAPI
@@ -87,7 +96,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminaddusertogroup.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminAddUserToGroup'
   properties:
   - type: OpenAPI
@@ -130,7 +140,8 @@ apis:
     operation(s) for #x amz target=awscognitoidentityproviderservice.adminconfirmsignup.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminConfirmSignUp'
   properties:
   - type: OpenAPI
@@ -173,7 +184,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.admincreateuser.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminCreateUser'
   properties:
   - type: OpenAPI
@@ -216,7 +228,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.admindeleteuser.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminDeleteUser'
   properties:
   - type: OpenAPI
@@ -260,7 +273,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.admindeleteuserattributes.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminDeleteUserAttributes'
   properties:
   - type: OpenAPI
@@ -304,7 +318,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.admindisableproviderforuser.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminDisableProviderForUser'
   properties:
   - type: OpenAPI
@@ -347,7 +362,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.admindisableuser.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminDisableUser'
   properties:
   - type: OpenAPI
@@ -390,7 +406,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.adminenableuser.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminEnableUser'
   properties:
   - type: OpenAPI
@@ -433,7 +450,8 @@ apis:
     operation(s) for #x amz target=awscognitoidentityproviderservice.adminforgetdevice.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminForgetDevice'
   properties:
   - type: OpenAPI
@@ -476,7 +494,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.admingetdevice.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminGetDevice'
   properties:
   - type: OpenAPI
@@ -562,7 +581,8 @@ apis:
     operation(s) for #x amz target=awscognitoidentityproviderservice.admininitiateauth.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminInitiateAuth'
   properties:
   - type: OpenAPI
@@ -606,7 +626,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminlinkproviderforuser.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminLinkProviderForUser'
   properties:
   - type: OpenAPI
@@ -649,7 +670,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.adminlistdevices.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminListDevices'
   properties:
   - type: OpenAPI
@@ -693,7 +715,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminlistgroupsforuser.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminListGroupsForUser'
   properties:
   - type: OpenAPI
@@ -737,7 +760,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminlistuserauthevents.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminListUserAuthEvents'
   properties:
   - type: OpenAPI
@@ -781,7 +805,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminremoveuserfromgroup.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminRemoveUserFromGroup'
   properties:
   - type: OpenAPI
@@ -825,7 +850,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminresetuserpassword.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminResetUserPassword'
   properties:
   - type: OpenAPI
@@ -869,7 +895,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminrespondtoauthchallenge.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminRespondToAuthChallenge'
   properties:
   - type: OpenAPI
@@ -913,7 +940,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminsetusermfapreference.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminSetUserMFAPreference'
   properties:
   - type: OpenAPI
@@ -956,7 +984,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminsetuserpassword.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminSetUserPassword'
   properties:
   - type: OpenAPI
@@ -999,7 +1028,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminsetusersettings.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminSetUserSettings'
   properties:
   - type: OpenAPI
@@ -1043,7 +1073,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminupdateautheventfeedback.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminUpdateAuthEventFeedback'
   properties:
   - type: OpenAPI
@@ -1087,7 +1118,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminupdatedevicestatus.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminUpdateDeviceStatus'
   properties:
   - type: OpenAPI
@@ -1131,7 +1163,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminupdateuserattributes.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminUpdateUserAttributes'
   properties:
   - type: OpenAPI
@@ -1175,7 +1208,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.adminuserglobalsignout.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AdminUserGlobalSignOut'
   properties:
   - type: OpenAPI
@@ -1219,7 +1253,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.associatesoftwaretoken.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.AssociateSoftwareToken'
   properties:
   - type: OpenAPI
@@ -1262,7 +1297,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.changepassword.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ChangePassword'
   properties:
   - type: OpenAPI
@@ -1305,7 +1341,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.confirmdevice.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ConfirmDevice'
   properties:
   - type: OpenAPI
@@ -1348,7 +1385,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.confirmforgotpassword.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ConfirmForgotPassword'
   properties:
   - type: OpenAPI
@@ -1391,7 +1429,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.confirmsignup.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ConfirmSignUp'
   properties:
   - type: OpenAPI
@@ -1478,7 +1517,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.createidentityprovider.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.CreateIdentityProvider'
   properties:
   - type: OpenAPI
@@ -1521,7 +1561,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.createresourceserver.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.CreateResourceServer'
   properties:
   - type: OpenAPI
@@ -1564,7 +1605,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.createuserimportjob.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.CreateUserImportJob'
   properties:
   - type: OpenAPI
@@ -1607,7 +1649,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.createuserpool.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.CreateUserPool'
   properties:
   - type: OpenAPI
@@ -1650,7 +1693,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.createuserpoolclient.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.CreateUserPoolClient'
   properties:
   - type: OpenAPI
@@ -1693,7 +1737,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.createuserpooldomain.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.CreateUserPoolDomain'
   properties:
   - type: OpenAPI
@@ -1780,7 +1825,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.deleteidentityprovider.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DeleteIdentityProvider'
   properties:
   - type: OpenAPI
@@ -1823,7 +1869,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.deleteresourceserver.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DeleteResourceServer'
   properties:
   - type: OpenAPI
@@ -1909,7 +1956,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.deleteuserattributes.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DeleteUserAttributes'
   properties:
   - type: OpenAPI
@@ -1952,7 +2000,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.deleteuserpool.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DeleteUserPool'
   properties:
   - type: OpenAPI
@@ -1995,7 +2044,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.deleteuserpoolclient.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DeleteUserPoolClient'
   properties:
   - type: OpenAPI
@@ -2038,7 +2088,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.deleteuserpooldomain.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DeleteUserPoolDomain'
   properties:
   - type: OpenAPI
@@ -2082,7 +2133,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.describeidentityprovider.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DescribeIdentityProvider'
   properties:
   - type: OpenAPI
@@ -2126,7 +2178,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.describeresourceserver.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DescribeResourceServer'
   properties:
   - type: OpenAPI
@@ -2170,7 +2223,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.describeriskconfiguration.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DescribeRiskConfiguration'
   properties:
   - type: OpenAPI
@@ -2213,7 +2267,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.describeuserimportjob.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DescribeUserImportJob'
   properties:
   - type: OpenAPI
@@ -2256,7 +2311,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.describeuserpool.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DescribeUserPool'
   properties:
   - type: OpenAPI
@@ -2300,7 +2356,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.describeuserpoolclient.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DescribeUserPoolClient'
   properties:
   - type: OpenAPI
@@ -2344,7 +2401,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.describeuserpooldomain.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.DescribeUserPoolDomain'
   properties:
   - type: OpenAPI
@@ -2430,7 +2488,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.forgotpassword.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ForgotPassword'
   properties:
   - type: OpenAPI
@@ -2603,7 +2662,8 @@ apis:
     Cognito — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.getidentityproviderbyidentifier.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.GetIdentityProviderByIdentifier'
   properties:
   - type: OpenAPI
@@ -2647,7 +2707,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.getlogdeliveryconfiguration.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.GetLogDeliveryConfiguration'
   properties:
   - type: OpenAPI
@@ -2690,7 +2751,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.getsigningcertificate.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.GetSigningCertificate'
   properties:
   - type: OpenAPI
@@ -2733,7 +2795,8 @@ apis:
     operation(s) for #x amz target=awscognitoidentityproviderservice.getuicustomization.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.GetUICustomization'
   properties:
   - type: OpenAPI
@@ -2819,7 +2882,8 @@ apis:
     Cognito — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.getuserattributeverificationcode.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.GetUserAttributeVerificationCode'
   properties:
   - type: OpenAPI
@@ -2862,7 +2926,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.getuserpoolmfaconfig.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.GetUserPoolMfaConfig'
   properties:
   - type: OpenAPI
@@ -2905,7 +2970,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.globalsignout.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.GlobalSignOut'
   properties:
   - type: OpenAPI
@@ -3077,7 +3143,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.listidentityproviders.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ListIdentityProviders'
   properties:
   - type: OpenAPI
@@ -3120,7 +3187,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.listresourceservers.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ListResourceServers'
   properties:
   - type: OpenAPI
@@ -3163,7 +3231,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.listtagsforresource.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ListTagsForResource'
   properties:
   - type: OpenAPI
@@ -3206,7 +3275,8 @@ apis:
     operation(s) for #x amz target=awscognitoidentityproviderservice.listuserimportjobs.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ListUserImportJobs'
   properties:
   - type: OpenAPI
@@ -3249,7 +3319,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.listuserpoolclients.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ListUserPoolClients'
   properties:
   - type: OpenAPI
@@ -3292,7 +3363,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.listuserpools.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ListUserPools'
   properties:
   - type: OpenAPI
@@ -3378,7 +3450,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.listusersingroup.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ListUsersInGroup'
   properties:
   - type: OpenAPI
@@ -3422,7 +3495,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.resendconfirmationcode.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.ResendConfirmationCode'
   properties:
   - type: OpenAPI
@@ -3466,7 +3540,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.respondtoauthchallenge.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.RespondToAuthChallenge'
   properties:
   - type: OpenAPI
@@ -3553,7 +3628,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.setlogdeliveryconfiguration.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.SetLogDeliveryConfiguration'
   properties:
   - type: OpenAPI
@@ -3596,7 +3672,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.setriskconfiguration.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.SetRiskConfiguration'
   properties:
   - type: OpenAPI
@@ -3639,7 +3716,8 @@ apis:
     operation(s) for #x amz target=awscognitoidentityproviderservice.setuicustomization.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.SetUICustomization'
   properties:
   - type: OpenAPI
@@ -3682,7 +3760,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.setusermfapreference.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.SetUserMFAPreference'
   properties:
   - type: OpenAPI
@@ -3725,7 +3804,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.setuserpoolmfaconfig.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.SetUserPoolMfaConfig'
   properties:
   - type: OpenAPI
@@ -3768,7 +3848,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.setusersettings.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.SetUserSettings'
   properties:
   - type: OpenAPI
@@ -3853,7 +3934,8 @@ apis:
     operation(s) for #x amz target=awscognitoidentityproviderservice.startuserimportjob.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.StartUserImportJob'
   properties:
   - type: OpenAPI
@@ -3896,7 +3978,8 @@ apis:
     operation(s) for #x amz target=awscognitoidentityproviderservice.stopuserimportjob.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.StopUserImportJob'
   properties:
   - type: OpenAPI
@@ -3982,7 +4065,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.untagresource.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.UntagResource'
   properties:
   - type: OpenAPI
@@ -4026,7 +4110,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.updateautheventfeedback.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.UpdateAuthEventFeedback'
   properties:
   - type: OpenAPI
@@ -4069,7 +4154,8 @@ apis:
     operation(s) for #x amz target=awscognitoidentityproviderservice.updatedevicestatus.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.UpdateDeviceStatus'
   properties:
   - type: OpenAPI
@@ -4156,7 +4242,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityproviderservice.updateidentityprovider.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.UpdateIdentityProvider'
   properties:
   - type: OpenAPI
@@ -4199,7 +4286,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.updateresourceserver.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.UpdateResourceServer'
   properties:
   - type: OpenAPI
@@ -4242,7 +4330,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.updateuserattributes.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.UpdateUserAttributes'
   properties:
   - type: OpenAPI
@@ -4285,7 +4374,8 @@ apis:
     for #x amz target=awscognitoidentityproviderservice.updateuserpool.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.UpdateUserPool'
   properties:
   - type: OpenAPI
@@ -4328,7 +4418,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.updateuserpoolclient.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.UpdateUserPoolClient'
   properties:
   - type: OpenAPI
@@ -4371,7 +4462,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.updateuserpooldomain.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.UpdateUserPoolDomain'
   properties:
   - type: OpenAPI
@@ -4414,7 +4506,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.verifysoftwaretoken.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.VerifySoftwareToken'
   properties:
   - type: OpenAPI
@@ -4457,7 +4550,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityproviderservice.verifyuserattribute.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityProviderService.VerifyUserAttribute'
   properties:
   - type: OpenAPI
@@ -4715,7 +4809,8 @@ apis:
     operation(s) for #x amz target=awscognitoidentityservice.getcredentialsforidentity.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityService.GetCredentialsForIdentity'
   properties:
   - type: OpenAPI
@@ -4885,7 +4980,8 @@ apis:
     — 1 operation(s) for #x amz target=awscognitoidentityservice.getopenidtokenfordeveloperidentity.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityService.GetOpenIdTokenForDeveloperIdentity'
   properties:
   - type: OpenAPI
@@ -4928,7 +5024,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityservice.getprincipaltagattributemap.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityService.GetPrincipalTagAttributeMap'
   properties:
   - type: OpenAPI
@@ -5099,7 +5196,8 @@ apis:
     for #x amz target=awscognitoidentityservice.lookupdeveloperidentity.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityService.LookupDeveloperIdentity'
   properties:
   - type: OpenAPI
@@ -5142,7 +5240,8 @@ apis:
     for #x amz target=awscognitoidentityservice.mergedeveloperidentities.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityService.MergeDeveloperIdentities'
   properties:
   - type: OpenAPI
@@ -5228,7 +5327,8 @@ apis:
     1 operation(s) for #x amz target=awscognitoidentityservice.setprincipaltagattributemap.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap'
   properties:
   - type: OpenAPI
@@ -5313,7 +5413,8 @@ apis:
     for #x amz target=awscognitoidentityservice.unlinkdeveloperidentity.
   humanURL: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html
   baseURL: https://cognito-idp.us-east-1.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=AWSCognitoIdentityService.UnlinkDeveloperIdentity'
   properties:
   - type: OpenAPI
