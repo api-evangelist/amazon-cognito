@@ -8,6 +8,18 @@ description: Amazon Cognito is a fully managed AWS user identity and authenticat
   and SAML 2.0. The Cognito APIs are AWS regional service endpoints accessed over
   HTTPS using AWS Signature Version 4 (SigV4), typically via the AWS SDKs.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: self-serve
