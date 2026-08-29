@@ -1,9 +1,9 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: '2016-04-18'
   x-release: v4
-  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.AddCustomAttributes #X Amz Target=AWSCognitoIdentityProviderService.InitiateAuth API'
-  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  title: 'Amazon Cognito Identity Provider #X Amz Target=AWSCognitoIdentityProviderService.InitiateAuth API'
+  description: <p>With the Amazon Cognito user pools API, you can set up user pools and app clients, and authenticate users. To authenticate users from third-party identity providers (IdPs) in this API, you can <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation-consolidate-users.html">link IdP users to native user profiles</a>. Learn more about the authentication and authorization of federated users in the <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-userpools-server-contract-reference.html">Using the Amazon Cognito user pools API and user pool endpoints</a>.</p> <p>This API reference provides detailed information about API operations and object types in Amazon Cognito. At the bottom of the page for each API operation and object, under <i>See Also</i>, you can learn how to use it in an Amazon Web Services SDK in the language of your choice.</p> <p>Along with resource management operations, the Amazon Cognito user pools API includes classes of operations and authorization models for client-side and server-side user operations. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html">Using the Amazon Cognito native and OIDC APIs</a> in the <i>Amazon Cognito Developer Guide</i>.</p> <p>You can also start reading about the <code>CognitoIdentityProvider</code> client in the following SDK guides.</p> <ul> <li> <p> <a href="https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/index.html#cli-aws-cognito-idp">Amazon Web Services Command Line Interface</a> </p> </li> <li> <p> <a href="https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/CognitoIdentityProvider/TCognitoIdentityProviderClient.html">Amazon Web Services SDK for .NET</a> </p> </li> <li> <p> <a href="https://sdk.amazonaws.com/cpp/api/LATEST/aws-cpp-sdk-cognito-idp/html/class_aws_1_1_cognito_identity_provider_1_1_cognito_identity_provider_client.html">Amazon Web Services SDK for C++</a> </p> </li> <li> <p> <a href="https://docs.aws.amazon.com/sdk-for-go/api/service/cognitoidentityprovider/#CognitoIdentityProvider">Amazon Web Services SDK for Go</a> </p> </li> <li> <p> <a href="https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cognitoidentityprovider/CognitoIdentityProviderClient.html">Amazon Web Services SDK for Java V2</a> </p> </li> <li> <p> <a href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityServiceProvider.html">Amazon Web Services SDK for JavaScript</a> </p> </li> <li> <p> <a href="https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-idp-2016-04-18.html">Amazon Web Services SDK for PHP V3</a> </p> </li> <li> <p> <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html">Amazon Web Services SDK for Python</a> </p> </li> <li> <p> <a href="https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/CognitoIdentityProvider/Client.html">Amazon Web Services SDK for Ruby V3</a> </p> </li> </ul> <p>To get started with an Amazon Web Services SDK, see <a href="http://aws.amazon.com/developer/tools/">Tools to Build on Amazon Web Services</a>. For example actions and scenarios, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/service_code_examples_cognito-identity-provider.html">Code examples for Amazon Cognito Identity Provider using Amazon Web Services SDKs</a>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -17,12 +17,13 @@ info:
     name: Apache 2.0 License
     url: http://www.apache.org/licenses/
   x-providerName: amazonaws.com
-  x-serviceName: cognito-identity
+  x-serviceName: cognito-idp
   x-origin:
   - contentType: application/json
-    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-identity-2014-06-30.normal.json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/cognito-idp-2016-04-18.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -30,7 +31,7 @@ info:
   - cloud
   x-preferred: true
 servers:
-- url: http://cognito-identity.{region}.amazonaws.com
+- url: http://cognito-idp.{region}.amazonaws.com
   variables:
     region:
       description: The AWS region
@@ -59,8 +60,8 @@ servers:
       - sa-east-1
       - me-south-1
       default: us-east-1
-  description: The Amazon Cognito Identity multi-region endpoint
-- url: https://cognito-identity.{region}.amazonaws.com
+  description: The Amazon Cognito Identity Provider multi-region endpoint
+- url: https://cognito-idp.{region}.amazonaws.com
   variables:
     region:
       description: The AWS region
@@ -89,8 +90,8 @@ servers:
       - sa-east-1
       - me-south-1
       default: us-east-1
-  description: The Amazon Cognito Identity multi-region endpoint
-- url: http://cognito-identity.{region}.amazonaws.com.cn
+  description: The Amazon Cognito Identity Provider multi-region endpoint
+- url: http://cognito-idp.{region}.amazonaws.com.cn
   variables:
     region:
       description: The AWS region
@@ -98,8 +99,8 @@ servers:
       - cn-north-1
       - cn-northwest-1
       default: cn-north-1
-  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
-- url: https://cognito-identity.{region}.amazonaws.com.cn
+  description: The Amazon Cognito Identity Provider endpoint for China (Beijing) and China (Ningxia)
+- url: https://cognito-idp.{region}.amazonaws.com.cn
   variables:
     region:
       description: The AWS region
@@ -107,7 +108,7 @@ servers:
       - cn-north-1
       - cn-northwest-1
       default: cn-north-1
-  description: The Amazon Cognito Identity endpoint for China (Beijing) and China (Ningxia)
+  description: The Amazon Cognito Identity Provider endpoint for China (Beijing) and China (Ningxia)
 security:
 - hmac: []
 tags:
@@ -328,15 +329,119 @@ paths:
       - '#X Amz Target=AWSCognitoIdentityProviderService.InitiateAuth'
 components:
   schemas:
+    AuthenticationResultType:
+      type: object
+      properties:
+        AccessToken:
+          allOf:
+          - $ref: '#/components/schemas/TokenModelType'
+          - description: A valid access token that Amazon Cognito issued to the user who you want to authenticate.
+        ExpiresIn:
+          allOf:
+          - $ref: '#/components/schemas/IntegerType'
+          - description: The expiration period of the authentication result in seconds.
+        TokenType:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The token type.
+        RefreshToken:
+          allOf:
+          - $ref: '#/components/schemas/TokenModelType'
+          - description: The refresh token.
+        IdToken:
+          allOf:
+          - $ref: '#/components/schemas/TokenModelType'
+          - description: The ID token.
+        NewDeviceMetadata:
+          allOf:
+          - $ref: '#/components/schemas/NewDeviceMetadataType'
+          - description: The new device metadata from an authentication result.
+      description: The authentication result.
+    InvalidLambdaResponseException: {}
+    ResourceNotFoundException: {}
+    AnalyticsMetadataType:
+      type: object
+      properties:
+        AnalyticsEndpointId:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The endpoint ID.
+      description: <p>An Amazon Pinpoint analytics endpoint.</p> <p>An endpoint uniquely identifies a mobile device, email address, or phone number that can receive messages from Amazon Pinpoint analytics. For more information about Amazon Web Services Regions that can contain Amazon Pinpoint resources for use with Amazon Cognito user pools, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.html">Using Amazon Pinpoint analytics with Amazon Cognito user pools</a>.</p>
+    IntegerType:
+      type: integer
     InvalidSmsRoleTrustRelationshipException: {}
+    ChallengeParametersType:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/StringType'
+    UnexpectedLambdaException: {}
+    InvalidSmsRoleAccessPolicyException: {}
+    ClientMetadataType:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/StringType'
+    InitiateAuthResponse:
+      type: object
+      properties:
+        ChallengeName:
+          allOf:
+          - $ref: '#/components/schemas/ChallengeNameType'
+          - description: '<p>The name of the challenge that you''re responding to with this call. This name is returned in the <code>AdminInitiateAuth</code> response if you must pass another challenge.</p> <p>Valid values include the following:</p> <note> <p>All of the following challenges require <code>USERNAME</code> and <code>SECRET_HASH</code> (if applicable) in the parameters.</p> </note> <ul> <li> <p> <code>SMS_MFA</code>: Next challenge is to supply an <code>SMS_MFA_CODE</code>, delivered via SMS.</p> </li> <li> <p> <code>PASSWORD_VERIFIER</code>: Next challenge is to supply <code>PASSWORD_CLAIM_SIGNATURE</code>, <code>PASSWORD_CLAIM_SECRET_BLOCK</code>, and <code>TIMESTAMP</code> after the client-side SRP calculations.</p> </li> <li> <p> <code>CUSTOM_CHALLENGE</code>: This is returned if your custom authentication flow determines that the user should pass another challenge before tokens are issued.</p> </li> <li> <p> <code>DEVICE_SRP_AUTH</code>: If device tracking was activated on your user pool and the previous challenges were passed, this challenge is returned so that Amazon Cognito can start tracking this device.</p> </li> <li> <p> <code>DEVICE_PASSWORD_VERIFIER</code>: Similar to <code>PASSWORD_VERIFIER</code>, but for devices only.</p> </li> <li> <p> <code>NEW_PASSWORD_REQUIRED</code>: For users who are required to change their passwords after successful first login. </p> <p>Respond to this challenge with <code>NEW_PASSWORD</code> and any required attributes that Amazon Cognito returned in the <code>requiredAttributes</code> parameter. You can also set values for attributes that aren''t required by your user pool and that your app client can write. For more information, see <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_RespondToAuthChallenge.html">RespondToAuthChallenge</a>.</p> <note> <p>In a <code>NEW_PASSWORD_REQUIRED</code> challenge response, you can''t modify a required attribute that already has a value. In <code>RespondToAuthChallenge</code>, set a value for any keys that Amazon Cognito returned in the <code>requiredAttributes</code> parameter, then use the <code>UpdateUserAttributes</code> API operation to modify the value of any additional attributes.</p> </note> </li> <li> <p> <code>MFA_SETUP</code>: For users who are required to setup an MFA factor before they can sign in. The MFA types activated for the user pool will be listed in the challenge parameters <code>MFA_CAN_SETUP</code> value. </p> <p> To set up software token MFA, use the session returned here from <code>InitiateAuth</code> as an input to <code>AssociateSoftwareToken</code>. Use the session returned by <code>VerifySoftwareToken</code> as an input to <code>RespondToAuthChallenge</code> with challenge name <code>MFA_SETUP</code> to complete sign-in. To set up SMS MFA, an administrator should help the user to add a phone number to their account, and then the user should call <code>InitiateAuth</code> again to restart sign-in.</p> </li> </ul>'
+        Session:
+          allOf:
+          - $ref: '#/components/schemas/SessionType'
+          - description: The session that should pass both ways in challenge-response calls to the service. If the caller must pass another challenge, they return a session with other challenge parameters. This session should be passed as it is to the next <code>RespondToAuthChallenge</code> API call.
+        ChallengeParameters:
+          allOf:
+          - $ref: '#/components/schemas/ChallengeParametersType'
+          - description: <p>The challenge parameters. These are returned in the <code>InitiateAuth</code> response if you must pass another challenge. The responses in this parameter should be used to compute inputs to the next call (<code>RespondToAuthChallenge</code>). </p> <p>All challenges require <code>USERNAME</code> and <code>SECRET_HASH</code> (if applicable).</p>
+        AuthenticationResult:
+          allOf:
+          - $ref: '#/components/schemas/AuthenticationResultType'
+          - description: The result of the authentication response. This result is only returned if the caller doesn't need to pass another challenge. If the caller does need to pass another challenge before it gets tokens, <code>ChallengeName</code>, <code>ChallengeParameters</code>, and <code>Session</code> are returned.
+      description: Initiates the authentication response.
     ClientIdType:
       type: string
       pattern: '[\w+]+'
       minLength: 1
       maxLength: 128
       format: password
-    ResourceNotFoundException: {}
+    NotAuthorizedException: {}
     InvalidUserPoolConfigurationException: {}
+    UserNotConfirmedException: {}
+    PasswordResetRequiredException: {}
+    UserContextDataType:
+      type: object
+      properties:
+        IpAddress:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The source IP address of your user's device.
+        EncodedData:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: Encoded device-fingerprint details that your app collected with the Amazon Cognito context data collection library. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-adaptive-authentication.html#user-pool-settings-adaptive-authentication-device-fingerprint">Adding user device and session data to API requests</a>.
+      description: Contextual data, such as the user's device fingerprint, IP address, or location, used for evaluating the risk of an unexpected event by Amazon Cognito advanced security.
+    SessionType:
+      type: string
+      minLength: 20
+      maxLength: 2048
+    UserLambdaValidationException: {}
+    ForbiddenException: {}
+    TokenModelType:
+      type: string
+      pattern: '[A-Za-z0-9-_=.]+'
+      format: password
+    AuthFlowType:
+      type: string
+      enum:
+      - USER_SRP_AUTH
+      - REFRESH_TOKEN_AUTH
+      - REFRESH_TOKEN
+      - CUSTOM_AUTH
+      - ADMIN_NO_SRP_AUTH
+      - USER_PASSWORD_AUTH
+      - ADMIN_USER_PASSWORD_AUTH
     InitiateAuthRequest:
       type: object
       required:
@@ -369,29 +474,7 @@ components:
           - $ref: '#/components/schemas/UserContextDataType'
           - description: Contextual data about your user session, such as the device fingerprint, IP address, or location. Amazon Cognito advanced security evaluates the risk of an authentication event based on the context that your app generates and passes to Amazon Cognito when it makes API requests.
       description: Initiates the authentication request.
-    InitiateAuthResponse:
-      type: object
-      properties:
-        ChallengeName:
-          allOf:
-          - $ref: '#/components/schemas/ChallengeNameType'
-          - description: '<p>The name of the challenge that you''re responding to with this call. This name is returned in the <code>AdminInitiateAuth</code> response if you must pass another challenge.</p> <p>Valid values include the following:</p> <note> <p>All of the following challenges require <code>USERNAME</code> and <code>SECRET_HASH</code> (if applicable) in the parameters.</p> </note> <ul> <li> <p> <code>SMS_MFA</code>: Next challenge is to supply an <code>SMS_MFA_CODE</code>, delivered via SMS.</p> </li> <li> <p> <code>PASSWORD_VERIFIER</code>: Next challenge is to supply <code>PASSWORD_CLAIM_SIGNATURE</code>, <code>PASSWORD_CLAIM_SECRET_BLOCK</code>, and <code>TIMESTAMP</code> after the client-side SRP calculations.</p> </li> <li> <p> <code>CUSTOM_CHALLENGE</code>: This is returned if your custom authentication flow determines that the user should pass another challenge before tokens are issued.</p> </li> <li> <p> <code>DEVICE_SRP_AUTH</code>: If device tracking was activated on your user pool and the previous challenges were passed, this challenge is returned so that Amazon Cognito can start tracking this device.</p> </li> <li> <p> <code>DEVICE_PASSWORD_VERIFIER</code>: Similar to <code>PASSWORD_VERIFIER</code>, but for devices only.</p> </li> <li> <p> <code>NEW_PASSWORD_REQUIRED</code>: For users who are required to change their passwords after successful first login. </p> <p>Respond to this challenge with <code>NEW_PASSWORD</code> and any required attributes that Amazon Cognito returned in the <code>requiredAttributes</code> parameter. You can also set values for attributes that aren''t required by your user pool and that your app client can write. For more information, see <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_RespondToAuthChallenge.html">RespondToAuthChallenge</a>.</p> <note> <p>In a <code>NEW_PASSWORD_REQUIRED</code> challenge response, you can''t modify a required attribute that already has a value. In <code>RespondToAuthChallenge</code>, set a value for any keys that Amazon Cognito returned in the <code>requiredAttributes</code> parameter, then use the <code>UpdateUserAttributes</code> API operation to modify the value of any additional attributes.</p> </note> </li> <li> <p> <code>MFA_SETUP</code>: For users who are required to setup an MFA factor before they can sign in. The MFA types activated for the user pool will be listed in the challenge parameters <code>MFA_CAN_SETUP</code> value. </p> <p> To set up software token MFA, use the session returned here from <code>InitiateAuth</code> as an input to <code>AssociateSoftwareToken</code>. Use the session returned by <code>VerifySoftwareToken</code> as an input to <code>RespondToAuthChallenge</code> with challenge name <code>MFA_SETUP</code> to complete sign-in. To set up SMS MFA, an administrator should help the user to add a phone number to their account, and then the user should call <code>InitiateAuth</code> again to restart sign-in.</p> </li> </ul>'
-        Session:
-          allOf:
-          - $ref: '#/components/schemas/SessionType'
-          - description: The session that should pass both ways in challenge-response calls to the service. If the caller must pass another challenge, they return a session with other challenge parameters. This session should be passed as it is to the next <code>RespondToAuthChallenge</code> API call.
-        ChallengeParameters:
-          allOf:
-          - $ref: '#/components/schemas/ChallengeParametersType'
-          - description: <p>The challenge parameters. These are returned in the <code>InitiateAuth</code> response if you must pass another challenge. The responses in this parameter should be used to compute inputs to the next call (<code>RespondToAuthChallenge</code>). </p> <p>All challenges require <code>USERNAME</code> and <code>SECRET_HASH</code> (if applicable).</p>
-        AuthenticationResult:
-          allOf:
-          - $ref: '#/components/schemas/AuthenticationResultType'
-          - description: The result of the authentication response. This result is only returned if the caller doesn't need to pass another challenge. If the caller does need to pass another challenge before it gets tokens, <code>ChallengeName</code>, <code>ChallengeParameters</code>, and <code>Session</code> are returned.
-      description: Initiates the authentication response.
-    ForbiddenException: {}
-    InvalidParameterException: {}
-    UserLambdaValidationException: {}
+    UserNotFoundException: {}
     ChallengeNameType:
       type: string
       enum:
@@ -405,18 +488,15 @@ components:
       - DEVICE_PASSWORD_VERIFIER
       - ADMIN_NO_SRP_AUTH
       - NEW_PASSWORD_REQUIRED
-    UserContextDataType:
+    TooManyRequestsException: {}
+    StringType:
+      type: string
+      minLength: 0
+      maxLength: 131072
+    AuthParametersType:
       type: object
-      properties:
-        IpAddress:
-          allOf:
-          - $ref: '#/components/schemas/StringType'
-          - description: The source IP address of your user's device.
-        EncodedData:
-          allOf:
-          - $ref: '#/components/schemas/StringType'
-          - description: Encoded device-fingerprint details that your app collected with the Amazon Cognito context data collection library. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-adaptive-authentication.html#user-pool-settings-adaptive-authentication-device-fingerprint">Adding user device and session data to API requests</a>.
-      description: Contextual data, such as the user's device fingerprint, IP address, or location, used for evaluating the risk of an unexpected event by Amazon Cognito advanced security.
+      additionalProperties:
+        $ref: '#/components/schemas/StringType'
     NewDeviceMetadataType:
       type: object
       properties:
@@ -429,105 +509,14 @@ components:
           - $ref: '#/components/schemas/StringType'
           - description: The device group key.
       description: The new device metadata type.
-    ChallengeParametersType:
-      type: object
-      additionalProperties:
-        $ref: '#/components/schemas/StringType'
-    UserNotFoundException: {}
-    IntegerType:
-      type: integer
-    InvalidLambdaResponseException: {}
-    StringType:
-      type: string
-      minLength: 0
-      maxLength: 131072
-    AuthParametersType:
-      type: object
-      additionalProperties:
-        $ref: '#/components/schemas/StringType'
-    SessionType:
-      type: string
-      minLength: 20
-      maxLength: 2048
-    UnexpectedLambdaException: {}
-    ClientMetadataType:
-      type: object
-      additionalProperties:
-        $ref: '#/components/schemas/StringType'
-    AuthenticationResultType:
-      type: object
-      properties:
-        AccessToken:
-          allOf:
-          - $ref: '#/components/schemas/TokenModelType'
-          - description: A valid access token that Amazon Cognito issued to the user who you want to authenticate.
-        ExpiresIn:
-          allOf:
-          - $ref: '#/components/schemas/IntegerType'
-          - description: The expiration period of the authentication result in seconds.
-        TokenType:
-          allOf:
-          - $ref: '#/components/schemas/StringType'
-          - description: The token type.
-        RefreshToken:
-          allOf:
-          - $ref: '#/components/schemas/TokenModelType'
-          - description: The refresh token.
-        IdToken:
-          allOf:
-          - $ref: '#/components/schemas/TokenModelType'
-          - description: The ID token.
-        NewDeviceMetadata:
-          allOf:
-          - $ref: '#/components/schemas/NewDeviceMetadataType'
-          - description: The new device metadata from an authentication result.
-      description: The authentication result.
+    InvalidParameterException: {}
     DeviceKeyType:
       type: string
       pattern: '[\w-]+_[0-9a-f-]+'
       minLength: 1
       maxLength: 55
-    PasswordResetRequiredException: {}
-    InvalidSmsRoleAccessPolicyException: {}
-    NotAuthorizedException: {}
     InternalErrorException: {}
-    AuthFlowType:
-      type: string
-      enum:
-      - USER_SRP_AUTH
-      - REFRESH_TOKEN_AUTH
-      - REFRESH_TOKEN
-      - CUSTOM_AUTH
-      - ADMIN_NO_SRP_AUTH
-      - USER_PASSWORD_AUTH
-      - ADMIN_USER_PASSWORD_AUTH
-    UserNotConfirmedException: {}
-    TooManyRequestsException: {}
-    TokenModelType:
-      type: string
-      pattern: '[A-Za-z0-9-_=.]+'
-      format: password
-    AnalyticsMetadataType:
-      type: object
-      properties:
-        AnalyticsEndpointId:
-          allOf:
-          - $ref: '#/components/schemas/StringType'
-          - description: The endpoint ID.
-      description: <p>An Amazon Pinpoint analytics endpoint.</p> <p>An endpoint uniquely identifies a mobile device, email address, or phone number that can receive messages from Amazon Pinpoint analytics. For more information about Amazon Web Services Regions that can contain Amazon Pinpoint resources for use with Amazon Cognito user pools, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.html">Using Amazon Pinpoint analytics with Amazon Cognito user pools</a>.</p>
   parameters:
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Security-Token:
       name: X-Amz-Security-Token
       in: header
@@ -536,6 +525,18 @@ components:
       required: false
     X-Amz-SignedHeaders:
       name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
       in: header
       schema:
         type: string
@@ -552,8 +553,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -567,5 +568,5 @@ components:
       x-amazon-apigateway-authtype: awsSigv4
 externalDocs:
   description: Amazon Web Services documentation
-  url: https://docs.aws.amazon.com/cognito-identity/
+  url: https://docs.aws.amazon.com/cognito-idp/
 x-hasEquivalentPaths: true
