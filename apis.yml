@@ -5589,6 +5589,9 @@ apis:
     url: >-
       https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-with-identity-pools.html
 common:
+- type: CapabilityMap
+  url: capabilities/amazon-cognito-capability-edges.yml
+  name: Amazon Cognito Business Capability Map
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-cognito/overview
 - type: AgenticAccess
