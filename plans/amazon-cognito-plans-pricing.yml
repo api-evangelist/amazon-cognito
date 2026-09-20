@@ -1,53 +1,85 @@
-specification: API Commons Plans
-specificationVersion: '0.1'
-schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
-provider: Amazon Cognito
-providerId: amazon-cognito
-created: '2026-05-22'
-modified: '2026-05-22'
-tags:
-- Authentication
-- AWS
-- Identity
-- OAuth
-- OIDC
-- SAML
-- User Management
-- Federated Identity
-description: Machine-readable plans scaffold for the Amazon Cognito API surface. Conforms to the API Commons Plans schema.
-  Tier limits and prices are scaffold defaults; replace with provider-published values.
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-09-20'
+method: searched
+source: https://aws.amazon.com/cognito/pricing/
+sources:
+- https://aws.amazon.com/cognito/pricing/
+provenance:
+  tool: planning/api-economics/harvest_pricing.py
+  run: 20260920T120546
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: usage-other
+published: true
+note: 'Main pricing tables render as unresolved {priceOf!...} tokens; numeric rates were taken from the
+  worked billing examples on the page. Cognito Sync rates also unresolved (free tier: 10 GB and 1,000,000
+  sync operations/month for first 12 months).'
+plan_count: 8
+currency: USD
 plans:
-- id: amazon-cognito-free
-  name: Free
-  type: freemium
-  description: Free entry tier for the Amazon Cognito API surface. Intended for evaluation, prototyping, and low-volume integrations.
-    Real limits and pricing must be reconciled with the provider's published plan documentation.
-  entries:
-  - label: API Requests
-    description: Monthly API request quota across all included endpoints
-    name: api_requests
-    type: quota
-    metric: requests
-    limit: 1000
-    timeFrame: month
-    geo: global
-    domains:
-    - https://cognito-idp.us-east-1.amazonaws.com
-    unit: 1
-    price: '0.00'
-    userMultiplied: false
-  - label: Rate Limit
-    description: Maximum requests per minute on the free tier
-    name: rate_limit
-    type: rate
-    metric: requests_per_minute
-    limit: 10
-    timeFrame: minute
-    geo: global
-    domains:
-    - https://cognito-idp.us-east-1.amazonaws.com
-    unit: 1
-    price: '0.00'
-references:
-- name: Amazon Cognito API Documentation
-  url: https://raw.githubusercontent.com/api-evangelist/amazon-cognito/refs/heads/main/apis.yml
+- name: Essentials
+  price_text: $0.015
+  price: 0.015
+  currency: USD
+  period: month
+  unit: per MAU
+  included_quota: free tier of 10,000 monthly active user (MAU) per month per account
+  overage: Price / MAU charged above the free tier = $0.015
+- name: Plus
+  price_text: $0.020
+  price: 0.02
+  currency: USD
+  period: month
+  unit: per MAU
+  included_quota: There is no free tier for the Plus tier.
+  overage: Price / MAU charged above the free tier = $0.020
+- name: Lite
+  price_text: $0.0055
+  price: 0.0055
+  currency: USD
+  period: month
+  unit: per MAU
+  included_quota: First 10,000 (Free-tier)
+  overage: 850,000 MAUs x $0.0046
+- name: SAML/OIDC federation MAUs
+  price_text: the price for MAUs above the 50 MAU free tier is $0.015
+  price: 0.015
+  currency: USD
+  period: month
+  unit: per MAU
+  included_quota: 50 MAUs per month per account
+- name: Advanced Security Features (add-on)
+  price_text: $0.05 per MAU for the first 50,000
+  price: 0.05
+  currency: USD
+  period: month
+  unit: per MAU
+  included_quota: no free tier
+  overage: $0.035 per MAU for the next 50,000; 850,000 MAUs x $0.02
+- name: Multi-Region replication add-on (Essentials)
+  price_text: $0.0045 per MAU
+  price: 0.0045
+  currency: USD
+  period: month
+  unit: per MAU
+- name: M2M authorization token requests
+  price_text: $0.00225
+  price: 0.00225
+  currency: USD
+  period: month
+  unit: per token request (tiered per 1000 token requests)
+  included_quota: There is no free tier for token requests
+- name: Higher API RPS quota
+  price_text: $20 per RPS-Month
+  price: 20
+  currency: USD
+  period: month
+  unit: per 1 RPS of incremental capacity
+  overage: $45 per RPS-Month for partial month usage
+rate_limit_statements:
+- You can request higher requests per second (RPS) rates in Amazon Cognito for the API categories defined
+  in the table below.
+- Prices are per 1 RPS of incremental capacity over default quotas per month. Each API Category is charged
+  separately.
+- Minimum duration for higher quotas is 1 day.
+- '* Please contact your account team if you require over 2,500 app clients.'

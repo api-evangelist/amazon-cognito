@@ -4816,6 +4816,8 @@ apis:
   - type: GettingStarted
     url: https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-with-identity-pools.html
 common:
+- type: Plans
+  url: plans/amazon-cognito-plans-pricing.yml
 - type: CapabilityMap
   url: capabilities/amazon-cognito-capability-edges.yml
   name: Amazon Cognito Business Capability Map
