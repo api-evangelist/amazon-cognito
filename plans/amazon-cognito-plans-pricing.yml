@@ -10,6 +10,11 @@ provenance:
   grounding: every price_text was found verbatim in the fetched page text
 audience: developer-api
 pricing_basis: usage-other
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-09-20'
+  managed_tier: Lite
 published: true
 note: 'Main pricing tables render as unresolved {priceOf!...} tokens; numeric rates were taken from the
   worked billing examples on the page. Cognito Sync rates also unresolved (free tier: 10 GB and 1,000,000
