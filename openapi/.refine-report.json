@@ -390,7 +390,8 @@
     "amazon-cognito-user-pools-openapi.yml: declared missing tag: #X Amz Target=AWSCognitoIdentityProviderService.UpdateUserPoolClient",
     "amazon-cognito-user-pools-openapi.yml: declared missing tag: #X Amz Target=AWSCognitoIdentityProviderService.UpdateUserPoolDomain",
     "amazon-cognito-user-pools-openapi.yml: declared missing tag: #X Amz Target=AWSCognitoIdentityProviderService.VerifySoftwareToken",
-    "amazon-cognito-user-pools-openapi.yml: declared missing tag: #X Amz Target=AWSCognitoIdentityProviderService.VerifyUserAttribute"
+    "amazon-cognito-user-pools-openapi.yml: declared missing tag: #X Amz Target=AWSCognitoIdentityProviderService.VerifyUserAttribute",
+    "apis.yml register: already-registered"
   ],
   "skipped": [
     "amazon-cognito-x-amz-target-awscognitoidentityproviderservice-addcustomattributes-api-openapi.yml: previously refined output, superseded by openapi/_original/",

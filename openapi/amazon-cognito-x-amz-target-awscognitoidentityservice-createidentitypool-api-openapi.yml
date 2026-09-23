@@ -2,8 +2,10 @@ openapi: 3.2.0
 info:
   version: '2014-06-30'
   x-release: v4
-  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityService.CreateIdentityPool API'
-  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityServ…'
+  description: 'Amazon Cognito Federated Identities
+
+    Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments.'
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -125,7 +127,25 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: CreateIdentityPool
-      description: '<p>Creates a new identity pool. The identity pool is a store of user identity information that is specific to your AWS account. The keys for <code>SupportedLoginProviders</code> are as follows:</p> <ul> <li> <p>Facebook: <code>graph.facebook.com</code> </p> </li> <li> <p>Google: <code>accounts.google.com</code> </p> </li> <li> <p>Amazon: <code>www.amazon.com</code> </p> </li> <li> <p>Twitter: <code>api.twitter.com</code> </p> </li> <li> <p>Digits: <code>www.digits.com</code> </p> </li> </ul> <p>You must use AWS Developer credentials to call this API.</p>'
+      description: 'Creates a new identity pool. The identity pool is a store of user identity information that is specific to your AWS account. The keys for SupportedLoginProviders are as follows:
+
+
+        Facebook: graph.facebook.com
+
+
+        Google: accounts.google.com
+
+
+        Amazon: www.amazon.com
+
+
+        Twitter: api.twitter.com
+
+
+        Digits: www.digits.com
+
+
+        You must use AWS Developer credentials to call this API.'
       responses:
         '200':
           description: Success
@@ -235,41 +255,52 @@ paths:
       tags:
       - '#X Amz Target=AWSCognitoIdentityService.CreateIdentityPool'
 components:
+  parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    DeveloperProviderName:
-      type: string
-      pattern: '[\w._-]+'
-      minLength: 1
-      maxLength: 128
-    ResourceConflictException: {}
-    IdentityPoolId:
-      type: string
-      pattern: '[\w-]+:[0-9a-f-]+'
-      minLength: 1
-      maxLength: 55
-    CognitoIdentityProviderClientId:
-      type: string
-      pattern: '[\w_]+'
-      minLength: 1
-      maxLength: 128
-    IdentityPoolTagsType:
-      type: object
-      additionalProperties:
-        $ref: '#/components/schemas/TagValueType'
-    IdentityPoolName:
-      type: string
-      pattern: '[\w\s+=,.@-]+'
-      minLength: 1
-      maxLength: 128
-    TagValueType:
-      type: string
-      minLength: 0
-      maxLength: 256
-    ARNString:
-      type: string
-      minLength: 20
-      maxLength: 2048
-    NotAuthorizedException: {}
+    CognitoIdentityProviderTokenCheck:
+      type: boolean
     IdentityPool:
       type: object
       required:
@@ -319,31 +350,15 @@ components:
           - $ref: '#/components/schemas/IdentityPoolTagsType'
           - description: The tags that are assigned to the identity pool. A tag is a label that you can apply to identity pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria.
       description: An object representing an Amazon Cognito identity pool.
-    CognitoIdentityProvider:
-      type: object
-      properties:
-        ProviderName:
-          allOf:
-          - $ref: '#/components/schemas/CognitoIdentityProviderName'
-          - description: The provider name for an Amazon Cognito user pool. For example, <code>cognito-idp.us-east-1.amazonaws.com/us-east-1_123456789</code>.
-        ClientId:
-          allOf:
-          - $ref: '#/components/schemas/CognitoIdentityProviderClientId'
-          - description: The client ID for the Amazon Cognito user pool.
-        ServerSideTokenCheck:
-          allOf:
-          - $ref: '#/components/schemas/CognitoIdentityProviderTokenCheck'
-          - description: <p>TRUE if server-side token validation is enabled for the identity provider’s token.</p> <p>Once you set <code>ServerSideTokenCheck</code> to TRUE for an identity pool, that identity pool will check with the integrated user pools to make sure that the user has not been globally signed out or deleted before the identity pool provides an OIDC token or AWS credentials for the user.</p> <p>If the user is signed out or deleted, the identity pool will return a 400 Not Authorized error.</p>
-      description: A provider representing an Amazon Cognito user pool and its client ID.
-    CognitoIdentityProviderName:
-      type: string
-      pattern: '[\w._:/-]+'
-      minLength: 1
-      maxLength: 128
     OIDCProviderList:
       type: array
       items:
         $ref: '#/components/schemas/ARNString'
+    DeveloperProviderName:
+      type: string
+      pattern: '[\w._-]+'
+      minLength: 1
+      maxLength: 128
     CreateIdentityPoolInput:
       type: object
       required:
@@ -388,77 +403,82 @@ components:
           - $ref: '#/components/schemas/IdentityPoolTagsType'
           - description: Tags to assign to the identity pool. A tag is a label that you can apply to identity pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria.
       description: Input to the CreateIdentityPool action.
-    LimitExceededException: {}
-    InternalErrorException: {}
-    CognitoIdentityProviderTokenCheck:
-      type: boolean
-    IdentityPoolUnauthenticated:
-      type: boolean
+    SAMLProviderList:
+      type: array
+      items:
+        $ref: '#/components/schemas/ARNString'
     IdentityProviders:
       type: object
       maxProperties: 10
       additionalProperties:
         $ref: '#/components/schemas/IdentityProviderId'
-    ClassicFlow:
-      type: boolean
-    SAMLProviderList:
-      type: array
-      items:
-        $ref: '#/components/schemas/ARNString'
-    TooManyRequestsException: {}
-    InvalidParameterException: {}
-    CognitoIdentityProviderList:
-      type: array
-      items:
-        $ref: '#/components/schemas/CognitoIdentityProvider'
+    LimitExceededException: {}
+    IdentityPoolId:
+      type: string
+      pattern: '[\w-]+:[0-9a-f-]+'
+      minLength: 1
+      maxLength: 55
+    CognitoIdentityProvider:
+      type: object
+      properties:
+        ProviderName:
+          allOf:
+          - $ref: '#/components/schemas/CognitoIdentityProviderName'
+          - description: The provider name for an Amazon Cognito user pool. For example, <code>cognito-idp.us-east-1.amazonaws.com/us-east-1_123456789</code>.
+        ClientId:
+          allOf:
+          - $ref: '#/components/schemas/CognitoIdentityProviderClientId'
+          - description: The client ID for the Amazon Cognito user pool.
+        ServerSideTokenCheck:
+          allOf:
+          - $ref: '#/components/schemas/CognitoIdentityProviderTokenCheck'
+          - description: <p>TRUE if server-side token validation is enabled for the identity provider’s token.</p> <p>Once you set <code>ServerSideTokenCheck</code> to TRUE for an identity pool, that identity pool will check with the integrated user pools to make sure that the user has not been globally signed out or deleted before the identity pool provides an OIDC token or AWS credentials for the user.</p> <p>If the user is signed out or deleted, the identity pool will return a 400 Not Authorized error.</p>
+      description: A provider representing an Amazon Cognito user pool and its client ID.
+    IdentityPoolName:
+      type: string
+      pattern: '[\w\s+=,.@-]+'
+      minLength: 1
+      maxLength: 128
+    ResourceConflictException: {}
+    TagValueType:
+      type: string
+      minLength: 0
+      maxLength: 256
     IdentityProviderId:
       type: string
       pattern: '[\w.;_/-]+'
       minLength: 1
       maxLength: 128
-  parameters:
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
+    CognitoIdentityProviderList:
+      type: array
+      items:
+        $ref: '#/components/schemas/CognitoIdentityProvider'
+    NotAuthorizedException: {}
+    IdentityPoolUnauthenticated:
+      type: boolean
+    IdentityPoolTagsType:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/TagValueType'
+    TooManyRequestsException: {}
+    InternalErrorException: {}
+    ClassicFlow:
+      type: boolean
+    ARNString:
+      type: string
+      minLength: 20
+      maxLength: 2048
+    InvalidParameterException: {}
+    CognitoIdentityProviderName:
+      type: string
+      pattern: '[\w._:/-]+'
+      minLength: 1
+      maxLength: 128
+    CognitoIdentityProviderClientId:
+      type: string
+      pattern: '[\w_]+'
+      minLength: 1
+      maxLength: 128
   securitySchemes:
     hmac:
       type: apiKey

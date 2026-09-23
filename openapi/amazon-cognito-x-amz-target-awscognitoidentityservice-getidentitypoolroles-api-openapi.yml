@@ -2,8 +2,10 @@ openapi: 3.2.0
 info:
   version: '2014-06-30'
   x-release: v4
-  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityService.GetIdentityPoolRoles API'
-  description: <fullname>Amazon Cognito Federated Identities</fullname> <p>Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.</p> <p>Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials.</p> <p>For a description of the authentication flow from the Amazon Cognito Developer Guide see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Authentication Flow</a>.</p> <p>For more information see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html">Amazon Cognito Federated Identities</a>.</p>
+  title: 'Amazon Cognito Identity #X Amz Target=AWSCognitoIdentityServ…'
+  description: 'Amazon Cognito Federated Identities
+
+    Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments.'
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -125,7 +127,10 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: GetIdentityPoolRoles
-      description: <p>Gets the roles for an identity pool.</p> <p>You must use AWS Developer credentials to call this API.</p>
+      description: 'Gets the roles for an identity pool.
+
+
+        You must use AWS Developer credentials to call this API.'
       responses:
         '200':
           description: Success
@@ -229,6 +234,32 @@ paths:
       - '#X Amz Target=AWSCognitoIdentityService.GetIdentityPoolRoles'
 components:
   schemas:
+    GetIdentityPoolRolesInput:
+      type: object
+      required:
+      - IdentityPoolId
+      title: GetIdentityPoolRolesInput
+      properties:
+        IdentityPoolId:
+          allOf:
+          - $ref: '#/components/schemas/IdentityPoolId'
+          - description: An identity pool ID in the format REGION:GUID.
+      description: Input to the <code>GetIdentityPoolRoles</code> action.
+    RoleMappingMap:
+      type: object
+      maxProperties: 10
+      additionalProperties:
+        $ref: '#/components/schemas/RoleMapping'
+    ClaimValue:
+      type: string
+      minLength: 1
+      maxLength: 128
+    MappingRulesList:
+      type: array
+      items:
+        $ref: '#/components/schemas/MappingRule'
+      minItems: 1
+      maxItems: 400
     RoleMapping:
       type: object
       required:
@@ -247,7 +278,16 @@ components:
           - $ref: '#/components/schemas/RulesConfigurationType'
           - description: <p>The rules to be used for mapping users to roles.</p> <p>If you specify Rules as the role mapping type, <code>RulesConfiguration</code> is required.</p>
       description: A role mapping.
-    ResourceNotFoundException: {}
+    RoleMappingType:
+      type: string
+      enum:
+      - Token
+      - Rules
+    IdentityPoolId:
+      type: string
+      pattern: '[\w-]+:[0-9a-f-]+'
+      minLength: 1
+      maxLength: 55
     GetIdentityPoolRolesResponse:
       type: object
       properties:
@@ -264,38 +304,47 @@ components:
           - $ref: '#/components/schemas/RoleMappingMap'
           - description: How users for a specific identity provider are to mapped to roles. This is a String-to-<a>RoleMapping</a> object map. The string identifies the identity provider, for example, "graph.facebook.com" or "cognito-idp.us-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id".
       description: Returned in response to a successful <code>GetIdentityPoolRoles</code> operation.
+    AmbiguousRoleResolutionType:
+      type: string
+      enum:
+      - AuthenticatedRole
+      - Deny
     ResourceConflictException: {}
-    IdentityPoolId:
-      type: string
-      pattern: '[\w-]+:[0-9a-f-]+'
-      minLength: 1
-      maxLength: 55
-    ClaimName:
-      type: string
-      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
-      minLength: 1
-      maxLength: 64
-    RoleMappingMap:
-      type: object
-      maxProperties: 10
-      additionalProperties:
-        $ref: '#/components/schemas/RoleMapping'
+    ResourceNotFoundException: {}
+    NotAuthorizedException: {}
     RolesMap:
       type: object
       maxProperties: 2
       additionalProperties:
         $ref: '#/components/schemas/ARNString'
+    ClaimName:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
+      minLength: 1
+      maxLength: 64
+    TooManyRequestsException: {}
+    InternalErrorException: {}
+    RulesConfigurationType:
+      type: object
+      required:
+      - Rules
+      properties:
+        Rules:
+          allOf:
+          - $ref: '#/components/schemas/MappingRulesList'
+          - description: <p>An array of rules. You can specify up to 25 rules per identity provider.</p> <p>Rules are evaluated in order. The first one to match specifies the role.</p>
+      description: A container for rules.
+    MappingRuleMatchType:
+      type: string
+      enum:
+      - Equals
+      - Contains
+      - StartsWith
+      - NotEqual
     ARNString:
       type: string
       minLength: 20
       maxLength: 2048
-    NotAuthorizedException: {}
-    MappingRulesList:
-      type: array
-      items:
-        $ref: '#/components/schemas/MappingRule'
-      minItems: 1
-      maxItems: 400
     MappingRule:
       type: object
       required:
@@ -321,72 +370,16 @@ components:
           - $ref: '#/components/schemas/ARNString'
           - description: The role ARN.
       description: A rule that maps a claim name, a claim value, and a match type to a role ARN.
-    GetIdentityPoolRolesInput:
-      type: object
-      required:
-      - IdentityPoolId
-      title: GetIdentityPoolRolesInput
-      properties:
-        IdentityPoolId:
-          allOf:
-          - $ref: '#/components/schemas/IdentityPoolId'
-          - description: An identity pool ID in the format REGION:GUID.
-      description: Input to the <code>GetIdentityPoolRoles</code> action.
-    RulesConfigurationType:
-      type: object
-      required:
-      - Rules
-      properties:
-        Rules:
-          allOf:
-          - $ref: '#/components/schemas/MappingRulesList'
-          - description: <p>An array of rules. You can specify up to 25 rules per identity provider.</p> <p>Rules are evaluated in order. The first one to match specifies the role.</p>
-      description: A container for rules.
-    TooManyRequestsException: {}
-    MappingRuleMatchType:
-      type: string
-      enum:
-      - Equals
-      - Contains
-      - StartsWith
-      - NotEqual
     InvalidParameterException: {}
-    ClaimValue:
-      type: string
-      minLength: 1
-      maxLength: 128
-    AmbiguousRoleResolutionType:
-      type: string
-      enum:
-      - AuthenticatedRole
-      - Deny
-    RoleMappingType:
-      type: string
-      enum:
-      - Token
-      - Rules
-    InternalErrorException: {}
   parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Security-Token:
       name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
       in: header
       schema:
         type: string
@@ -397,14 +390,26 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string
       required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string

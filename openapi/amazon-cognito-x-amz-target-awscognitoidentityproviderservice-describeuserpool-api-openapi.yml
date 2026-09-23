@@ -2,8 +2,8 @@ openapi: 3.2.0
 info:
   version: '2016-04-18'
   x-release: v4
-  title: 'Amazon Cognito Identity Provider #X Amz Target=AWSCognitoIdentityProviderService.DescribeUserPool API'
-  description: <p>With the Amazon Cognito user pools API, you can set up user pools and app clients, and authenticate users. To authenticate users from third-party identity providers (IdPs) in this API, you can <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation-consolidate-users.html">link IdP users to native user profiles</a>. Learn more about the authentication and authorization of federated users in the <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-userpools-server-contract-reference.html">Using the Amazon Cognito user pools API and user pool endpoints</a>.</p> <p>This API reference provides detailed information about API operations and object types in Amazon Cognito. At the bottom of the page for each API operation and object, under <i>See Also</i>, you can learn how to use it in an Amazon Web Services SDK in the language of your choice.</p> <p>Along with resource management operations, the Amazon Cognito user pools API includes classes of operations and authorization models for client-side and server-side user operations. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html">Using the Amazon Cognito native and OIDC APIs</a> in the <i>Amazon Cognito Developer Guide</i>.</p> <p>You can also start reading about the <code>CognitoIdentityProvider</code> client in the following SDK guides.</p> <ul> <li> <p> <a href="https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/index.html#cli-aws-cognito-idp">Amazon Web Services Command Line Interface</a> </p> </li> <li> <p> <a href="https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/CognitoIdentityProvider/TCognitoIdentityProviderClient.html">Amazon Web Services SDK for .NET</a> </p> </li> <li> <p> <a href="https://sdk.amazonaws.com/cpp/api/LATEST/aws-cpp-sdk-cognito-idp/html/class_aws_1_1_cognito_identity_provider_1_1_cognito_identity_provider_client.html">Amazon Web Services SDK for C++</a> </p> </li> <li> <p> <a href="https://docs.aws.amazon.com/sdk-for-go/api/service/cognitoidentityprovider/#CognitoIdentityProvider">Amazon Web Services SDK for Go</a> </p> </li> <li> <p> <a href="https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/cognitoidentityprovider/CognitoIdentityProviderClient.html">Amazon Web Services SDK for Java V2</a> </p> </li> <li> <p> <a href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CognitoIdentityServiceProvider.html">Amazon Web Services SDK for JavaScript</a> </p> </li> <li> <p> <a href="https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-cognito-idp-2016-04-18.html">Amazon Web Services SDK for PHP V3</a> </p> </li> <li> <p> <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html">Amazon Web Services SDK for Python</a> </p> </li> <li> <p> <a href="https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/CognitoIdentityProvider/Client.html">Amazon Web Services SDK for Ruby V3</a> </p> </li> </ul> <p>To get started with an Amazon Web Services SDK, see <a href="http://aws.amazon.com/developer/tools/">Tools to Build on Amazon Web Services</a>. For example actions and scenarios, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/service_code_examples_cognito-identity-provider.html">Code examples for Amazon Cognito Identity Provider using Amazon Web Services SDKs</a>.</p>
+  title: 'Amazon Cognito Identity Provider #X Amz…'
+  description: With the Amazon Cognito user pools API, you can set up user pools and app clients, and authenticate users.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -125,7 +125,19 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: DescribeUserPool
-      description: <p>Returns the configuration information and metadata of the specified user pool.</p> <note> <p>Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.</p> <p class="title"> <b>Learn more</b> </p> <ul> <li> <p> <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html">Signing Amazon Web Services API Requests</a> </p> </li> <li> <p> <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pools-API-operations.html">Using the Amazon Cognito user pools API and user pool endpoints</a> </p> </li> </ul> </note>
+      description: 'Returns the configuration information and metadata of the specified user pool.
+
+
+        Amazon Cognito evaluates Identity and Access Management (IAM) policies in requests for this API operation. For this operation, you must use IAM credentials to authorize requests, and you must grant yourself the corresponding IAM permission in a policy.
+
+
+        Learn more
+
+
+        Signing Amazon Web Services API Requests
+
+
+        Using the Amazon Cognito user pools API and user pool endpoints'
       responses:
         '200':
           description: Success
@@ -227,65 +239,173 @@ paths:
       - '#X Amz Target=AWSCognitoIdentityProviderService.DescribeUserPool'
 components:
   schemas:
-    UserPoolMfaType:
+    CustomEmailLambdaVersionConfigType:
+      type: object
+      required:
+      - LambdaVersion
+      - LambdaArn
+      properties:
+        LambdaVersion:
+          allOf:
+          - $ref: '#/components/schemas/CustomEmailSenderLambdaVersionType'
+          - description: Signature of the "request" attribute in the "event" information Amazon Cognito passes to your custom email Lambda function. The only supported value is <code>V1_0</code>.
+        LambdaArn:
+          allOf:
+          - $ref: '#/components/schemas/ArnType'
+          - description: The Amazon Resource Name (ARN) of the Lambda function that Amazon Cognito activates to send email notifications to users.
+      description: A custom email sender Lambda configuration type.
+    RecoveryOptionType:
+      type: object
+      required:
+      - Priority
+      - Name
+      properties:
+        Priority:
+          allOf:
+          - $ref: '#/components/schemas/PriorityType'
+          - description: A positive integer specifying priority of a method with 1 being the highest priority.
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/RecoveryOptionNameType'
+          - description: The recovery method for a user.
+      description: A map containing a priority as a key, and recovery method name as a value.
+    VerifiedAttributesListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/VerifiedAttributeType'
+    DefaultEmailOptionType:
       type: string
       enum:
-      - 'OFF'
-      - 'ON'
-      - OPTIONAL
-    UserPoolPolicyType:
+      - CONFIRM_WITH_LINK
+      - CONFIRM_WITH_CODE
+    DeviceConfigurationType:
       type: object
       properties:
-        PasswordPolicy:
+        ChallengeRequiredOnNewDevice:
           allOf:
-          - $ref: '#/components/schemas/PasswordPolicyType'
-          - description: The password policy.
-      description: The policy associated with a user pool.
+          - $ref: '#/components/schemas/BooleanType'
+          - description: <p>When true, a remembered device can sign in with device authentication instead of SMS and time-based one-time password (TOTP) factors for multi-factor authentication (MFA).</p> <note> <p>Whether or not <code>ChallengeRequiredOnNewDevice</code> is true, users who sign in with devices that have not been confirmed or remembered must still provide a second factor in a user pool that requires MFA.</p> </note>
+        DeviceOnlyRememberedOnUserPrompt:
+          allOf:
+          - $ref: '#/components/schemas/BooleanType'
+          - description: <p>When true, Amazon Cognito doesn't automatically remember a user's device when your app sends a <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmDevice.html"> ConfirmDevice</a> API request. In your app, create a prompt for your user to choose whether they want to remember their device. Return the user's choice in an <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateDeviceStatus.html"> UpdateDeviceStatus</a> API request.</p> <p>When <code>DeviceOnlyRememberedOnUserPrompt</code> is <code>false</code>, Amazon Cognito immediately remembers devices that you register in a <code>ConfirmDevice</code> API request.</p>
+      description: <p>The device-remembering configuration for a user pool. A <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DescribeUserPool.html"> DescribeUserPool</a> request returns a null value for this object when the user pool isn't configured to remember devices. When device remembering is active, you can remember a user's device with a <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmDevice.html">ConfirmDevice</a> API request. Additionally. when the property <code>DeviceOnlyRememberedOnUserPrompt</code> is <code>true</code>, you must follow <code>ConfirmDevice</code> with an <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateDeviceStatus.html">UpdateDeviceStatus</a> API request that sets the user's device to <code>remembered</code> or <code>not_remembered</code>.</p> <p>To sign in with a remembered device, include <code>DEVICE_KEY</code> in the authentication parameters in your user's <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html"> InitiateAuth</a> request. If your app doesn't include a <code>DEVICE_KEY</code> parameter, the <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html#API_InitiateAuth_ResponseSyntax">response</a> from Amazon Cognito includes newly-generated <code>DEVICE_KEY</code> and <code>DEVICE_GROUP_KEY</code> values under <code>NewDeviceMetadata</code>. Store these values to use in future device-authentication requests.</p> <note> <p>When you provide a value for any property of <code>DeviceConfiguration</code>, you activate the device remembering for the user pool.</p> </note>
+    StringAttributeConstraintsType:
+      type: object
+      properties:
+        MinLength:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The minimum length.
+        MaxLength:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: The maximum length.
+      description: The constraints associated with a string attribute.
+    UserPoolTaggingException: {}
+    DeletionProtectionType:
+      type: string
+      enum:
+      - ACTIVE
+      - INACTIVE
+    UsernameConfigurationType:
+      type: object
+      required:
+      - CaseSensitive
+      properties:
+        CaseSensitive:
+          allOf:
+          - $ref: '#/components/schemas/WrappedBooleanType'
+          - description: <p>Specifies whether user name case sensitivity will be applied for all users in the user pool through Amazon Cognito APIs. For most use cases, set case sensitivity to <code>False</code> (case insensitive) as a best practice. When usernames and email addresses are case insensitive, users can sign in as the same user when they enter a different capitalization of their user name.</p> <p>Valid values include:</p> <dl> <dt>True</dt> <dd> <p>Enables case sensitivity for all username input. When this option is set to <code>True</code>, users must sign in using the exact capitalization of their given username, such as “UserName”. This is the default value.</p> </dd> <dt>False</dt> <dd> <p>Enables case insensitivity for all username input. For example, when this option is set to <code>False</code>, users can sign in using <code>username</code>, <code>USERNAME</code>, or <code>UserName</code>. This option also enables both <code>preferred_username</code> and <code>email</code> alias to be case insensitive, in addition to the <code>username</code> attribute.</p> </dd> </dl>
+      description: 'The username configuration type. '
     RegionCodeType:
       type: string
       minLength: 5
       maxLength: 32
-    IntegerType:
+    UsernameAttributesListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/UsernameAttributeType'
+    DescribeUserPoolResponse:
+      type: object
+      properties:
+        UserPool:
+          allOf:
+          - $ref: '#/components/schemas/UserPoolType'
+          - description: The container of metadata returned by the server to describe the pool.
+      description: Represents the response to describe the user pool.
+    TagValueType:
+      type: string
+      minLength: 0
+      maxLength: 256
+    TemporaryPasswordValidityDaysType:
       type: integer
-    RecoveryOptionNameType:
-      type: string
-      enum:
-      - verified_email
-      - verified_phone_number
-      - admin_only
-    UserPoolIdType:
-      type: string
-      pattern: '[\w-]+_[0-9a-zA-Z]+'
-      minLength: 1
-      maxLength: 55
-    AttributeDataType:
-      type: string
-      enum:
-      - String
-      - Number
-      - DateTime
-      - Boolean
-    EmailVerificationSubjectType:
+      minimum: 0
+      maximum: 365
+    InvalidParameterException: {}
+    PasswordPolicyType:
+      type: object
+      properties:
+        MinimumLength:
+          allOf:
+          - $ref: '#/components/schemas/PasswordPolicyMinLengthType'
+          - description: The minimum length of the password in the policy that you have set. This value can't be less than 6.
+        RequireUppercase:
+          allOf:
+          - $ref: '#/components/schemas/BooleanType'
+          - description: In the password policy that you have set, refers to whether you have required users to use at least one uppercase letter in their password.
+        RequireLowercase:
+          allOf:
+          - $ref: '#/components/schemas/BooleanType'
+          - description: In the password policy that you have set, refers to whether you have required users to use at least one lowercase letter in their password.
+        RequireNumbers:
+          allOf:
+          - $ref: '#/components/schemas/BooleanType'
+          - description: In the password policy that you have set, refers to whether you have required users to use at least one number in their password.
+        RequireSymbols:
+          allOf:
+          - $ref: '#/components/schemas/BooleanType'
+          - description: In the password policy that you have set, refers to whether you have required users to use at least one symbol in their password.
+        TemporaryPasswordValidityDays:
+          allOf:
+          - $ref: '#/components/schemas/TemporaryPasswordValidityDaysType'
+          - description: <p>The number of days a temporary password is valid in the password policy. If the user doesn't sign in during this time, an administrator must reset their password.</p> <note> <p>When you set <code>TemporaryPasswordValidityDays</code> for a user pool, you can no longer set a value for the legacy <code>UnusedAccountValidityDays</code> parameter in that user pool.</p> </note>
+      description: The password policy type.
+    EmailVerificationSubjectByLinkType:
       type: string
       pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}\s]+'
       minLength: 1
       maxLength: 140
-    AdminCreateUserConfigType:
+    AdvancedSecurityModeType:
+      type: string
+      enum:
+      - 'OFF'
+      - AUDIT
+      - ENFORCED
+    EmailConfigurationType:
       type: object
       properties:
-        AllowAdminCreateUserOnly:
+        SourceArn:
           allOf:
-          - $ref: '#/components/schemas/BooleanType'
-          - description: Set to <code>True</code> if only the administrator is allowed to create user profiles. Set to <code>False</code> if users can sign themselves up via an app.
-        UnusedAccountValidityDays:
+          - $ref: '#/components/schemas/ArnType'
+          - description: <p>The ARN of a verified email address or an address from a verified domain in Amazon SES. You can set a <code>SourceArn</code> email from a verified domain only with an API request. You can set a verified email address, but not an address in a verified domain, in the Amazon Cognito console. Amazon Cognito uses the email address that you provide in one of the following ways, depending on the value that you specify for the <code>EmailSendingAccount</code> parameter:</p> <ul> <li> <p>If you specify <code>COGNITO_DEFAULT</code>, Amazon Cognito uses this address as the custom FROM address when it emails your users using its built-in email account.</p> </li> <li> <p>If you specify <code>DEVELOPER</code>, Amazon Cognito emails your users with this address by calling Amazon SES on your behalf.</p> </li> </ul> <p>The Region value of the <code>SourceArn</code> parameter must indicate a supported Amazon Web Services Region of your user pool. Typically, the Region in the <code>SourceArn</code> and the user pool Region are the same. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.html#user-pool-email-developer-region-mapping">Amazon SES email configuration regions</a> in the <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html">Amazon Cognito Developer Guide</a>.</p>
+        ReplyToEmailAddress:
           allOf:
-          - $ref: '#/components/schemas/AdminCreateUserUnusedAccountValidityDaysType'
-          - description: <p>The user account expiration limit, in days, after which a new account that hasn't signed in is no longer usable. To reset the account after that time limit, you must call <code>AdminCreateUser</code> again, specifying <code>"RESEND"</code> for the <code>MessageAction</code> parameter. The default value for this parameter is 7. </p> <note> <p>If you set a value for <code>TemporaryPasswordValidityDays</code> in <code>PasswordPolicy</code>, that value will be used, and <code>UnusedAccountValidityDays</code> will be no longer be an available parameter for that user pool.</p> </note>
-        InviteMessageTemplate:
+          - $ref: '#/components/schemas/EmailAddressType'
+          - description: The destination to which the receiver of the email should reply.
+        EmailSendingAccount:
           allOf:
-          - $ref: '#/components/schemas/MessageTemplateType'
-          - description: <p>The message template to be used for the welcome message to new users.</p> <p>See also <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-message-customizations.html#cognito-user-pool-settings-user-invitation-message-customization">Customizing User Invitation Messages</a>.</p>
-      description: The configuration for creating a new user profile.
+          - $ref: '#/components/schemas/EmailSendingAccountType'
+          - description: <p>Specifies whether Amazon Cognito uses its built-in functionality to send your users email messages, or uses your Amazon Simple Email Service email configuration. Specify one of the following values:</p> <dl> <dt>COGNITO_DEFAULT</dt> <dd> <p>When Amazon Cognito emails your users, it uses its built-in email functionality. When you use the default option, Amazon Cognito allows only a limited number of emails each day for your user pool. For typical production environments, the default email limit is less than the required delivery volume. To achieve a higher delivery volume, specify DEVELOPER to use your Amazon SES email configuration.</p> <p>To look up the email delivery limit for the default option, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/limits.html">Limits</a> in the <i>Amazon Cognito Developer Guide</i>.</p> <p>The default FROM address is <code>no-reply@verificationemail.com</code>. To customize the FROM address, provide the Amazon Resource Name (ARN) of an Amazon SES verified email address for the <code>SourceArn</code> parameter.</p> </dd> <dt>DEVELOPER</dt> <dd> <p>When Amazon Cognito emails your users, it uses your Amazon SES configuration. Amazon Cognito calls Amazon SES on your behalf to send email from your verified email address. When you use this option, the email delivery limits are the same limits that apply to your Amazon SES verified email address in your Amazon Web Services account.</p> <p>If you use this option, provide the ARN of an Amazon SES verified email address for the <code>SourceArn</code> parameter.</p> <p>Before Amazon Cognito can email your users, it requires additional permissions to call Amazon SES on your behalf. When you update your user pool with this option, Amazon Cognito creates a <i>service-linked role</i>, which is a type of role in your Amazon Web Services account. This role contains the permissions that allow you to access Amazon SES and send email messages from your email address. For more information about the service-linked role that Amazon Cognito creates, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/using-service-linked-roles.html">Using Service-Linked Roles for Amazon Cognito</a> in the <i>Amazon Cognito Developer Guide</i>.</p> </dd> </dl>
+        From:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: Either the sender’s email address or the sender’s name with their email address. For example, <code>testuser@example.com</code> or <code>Test User &lt;testuser@example.com&gt;</code>. This address appears before the body of the email.
+        ConfigurationSet:
+          allOf:
+          - $ref: '#/components/schemas/SESConfigurationSet'
+          - description: '<p>The set of configuration rules that can be applied to emails sent using Amazon Simple Email Service. A configuration set is applied to an email by including a reference to the configuration set in the headers of the email. Once applied, all of the rules in that configuration set are applied to the email. Configuration sets can be used to apply the following types of rules to emails: </p> <dl> <dt>Event publishing</dt> <dd> <p>Amazon Simple Email Service can track the number of send, delivery, open, click, bounce, and complaint events for each email sent. Use event publishing to send information about these events to other Amazon Web Services services such as and Amazon CloudWatch</p> </dd> <dt>IP pool management</dt> <dd> <p>When leasing dedicated IP addresses with Amazon Simple Email Service, you can create groups of IP addresses, called dedicated IP pools. You can then associate the dedicated IP pools with configuration sets.</p> </dd> </dl>'
+      description: <p>The email configuration of your user pool. The email configuration type sets your preferred sending method, Amazon Web Services Region, and sender for messages from your user pool.</p> <note> <p>Amazon Cognito can send email messages with Amazon Simple Email Service resources in the Amazon Web Services Region where you created your user pool, and in alternate Regions in some cases. For more information on the supported Regions, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.html">Email settings for Amazon Cognito user pools</a>.</p> </note>
     MessageTemplateType:
       type: object
       properties:
@@ -302,34 +422,21 @@ components:
           - $ref: '#/components/schemas/EmailVerificationSubjectType'
           - description: 'The subject line for email messages. EmailSubject is allowed only if <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount">EmailSendingAccount</a> is DEVELOPER. '
       description: The message template structure.
-    VerificationMessageTemplateType:
+    AccountRecoverySettingType:
       type: object
       properties:
-        SmsMessage:
+        RecoveryMechanisms:
           allOf:
-          - $ref: '#/components/schemas/SmsVerificationMessageType'
-          - description: The template for SMS messages that Amazon Cognito sends to your users.
-        EmailMessage:
-          allOf:
-          - $ref: '#/components/schemas/EmailVerificationMessageType'
-          - description: The template for email messages that Amazon Cognito sends to your users. You can set an <code>EmailMessage</code> template only if the value of <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount"> EmailSendingAccount</a> is <code>DEVELOPER</code>. When your <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount">EmailSendingAccount</a> is <code>DEVELOPER</code>, your user pool sends email messages with your own Amazon SES configuration.
-        EmailSubject:
-          allOf:
-          - $ref: '#/components/schemas/EmailVerificationSubjectType'
-          - description: The subject line for the email message template. You can set an <code>EmailSubject</code> template only if the value of <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount"> EmailSendingAccount</a> is <code>DEVELOPER</code>. When your <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount">EmailSendingAccount</a> is <code>DEVELOPER</code>, your user pool sends email messages with your own Amazon SES configuration.
-        EmailMessageByLink:
-          allOf:
-          - $ref: '#/components/schemas/EmailVerificationMessageByLinkType'
-          - description: The email message template for sending a confirmation link to the user. You can set an <code>EmailMessageByLink</code> template only if the value of <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount"> EmailSendingAccount</a> is <code>DEVELOPER</code>. When your <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount">EmailSendingAccount</a> is <code>DEVELOPER</code>, your user pool sends email messages with your own Amazon SES configuration.
-        EmailSubjectByLink:
-          allOf:
-          - $ref: '#/components/schemas/EmailVerificationSubjectByLinkType'
-          - description: The subject line for the email message template for sending a confirmation link to the user. You can set an <code>EmailSubjectByLink</code> template only if the value of <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount"> EmailSendingAccount</a> is <code>DEVELOPER</code>. When your <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount">EmailSendingAccount</a> is <code>DEVELOPER</code>, your user pool sends email messages with your own Amazon SES configuration.
-        DefaultEmailOption:
-          allOf:
-          - $ref: '#/components/schemas/DefaultEmailOptionType'
-          - description: The default email option.
-      description: The template for verification messages.
+          - $ref: '#/components/schemas/RecoveryMechanismsType'
+          - description: The list of <code>RecoveryOptionTypes</code>.
+      description: The data type for <code>AccountRecoverySetting</code>.
+    DomainType:
+      type: string
+      pattern: ^[a-z0-9](?:[a-z0-9\-]{0,61}[a-z0-9])?$
+      minLength: 1
+      maxLength: 63
+    WrappedBooleanType:
+      type: boolean
     UserPoolAddOnsType:
       type: object
       required:
@@ -340,21 +447,28 @@ components:
           - $ref: '#/components/schemas/AdvancedSecurityModeType'
           - description: The operating mode of advanced security features in your user pool.
       description: <p>User pool add-ons. Contains settings for activation of advanced security features. To log user security information but take no action, set to <code>AUDIT</code>. To configure automatic security responses to risky traffic to your user pool, set to <code>ENFORCED</code>.</p> <p>For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-advanced-security.html">Adding advanced security to a user pool</a>.</p>
-    CustomSMSLambdaVersionConfigType:
+    SmsConfigurationType:
       type: object
       required:
-      - LambdaVersion
-      - LambdaArn
+      - SnsCallerArn
       properties:
-        LambdaVersion:
-          allOf:
-          - $ref: '#/components/schemas/CustomSMSSenderLambdaVersionType'
-          - description: Signature of the "request" attribute in the "event" information that Amazon Cognito passes to your custom SMS Lambda function. The only supported value is <code>V1_0</code>.
-        LambdaArn:
+        SnsCallerArn:
           allOf:
           - $ref: '#/components/schemas/ArnType'
-          - description: The Amazon Resource Name (ARN) of the Lambda function that Amazon Cognito activates to send SMS notifications to users.
-      description: A custom SMS sender Lambda configuration type.
+          - description: 'The Amazon Resource Name (ARN) of the Amazon SNS caller. This is the ARN of the IAM role in your Amazon Web Services account that Amazon Cognito will use to send SMS messages. SMS messages are subject to a <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-email-phone-verification.html">spending limit</a>. '
+        ExternalId:
+          allOf:
+          - $ref: '#/components/schemas/StringType'
+          - description: <p>The external ID provides additional security for your IAM role. You can use an <code>ExternalId</code> with the IAM role that you use with Amazon SNS to send SMS messages for your user pool. If you provide an <code>ExternalId</code>, your Amazon Cognito user pool includes it in the request to assume your IAM role. You can configure the role trust policy to require that Amazon Cognito, and any principal, provide the <code>ExternalID</code>. If you use the Amazon Cognito Management Console to create a role for SMS multi-factor authentication (MFA), Amazon Cognito creates a role with the required permissions and a trust policy that demonstrates use of the <code>ExternalId</code>.</p> <p>For more information about the <code>ExternalId</code> of a role, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html">How to use an external ID when granting access to your Amazon Web Services resources to a third party</a> </p>
+        SnsRegion:
+          allOf:
+          - $ref: '#/components/schemas/RegionCodeType'
+          - description: <p>The Amazon Web Services Region to use with Amazon SNS integration. You can choose the same Region as your user pool, or a supported <b>Legacy Amazon SNS alternate Region</b>. </p> <p> Amazon Cognito resources in the Asia Pacific (Seoul) Amazon Web Services Region must use your Amazon SNS configuration in the Asia Pacific (Tokyo) Region. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-sms-settings.html">SMS message settings for Amazon Cognito user pools</a>.</p>
+      description: The SMS configuration type is the settings that your Amazon Cognito user pool must use to send an SMS message from your Amazon Web Services account through Amazon Simple Notification Service. To send SMS messages with Amazon SNS in the Amazon Web Services Region that you want, the Amazon Cognito user pool uses an Identity and Access Management (IAM) role in your Amazon Web Services account.
+    CustomEmailSenderLambdaVersionType:
+      type: string
+      enum:
+      - V1_0
     LambdaConfigType:
       type: object
       properties:
@@ -411,64 +525,66 @@ components:
           - $ref: '#/components/schemas/ArnType'
           - description: The Amazon Resource Name (ARN) of an <a href="/kms/latest/developerguide/concepts.html#master_keys">KMS key</a>. Amazon Cognito uses the key to encrypt codes and temporary passwords sent to <code>CustomEmailSender</code> and <code>CustomSMSSender</code>.
       description: Specifies the configuration for Lambda triggers.
-    PriorityType:
-      type: integer
-      minimum: 1
-      maximum: 2
-    UsernameConfigurationType:
-      type: object
-      required:
-      - CaseSensitive
-      properties:
-        CaseSensitive:
-          allOf:
-          - $ref: '#/components/schemas/WrappedBooleanType'
-          - description: <p>Specifies whether user name case sensitivity will be applied for all users in the user pool through Amazon Cognito APIs. For most use cases, set case sensitivity to <code>False</code> (case insensitive) as a best practice. When usernames and email addresses are case insensitive, users can sign in as the same user when they enter a different capitalization of their user name.</p> <p>Valid values include:</p> <dl> <dt>True</dt> <dd> <p>Enables case sensitivity for all username input. When this option is set to <code>True</code>, users must sign in using the exact capitalization of their given username, such as “UserName”. This is the default value.</p> </dd> <dt>False</dt> <dd> <p>Enables case insensitivity for all username input. For example, when this option is set to <code>False</code>, users can sign in using <code>username</code>, <code>USERNAME</code>, or <code>UserName</code>. This option also enables both <code>preferred_username</code> and <code>email</code> alias to be case insensitive, in addition to the <code>username</code> attribute.</p> </dd> </dl>
-      description: 'The username configuration type. '
-    AccountRecoverySettingType:
-      type: object
-      properties:
-        RecoveryMechanisms:
-          allOf:
-          - $ref: '#/components/schemas/RecoveryMechanismsType'
-          - description: The list of <code>RecoveryOptionTypes</code>.
-      description: The data type for <code>AccountRecoverySetting</code>.
-    StringAttributeConstraintsType:
-      type: object
-      properties:
-        MinLength:
-          allOf:
-          - $ref: '#/components/schemas/StringType'
-          - description: The minimum length.
-        MaxLength:
-          allOf:
-          - $ref: '#/components/schemas/StringType'
-          - description: The maximum length.
-      description: The constraints associated with a string attribute.
-    InternalErrorException: {}
-    CustomEmailLambdaVersionConfigType:
-      type: object
-      required:
-      - LambdaVersion
-      - LambdaArn
-      properties:
-        LambdaVersion:
-          allOf:
-          - $ref: '#/components/schemas/CustomEmailSenderLambdaVersionType'
-          - description: Signature of the "request" attribute in the "event" information Amazon Cognito passes to your custom email Lambda function. The only supported value is <code>V1_0</code>.
-        LambdaArn:
-          allOf:
-          - $ref: '#/components/schemas/ArnType'
-          - description: The Amazon Resource Name (ARN) of the Lambda function that Amazon Cognito activates to send email notifications to users.
-      description: A custom email sender Lambda configuration type.
-    TagValueType:
-      type: string
-      minLength: 0
-      maxLength: 256
     PasswordPolicyMinLengthType:
       type: integer
       minimum: 6
       maximum: 99
+    CustomAttributeNameType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
+      minLength: 1
+      maxLength: 20
+    CustomSMSSenderLambdaVersionType:
+      type: string
+      enum:
+      - V1_0
+    UserPoolPolicyType:
+      type: object
+      properties:
+        PasswordPolicy:
+          allOf:
+          - $ref: '#/components/schemas/PasswordPolicyType'
+          - description: The password policy.
+      description: The policy associated with a user pool.
+    SchemaAttributesListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/SchemaAttributeType'
+      minItems: 1
+      maxItems: 50
+    UserAttributeUpdateSettingsType:
+      type: object
+      properties:
+        AttributesRequireVerificationBeforeUpdate:
+          allOf:
+          - $ref: '#/components/schemas/AttributesRequireVerificationBeforeUpdateType'
+          - description: <p>Requires that your user verifies their email address, phone number, or both before Amazon Cognito updates the value of that attribute. When you update a user attribute that has this option activated, Amazon Cognito sends a verification message to the new phone number or email address. Amazon Cognito doesn’t change the value of the attribute until your user responds to the verification message and confirms the new value.</p> <p>You can verify an updated email address or phone number with a <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_VerifyUserAttribute.html">VerifyUserAttribute</a> API request. You can also call the <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminUpdateUserAttributes.html">AdminUpdateUserAttributes</a> API and set <code>email_verified</code> or <code>phone_number_verified</code> to true.</p> <p>When <code>AttributesRequireVerificationBeforeUpdate</code> is false, your user pool doesn't require that your users verify attribute changes before Amazon Cognito updates them. In a user pool where <code>AttributesRequireVerificationBeforeUpdate</code> is false, API operations that change attribute values can immediately update a user’s <code>email</code> or <code>phone_number</code> attribute.</p>
+      description: The settings for updates to user attributes. These settings include the property <code>AttributesRequireVerificationBeforeUpdate</code>, a user-pool setting that tells Amazon Cognito how to handle changes to the value of your users' email address and phone number attributes. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-email-phone-verification.html#user-pool-settings-verifications-verify-attribute-updates"> Verifying updates to email addresses and phone numbers</a>.
+    TooManyRequestsException: {}
+    PriorityType:
+      type: integer
+      minimum: 1
+      maximum: 2
+    EmailVerificationSubjectType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}\s]+'
+      minLength: 1
+      maxLength: 140
+    BooleanType:
+      type: boolean
+    StatusType:
+      type: string
+      enum:
+      - Enabled
+      - Disabled
+    SmsVerificationMessageType:
+      type: string
+      pattern: .*\{####\}.*
+      minLength: 6
+      maxLength: 140
+    DateType:
+      type: string
+      format: date-time
     NumberAttributeConstraintsType:
       type: object
       properties:
@@ -481,85 +597,53 @@ components:
           - $ref: '#/components/schemas/StringType'
           - description: The maximum value of an attribute that is of the number data type.
       description: The minimum and maximum values of an attribute that is of the number data type.
-    VerifiedAttributeType:
+    EmailAddressType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+@[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
+    UserPoolIdType:
+      type: string
+      pattern: '[\w-]+_[0-9a-zA-Z]+'
+      minLength: 1
+      maxLength: 55
+    AliasAttributeType:
       type: string
       enum:
       - phone_number
       - email
-    EmailSendingAccountType:
-      type: string
-      enum:
-      - COGNITO_DEFAULT
-      - DEVELOPER
-    EmailConfigurationType:
+      - preferred_username
+    VerificationMessageTemplateType:
       type: object
       properties:
-        SourceArn:
+        SmsMessage:
           allOf:
-          - $ref: '#/components/schemas/ArnType'
-          - description: <p>The ARN of a verified email address or an address from a verified domain in Amazon SES. You can set a <code>SourceArn</code> email from a verified domain only with an API request. You can set a verified email address, but not an address in a verified domain, in the Amazon Cognito console. Amazon Cognito uses the email address that you provide in one of the following ways, depending on the value that you specify for the <code>EmailSendingAccount</code> parameter:</p> <ul> <li> <p>If you specify <code>COGNITO_DEFAULT</code>, Amazon Cognito uses this address as the custom FROM address when it emails your users using its built-in email account.</p> </li> <li> <p>If you specify <code>DEVELOPER</code>, Amazon Cognito emails your users with this address by calling Amazon SES on your behalf.</p> </li> </ul> <p>The Region value of the <code>SourceArn</code> parameter must indicate a supported Amazon Web Services Region of your user pool. Typically, the Region in the <code>SourceArn</code> and the user pool Region are the same. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.html#user-pool-email-developer-region-mapping">Amazon SES email configuration regions</a> in the <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html">Amazon Cognito Developer Guide</a>.</p>
-        ReplyToEmailAddress:
+          - $ref: '#/components/schemas/SmsVerificationMessageType'
+          - description: The template for SMS messages that Amazon Cognito sends to your users.
+        EmailMessage:
           allOf:
-          - $ref: '#/components/schemas/EmailAddressType'
-          - description: The destination to which the receiver of the email should reply.
-        EmailSendingAccount:
+          - $ref: '#/components/schemas/EmailVerificationMessageType'
+          - description: The template for email messages that Amazon Cognito sends to your users. You can set an <code>EmailMessage</code> template only if the value of <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount"> EmailSendingAccount</a> is <code>DEVELOPER</code>. When your <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount">EmailSendingAccount</a> is <code>DEVELOPER</code>, your user pool sends email messages with your own Amazon SES configuration.
+        EmailSubject:
           allOf:
-          - $ref: '#/components/schemas/EmailSendingAccountType'
-          - description: <p>Specifies whether Amazon Cognito uses its built-in functionality to send your users email messages, or uses your Amazon Simple Email Service email configuration. Specify one of the following values:</p> <dl> <dt>COGNITO_DEFAULT</dt> <dd> <p>When Amazon Cognito emails your users, it uses its built-in email functionality. When you use the default option, Amazon Cognito allows only a limited number of emails each day for your user pool. For typical production environments, the default email limit is less than the required delivery volume. To achieve a higher delivery volume, specify DEVELOPER to use your Amazon SES email configuration.</p> <p>To look up the email delivery limit for the default option, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/limits.html">Limits</a> in the <i>Amazon Cognito Developer Guide</i>.</p> <p>The default FROM address is <code>no-reply@verificationemail.com</code>. To customize the FROM address, provide the Amazon Resource Name (ARN) of an Amazon SES verified email address for the <code>SourceArn</code> parameter.</p> </dd> <dt>DEVELOPER</dt> <dd> <p>When Amazon Cognito emails your users, it uses your Amazon SES configuration. Amazon Cognito calls Amazon SES on your behalf to send email from your verified email address. When you use this option, the email delivery limits are the same limits that apply to your Amazon SES verified email address in your Amazon Web Services account.</p> <p>If you use this option, provide the ARN of an Amazon SES verified email address for the <code>SourceArn</code> parameter.</p> <p>Before Amazon Cognito can email your users, it requires additional permissions to call Amazon SES on your behalf. When you update your user pool with this option, Amazon Cognito creates a <i>service-linked role</i>, which is a type of role in your Amazon Web Services account. This role contains the permissions that allow you to access Amazon SES and send email messages from your email address. For more information about the service-linked role that Amazon Cognito creates, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/using-service-linked-roles.html">Using Service-Linked Roles for Amazon Cognito</a> in the <i>Amazon Cognito Developer Guide</i>.</p> </dd> </dl>
-        From:
+          - $ref: '#/components/schemas/EmailVerificationSubjectType'
+          - description: The subject line for the email message template. You can set an <code>EmailSubject</code> template only if the value of <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount"> EmailSendingAccount</a> is <code>DEVELOPER</code>. When your <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount">EmailSendingAccount</a> is <code>DEVELOPER</code>, your user pool sends email messages with your own Amazon SES configuration.
+        EmailMessageByLink:
           allOf:
-          - $ref: '#/components/schemas/StringType'
-          - description: Either the sender’s email address or the sender’s name with their email address. For example, <code>testuser@example.com</code> or <code>Test User &lt;testuser@example.com&gt;</code>. This address appears before the body of the email.
-        ConfigurationSet:
+          - $ref: '#/components/schemas/EmailVerificationMessageByLinkType'
+          - description: The email message template for sending a confirmation link to the user. You can set an <code>EmailMessageByLink</code> template only if the value of <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount"> EmailSendingAccount</a> is <code>DEVELOPER</code>. When your <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount">EmailSendingAccount</a> is <code>DEVELOPER</code>, your user pool sends email messages with your own Amazon SES configuration.
+        EmailSubjectByLink:
           allOf:
-          - $ref: '#/components/schemas/SESConfigurationSet'
-          - description: '<p>The set of configuration rules that can be applied to emails sent using Amazon Simple Email Service. A configuration set is applied to an email by including a reference to the configuration set in the headers of the email. Once applied, all of the rules in that configuration set are applied to the email. Configuration sets can be used to apply the following types of rules to emails: </p> <dl> <dt>Event publishing</dt> <dd> <p>Amazon Simple Email Service can track the number of send, delivery, open, click, bounce, and complaint events for each email sent. Use event publishing to send information about these events to other Amazon Web Services services such as and Amazon CloudWatch</p> </dd> <dt>IP pool management</dt> <dd> <p>When leasing dedicated IP addresses with Amazon Simple Email Service, you can create groups of IP addresses, called dedicated IP pools. You can then associate the dedicated IP pools with configuration sets.</p> </dd> </dl>'
-      description: <p>The email configuration of your user pool. The email configuration type sets your preferred sending method, Amazon Web Services Region, and sender for messages from your user pool.</p> <note> <p>Amazon Cognito can send email messages with Amazon Simple Email Service resources in the Amazon Web Services Region where you created your user pool, and in alternate Regions in some cases. For more information on the supported Regions, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.html">Email settings for Amazon Cognito user pools</a>.</p> </note>
-    NotAuthorizedException: {}
-    DeletionProtectionType:
+          - $ref: '#/components/schemas/EmailVerificationSubjectByLinkType'
+          - description: The subject line for the email message template for sending a confirmation link to the user. You can set an <code>EmailSubjectByLink</code> template only if the value of <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount"> EmailSendingAccount</a> is <code>DEVELOPER</code>. When your <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_EmailConfigurationType.html#CognitoUserPools-Type-EmailConfigurationType-EmailSendingAccount">EmailSendingAccount</a> is <code>DEVELOPER</code>, your user pool sends email messages with your own Amazon SES configuration.
+        DefaultEmailOption:
+          allOf:
+          - $ref: '#/components/schemas/DefaultEmailOptionType'
+          - description: The default email option.
+      description: The template for verification messages.
+    UserPoolNameType:
       type: string
-      enum:
-      - ACTIVE
-      - INACTIVE
-    EmailVerificationSubjectByLinkType:
-      type: string
-      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}\s]+'
+      pattern: '[\w\s+=,.@-]+'
       minLength: 1
-      maxLength: 140
-    AdminCreateUserUnusedAccountValidityDaysType:
-      type: integer
-      minimum: 0
-      maximum: 365
-    DeviceConfigurationType:
-      type: object
-      properties:
-        ChallengeRequiredOnNewDevice:
-          allOf:
-          - $ref: '#/components/schemas/BooleanType'
-          - description: <p>When true, a remembered device can sign in with device authentication instead of SMS and time-based one-time password (TOTP) factors for multi-factor authentication (MFA).</p> <note> <p>Whether or not <code>ChallengeRequiredOnNewDevice</code> is true, users who sign in with devices that have not been confirmed or remembered must still provide a second factor in a user pool that requires MFA.</p> </note>
-        DeviceOnlyRememberedOnUserPrompt:
-          allOf:
-          - $ref: '#/components/schemas/BooleanType'
-          - description: <p>When true, Amazon Cognito doesn't automatically remember a user's device when your app sends a <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmDevice.html"> ConfirmDevice</a> API request. In your app, create a prompt for your user to choose whether they want to remember their device. Return the user's choice in an <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateDeviceStatus.html"> UpdateDeviceStatus</a> API request.</p> <p>When <code>DeviceOnlyRememberedOnUserPrompt</code> is <code>false</code>, Amazon Cognito immediately remembers devices that you register in a <code>ConfirmDevice</code> API request.</p>
-      description: <p>The device-remembering configuration for a user pool. A <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_DescribeUserPool.html"> DescribeUserPool</a> request returns a null value for this object when the user pool isn't configured to remember devices. When device remembering is active, you can remember a user's device with a <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ConfirmDevice.html">ConfirmDevice</a> API request. Additionally. when the property <code>DeviceOnlyRememberedOnUserPrompt</code> is <code>true</code>, you must follow <code>ConfirmDevice</code> with an <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_UpdateDeviceStatus.html">UpdateDeviceStatus</a> API request that sets the user's device to <code>remembered</code> or <code>not_remembered</code>.</p> <p>To sign in with a remembered device, include <code>DEVICE_KEY</code> in the authentication parameters in your user's <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html"> InitiateAuth</a> request. If your app doesn't include a <code>DEVICE_KEY</code> parameter, the <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_InitiateAuth.html#API_InitiateAuth_ResponseSyntax">response</a> from Amazon Cognito includes newly-generated <code>DEVICE_KEY</code> and <code>DEVICE_GROUP_KEY</code> values under <code>NewDeviceMetadata</code>. Store these values to use in future device-authentication requests.</p> <note> <p>When you provide a value for any property of <code>DeviceConfiguration</code>, you activate the device remembering for the user pool.</p> </note>
-    DateType:
-      type: string
-      format: date-time
-    TooManyRequestsException: {}
-    StringType:
-      type: string
-      minLength: 0
-      maxLength: 131072
-    EmailVerificationMessageByLinkType:
-      type: string
-      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]*\{##[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]*##\}[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]*'
-      minLength: 6
-      maxLength: 20000
-    CustomAttributeNameType:
-      type: string
-      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
-      minLength: 1
-      maxLength: 20
+      maxLength: 128
     UserPoolType:
       type: object
       properties:
@@ -696,153 +780,6 @@ components:
           - $ref: '#/components/schemas/AccountRecoverySettingType'
           - description: The available verified method a user can use to recover their password when they call <code>ForgotPassword</code>. You can use this setting to define a preferred method when a user has more than one method available. With this setting, SMS doesn't qualify for a valid password recovery mechanism if the user also has SMS multi-factor authentication (MFA) activated. In the absence of this setting, Amazon Cognito uses the legacy behavior to determine the recovery method where SMS is preferred through email.
       description: A container for information about the user pool.
-    ResourceNotFoundException: {}
-    EmailAddressType:
-      type: string
-      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}]+@[\p{L}\p{M}\p{S}\p{N}\p{P}]+'
-    BooleanType:
-      type: boolean
-    SmsConfigurationType:
-      type: object
-      required:
-      - SnsCallerArn
-      properties:
-        SnsCallerArn:
-          allOf:
-          - $ref: '#/components/schemas/ArnType'
-          - description: 'The Amazon Resource Name (ARN) of the Amazon SNS caller. This is the ARN of the IAM role in your Amazon Web Services account that Amazon Cognito will use to send SMS messages. SMS messages are subject to a <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-email-phone-verification.html">spending limit</a>. '
-        ExternalId:
-          allOf:
-          - $ref: '#/components/schemas/StringType'
-          - description: <p>The external ID provides additional security for your IAM role. You can use an <code>ExternalId</code> with the IAM role that you use with Amazon SNS to send SMS messages for your user pool. If you provide an <code>ExternalId</code>, your Amazon Cognito user pool includes it in the request to assume your IAM role. You can configure the role trust policy to require that Amazon Cognito, and any principal, provide the <code>ExternalID</code>. If you use the Amazon Cognito Management Console to create a role for SMS multi-factor authentication (MFA), Amazon Cognito creates a role with the required permissions and a trust policy that demonstrates use of the <code>ExternalId</code>.</p> <p>For more information about the <code>ExternalId</code> of a role, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html">How to use an external ID when granting access to your Amazon Web Services resources to a third party</a> </p>
-        SnsRegion:
-          allOf:
-          - $ref: '#/components/schemas/RegionCodeType'
-          - description: <p>The Amazon Web Services Region to use with Amazon SNS integration. You can choose the same Region as your user pool, or a supported <b>Legacy Amazon SNS alternate Region</b>. </p> <p> Amazon Cognito resources in the Asia Pacific (Seoul) Amazon Web Services Region must use your Amazon SNS configuration in the Asia Pacific (Tokyo) Region. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-sms-settings.html">SMS message settings for Amazon Cognito user pools</a>.</p>
-      description: The SMS configuration type is the settings that your Amazon Cognito user pool must use to send an SMS message from your Amazon Web Services account through Amazon Simple Notification Service. To send SMS messages with Amazon SNS in the Amazon Web Services Region that you want, the Amazon Cognito user pool uses an Identity and Access Management (IAM) role in your Amazon Web Services account.
-    SchemaAttributesListType:
-      type: array
-      items:
-        $ref: '#/components/schemas/SchemaAttributeType'
-      minItems: 1
-      maxItems: 50
-    DomainType:
-      type: string
-      pattern: ^[a-z0-9](?:[a-z0-9\-]{0,61}[a-z0-9])?$
-      minLength: 1
-      maxLength: 63
-    CustomEmailSenderLambdaVersionType:
-      type: string
-      enum:
-      - V1_0
-    ArnType:
-      type: string
-      pattern: arn:[\w+=/,.@-]+:[\w+=/,.@-]+:([\w+=/,.@-]*)?:[0-9]+:[\w+=/,.@-]+(:[\w+=/,.@-]+)?(:[\w+=/,.@-]+)?
-      minLength: 20
-      maxLength: 2048
-    UsernameAttributeType:
-      type: string
-      enum:
-      - phone_number
-      - email
-    VerifiedAttributesListType:
-      type: array
-      items:
-        $ref: '#/components/schemas/VerifiedAttributeType'
-    UserPoolTagsType:
-      type: object
-      additionalProperties:
-        $ref: '#/components/schemas/TagValueType'
-    UserPoolNameType:
-      type: string
-      pattern: '[\w\s+=,.@-]+'
-      minLength: 1
-      maxLength: 128
-    TemporaryPasswordValidityDaysType:
-      type: integer
-      minimum: 0
-      maximum: 365
-    AttributesRequireVerificationBeforeUpdateType:
-      type: array
-      items:
-        $ref: '#/components/schemas/VerifiedAttributeType'
-    DescribeUserPoolResponse:
-      type: object
-      properties:
-        UserPool:
-          allOf:
-          - $ref: '#/components/schemas/UserPoolType'
-          - description: The container of metadata returned by the server to describe the pool.
-      description: Represents the response to describe the user pool.
-    AliasAttributesListType:
-      type: array
-      items:
-        $ref: '#/components/schemas/AliasAttributeType'
-    EmailVerificationMessageType:
-      type: string
-      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]*\{####\}[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]*'
-      minLength: 6
-      maxLength: 20000
-    RecoveryMechanismsType:
-      type: array
-      items:
-        $ref: '#/components/schemas/RecoveryOptionType'
-      minItems: 1
-      maxItems: 2
-    UsernameAttributesListType:
-      type: array
-      items:
-        $ref: '#/components/schemas/UsernameAttributeType'
-    PasswordPolicyType:
-      type: object
-      properties:
-        MinimumLength:
-          allOf:
-          - $ref: '#/components/schemas/PasswordPolicyMinLengthType'
-          - description: The minimum length of the password in the policy that you have set. This value can't be less than 6.
-        RequireUppercase:
-          allOf:
-          - $ref: '#/components/schemas/BooleanType'
-          - description: In the password policy that you have set, refers to whether you have required users to use at least one uppercase letter in their password.
-        RequireLowercase:
-          allOf:
-          - $ref: '#/components/schemas/BooleanType'
-          - description: In the password policy that you have set, refers to whether you have required users to use at least one lowercase letter in their password.
-        RequireNumbers:
-          allOf:
-          - $ref: '#/components/schemas/BooleanType'
-          - description: In the password policy that you have set, refers to whether you have required users to use at least one number in their password.
-        RequireSymbols:
-          allOf:
-          - $ref: '#/components/schemas/BooleanType'
-          - description: In the password policy that you have set, refers to whether you have required users to use at least one symbol in their password.
-        TemporaryPasswordValidityDays:
-          allOf:
-          - $ref: '#/components/schemas/TemporaryPasswordValidityDaysType'
-          - description: <p>The number of days a temporary password is valid in the password policy. If the user doesn't sign in during this time, an administrator must reset their password.</p> <note> <p>When you set <code>TemporaryPasswordValidityDays</code> for a user pool, you can no longer set a value for the legacy <code>UnusedAccountValidityDays</code> parameter in that user pool.</p> </note>
-      description: The password policy type.
-    StatusType:
-      type: string
-      enum:
-      - Enabled
-      - Disabled
-    SESConfigurationSet:
-      type: string
-      pattern: ^[a-zA-Z0-9_-]+$
-      minLength: 1
-      maxLength: 64
-    DefaultEmailOptionType:
-      type: string
-      enum:
-      - CONFIRM_WITH_LINK
-      - CONFIRM_WITH_CODE
-    UserPoolTaggingException: {}
-    AdvancedSecurityModeType:
-      type: string
-      enum:
-      - 'OFF'
-      - AUDIT
-      - ENFORCED
     DescribeUserPoolRequest:
       type: object
       required:
@@ -854,21 +791,25 @@ components:
           - $ref: '#/components/schemas/UserPoolIdType'
           - description: The user pool ID for the user pool you want to describe.
       description: Represents the request to describe the user pool.
-    CustomSMSSenderLambdaVersionType:
+    IntegerType:
+      type: integer
+    EmailSendingAccountType:
       type: string
       enum:
-      - V1_0
-    AliasAttributeType:
+      - COGNITO_DEFAULT
+      - DEVELOPER
+    ResourceNotFoundException: {}
+    NotAuthorizedException: {}
+    UserPoolMfaType:
       type: string
       enum:
-      - phone_number
-      - email
-      - preferred_username
-    SmsVerificationMessageType:
-      type: string
-      pattern: .*\{####\}.*
-      minLength: 6
-      maxLength: 140
+      - 'OFF'
+      - 'ON'
+      - OPTIONAL
+    AliasAttributesListType:
+      type: array
+      items:
+        $ref: '#/components/schemas/AliasAttributeType'
     SchemaAttributeType:
       type: object
       properties:
@@ -901,39 +842,104 @@ components:
           - $ref: '#/components/schemas/StringAttributeConstraintsType'
           - description: Specifies the constraints for an attribute of the string type.
       description: <p>A list of the user attributes and their properties in your user pool. The attribute schema contains standard attributes, custom attributes with a <code>custom:</code> prefix, and developer attributes with a <code>dev:</code> prefix. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-attributes.html">User pool attributes</a>.</p> <p>Developer-only attributes are a legacy feature of user pools, are read-only to all app clients. You can create and update developer-only attributes only with IAM-authenticated API operations. Use app client read/write permissions instead.</p>
-    RecoveryOptionType:
+    EmailVerificationMessageType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]*\{####\}[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]*'
+      minLength: 6
+      maxLength: 20000
+    SESConfigurationSet:
+      type: string
+      pattern: ^[a-zA-Z0-9_-]+$
+      minLength: 1
+      maxLength: 64
+    AdminCreateUserConfigType:
+      type: object
+      properties:
+        AllowAdminCreateUserOnly:
+          allOf:
+          - $ref: '#/components/schemas/BooleanType'
+          - description: Set to <code>True</code> if only the administrator is allowed to create user profiles. Set to <code>False</code> if users can sign themselves up via an app.
+        UnusedAccountValidityDays:
+          allOf:
+          - $ref: '#/components/schemas/AdminCreateUserUnusedAccountValidityDaysType'
+          - description: <p>The user account expiration limit, in days, after which a new account that hasn't signed in is no longer usable. To reset the account after that time limit, you must call <code>AdminCreateUser</code> again, specifying <code>"RESEND"</code> for the <code>MessageAction</code> parameter. The default value for this parameter is 7. </p> <note> <p>If you set a value for <code>TemporaryPasswordValidityDays</code> in <code>PasswordPolicy</code>, that value will be used, and <code>UnusedAccountValidityDays</code> will be no longer be an available parameter for that user pool.</p> </note>
+        InviteMessageTemplate:
+          allOf:
+          - $ref: '#/components/schemas/MessageTemplateType'
+          - description: <p>The message template to be used for the welcome message to new users.</p> <p>See also <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pool-settings-message-customizations.html#cognito-user-pool-settings-user-invitation-message-customization">Customizing User Invitation Messages</a>.</p>
+      description: The configuration for creating a new user profile.
+    StringType:
+      type: string
+      minLength: 0
+      maxLength: 131072
+    AdminCreateUserUnusedAccountValidityDaysType:
+      type: integer
+      minimum: 0
+      maximum: 365
+    RecoveryMechanismsType:
+      type: array
+      items:
+        $ref: '#/components/schemas/RecoveryOptionType'
+      minItems: 1
+      maxItems: 2
+    CustomSMSLambdaVersionConfigType:
       type: object
       required:
-      - Priority
-      - Name
+      - LambdaVersion
+      - LambdaArn
       properties:
-        Priority:
+        LambdaVersion:
           allOf:
-          - $ref: '#/components/schemas/PriorityType'
-          - description: A positive integer specifying priority of a method with 1 being the highest priority.
-        Name:
+          - $ref: '#/components/schemas/CustomSMSSenderLambdaVersionType'
+          - description: Signature of the "request" attribute in the "event" information that Amazon Cognito passes to your custom SMS Lambda function. The only supported value is <code>V1_0</code>.
+        LambdaArn:
           allOf:
-          - $ref: '#/components/schemas/RecoveryOptionNameType'
-          - description: The recovery method for a user.
-      description: A map containing a priority as a key, and recovery method name as a value.
-    InvalidParameterException: {}
-    UserAttributeUpdateSettingsType:
+          - $ref: '#/components/schemas/ArnType'
+          - description: The Amazon Resource Name (ARN) of the Lambda function that Amazon Cognito activates to send SMS notifications to users.
+      description: A custom SMS sender Lambda configuration type.
+    RecoveryOptionNameType:
+      type: string
+      enum:
+      - verified_email
+      - verified_phone_number
+      - admin_only
+    UserPoolTagsType:
       type: object
-      properties:
-        AttributesRequireVerificationBeforeUpdate:
-          allOf:
-          - $ref: '#/components/schemas/AttributesRequireVerificationBeforeUpdateType'
-          - description: <p>Requires that your user verifies their email address, phone number, or both before Amazon Cognito updates the value of that attribute. When you update a user attribute that has this option activated, Amazon Cognito sends a verification message to the new phone number or email address. Amazon Cognito doesn’t change the value of the attribute until your user responds to the verification message and confirms the new value.</p> <p>You can verify an updated email address or phone number with a <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_VerifyUserAttribute.html">VerifyUserAttribute</a> API request. You can also call the <a href="https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminUpdateUserAttributes.html">AdminUpdateUserAttributes</a> API and set <code>email_verified</code> or <code>phone_number_verified</code> to true.</p> <p>When <code>AttributesRequireVerificationBeforeUpdate</code> is false, your user pool doesn't require that your users verify attribute changes before Amazon Cognito updates them. In a user pool where <code>AttributesRequireVerificationBeforeUpdate</code> is false, API operations that change attribute values can immediately update a user’s <code>email</code> or <code>phone_number</code> attribute.</p>
-      description: The settings for updates to user attributes. These settings include the property <code>AttributesRequireVerificationBeforeUpdate</code>, a user-pool setting that tells Amazon Cognito how to handle changes to the value of your users' email address and phone number attributes. For more information, see <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-email-phone-verification.html#user-pool-settings-verifications-verify-attribute-updates"> Verifying updates to email addresses and phone numbers</a>.
-    WrappedBooleanType:
-      type: boolean
+      additionalProperties:
+        $ref: '#/components/schemas/TagValueType'
+    AttributeDataType:
+      type: string
+      enum:
+      - String
+      - Number
+      - DateTime
+      - Boolean
+    AttributesRequireVerificationBeforeUpdateType:
+      type: array
+      items:
+        $ref: '#/components/schemas/VerifiedAttributeType'
+    ArnType:
+      type: string
+      pattern: arn:[\w+=/,.@-]+:[\w+=/,.@-]+:([\w+=/,.@-]*)?:[0-9]+:[\w+=/,.@-]+(:[\w+=/,.@-]+)?(:[\w+=/,.@-]+)?
+      minLength: 20
+      maxLength: 2048
+    VerifiedAttributeType:
+      type: string
+      enum:
+      - phone_number
+      - email
+    EmailVerificationMessageByLinkType:
+      type: string
+      pattern: '[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]*\{##[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]*##\}[\p{L}\p{M}\p{S}\p{N}\p{P}\s*]*'
+      minLength: 6
+      maxLength: 20000
+    InternalErrorException: {}
+    UsernameAttributeType:
+      type: string
+      enum:
+      - phone_number
+      - email
   parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Algorithm:
       name: X-Amz-Algorithm
       in: header
@@ -966,6 +972,12 @@ components:
       required: false
     X-Amz-Date:
       name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string
