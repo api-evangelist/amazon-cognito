@@ -1,0 +1,154 @@
+# Vendor facets — Amazon Cognito. AWS user pools with managed login, a custom domain for the OAuth
+# endpoints, and an OIDC discovery document. The headline: the issuer is always on AWS
+# (cognito-idp.<region>.amazonaws.com/<poolId>), so even the discovery copy Cognito serves on a custom
+# domain names a platform issuer and the harvest records it as AWS's, not the provider's. No RFC 7591
+# registration endpoint is on the fetched endpoint list. The lift is small and mostly conditional.
+vendor: amazon-cognito
+name: Amazon Cognito
+website: https://aws.amazon.com/cognito/
+areas:
+- identity
+registry_keys:
+- cognito
+rubric_schema_version: 0.22.0
+generated: '2026-09-25'
+features_refreshed: '2026-09-25'
+basis: capability
+summary: >-
+  Cognito earns little on the Kin Score by itself. Its discovery document carries an AWS issuer, so the
+  served-discovery tiers of auth clarity and delegated identity are not reached from it; the provider
+  gets the OpenAPI fallback tiers only by declaring OAuth in its own contract. There is no dynamic client
+  registration and no protected-resource metadata. What it does give is hosted managed login on the provider's
+  own domain, which scores once declared as a Login pointer.
+features:
+- id: custom-domain
+  name: Custom domain for managed login
+  description: >-
+    Puts managed login and the /oauth2/* endpoints on a subdomain the customer owns (auth.example.com)
+    through an AWS-managed CloudFront distribution; Cognito serves /.well-known/openid-configuration only
+    on the custom domain, not the prefix domain.
+  source: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-add-custom-domain.html
+  tier: all
+- id: managed-login
+  name: Managed login pages
+  description: Hosted sign-in (and sign-up) pages served from the user pool domain.
+  source: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-add-custom-domain.html
+  tier: all
+- id: oidc-issuer
+  name: User pool as OIDC issuer
+  description: >-
+    Discovery and JWKS at cognito-idp.<region>.amazonaws.com/<poolId>/.well-known/; issuer is the original
+    or updated AWS-hosted form. The endpoint list has authorize, token, userInfo, revoke — no registration
+    endpoint.
+  source: https://docs.aws.amazon.com/cognito/latest/developerguide/federation-endpoints.html
+  tier: all
+maps:
+- feature: oidc-issuer
+  check: auth_clarity
+  layer: agent_readiness
+  grade: negotiable
+  partial: true
+  partial_note: >-
+    The served tier needs a discovery document on the provider's host whose issuer is on the provider's
+    domain; Cognito's issuer is always on amazonaws.com, so only the OpenAPI fallback (oauth2 authorizationCode/clientCredentials
+    declared in the provider's contract) is reachable.
+  provider_must: Declare the Cognito-backed oauth2 scheme in its own OpenAPI securitySchemes.
+  points: 10
+  baseline_pass_rate: 0.474
+- feature: oidc-issuer
+  check: delegated_identity
+  layer: agent_readiness
+  grade: documented
+  partial: true
+  partial_note: >-
+    Served tier unreachable for the same issuer reason; the documented tier reads an oauth2 authorizationCode
+    flow in the provider's OpenAPI.
+  provider_must: Declare the authorizationCode flow in its own OpenAPI.
+  points: 6
+  baseline_pass_rate: 0.209
+- feature: managed-login
+  check: sign_up_present
+  layer: composite
+  provider_must: Declare the managed login URL as a Login or SignUp pointer in apis.yml.
+  catalog_pass_rate: 0.19
+  facet: access_clarity
+  points: 5
+  baseline_pass_rate: 0.463
+earns_nothing:
+- feature: custom-domain
+  check: well_known_published
+  why: >-
+    The only well-known document Cognito serves on the custom domain is openid-configuration, which that
+    check does not read.
+out_of_reach:
+  checks:
+  - protected_resource_metadata
+  - dynamic_client_registration
+  - security_schemes_defined
+  - oauth_scopes_enumerated
+  - consent_identity
+  note: >-
+    No RFC 7591 or RFC 9728 surface on the fetched pages; the OpenAPI checks are the provider's own contract.
+surface:
+  access_clarity:
+    reachable: 5.0
+    total: 38
+  agent_readiness:
+    reachable: 10.5
+    total: 139
+hard_rule: >-
+  A model, not a score. Adopting this vendor changes a provider's Kin Score only when the provider publishes
+  the resulting artifacts on its own surface; nothing here writes a score, and no sponsorship or partnership
+  can.
+method: searched
+source:
+- https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-add-custom-domain.html
+- https://docs.aws.amazon.com/cognito/latest/developerguide/federation-endpoints.html
+measured:
+  cohort:
+    method: vendors-catalog.json detections (CNAME / header / URL shape / markup), never a name match
+    detected: 0
+    in_baseline: 0
+  control:
+    basis: providers earning contract_present + documentation_present + api_reference_present, minus the
+      cohort
+    n: 5216
+  metric: >-
+    cohort_pct / control_pct = mean share of the check's points earned (derived and platform credit weighted),
+    x100
+  measured_on: '2026-09-25'
+  status: 'not measurable: 0 detected customers clear the baseline (need 20)'
+simulation:
+  simulated_on: '2026-09-25'
+  rubric: 0.23.0
+  population: providers publishing a contract (contract_present earned), replayable exactly
+  providers: 8977
+  providers_unreplayable: 987
+  providers_moved: 8268
+  conditional_rows: excluded (they depend on what the API already does)
+  composite_lift:
+    median: 2.4
+    p75: 2.6
+    p90: 2.7
+    max: 2.7
+    mean_among_movers: 2.3
+  agent_readiness_lift:
+    median: 5.0
+    p75: 5.1
+    p90: 5.9
+    max: 8.8
+    mean_among_movers: 5.3
+  facet_lift_median_among_movers:
+    access_clarity: 13.1
+  composite_band_moves:
+    thin -> developing: 679
+    developing -> strong: 189
+    emerging -> thin: 167
+    strong -> exemplar: 48
+    minimal -> emerging: 1
+  agent_readiness_band_moves:
+    agent-aware -> agent-ready: 2198
+    agent-ready -> agent-native: 170
+  method: >-
+    each provider's own kin/checks file, the vendor's maps at their stated credit, the scorer's composite
+    formula; from -> to, nothing written
