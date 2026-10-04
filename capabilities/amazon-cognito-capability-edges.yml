@@ -11,7 +11,7 @@ capability_model:
   attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
     CC BY 4.0
   notice: NOTICE
-edge_count: 107
+edge_count: 109
 edges:
 - tag: '#X Amz Target=AWSCognitoIdentityProviderService.GetUserPoolMfaConfig'
   spec_file: amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserpoolmfaconfig-api-openapi.yml
@@ -441,6 +441,25 @@ edges:
   evidence: GetOpenIdToken ... schemas OIDCToken, IdentityProviderToken, LoginsMap
   reason: Issues an OpenID Connect token for an identity — authentication/token issuance, an IAM federation
     capability.
+- tag: Amazon Cognito Identity
+  spec_file: amazon-cognito-amazon-cognito-identity-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: '"Amazon Cognito Federated Identities ... delivers scoped temporary credentials"; operations
+    "CreateIdentityPool", "GetCredentialsForIdentity", "GetOpenIdToken"'
+  reason: Federated identity pools dispensing temporary credentials is squarely identity and access management.
+- tag: Amazon Cognito Identity Provider
+  spec_file: amazon-cognito-amazon-cognito-identity-provider-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: '"you can set up user pools and app clients, and authenticate users"; "AdminCreateUser", "AdminAddUserToGroup",
+    "AdminDisableUser"'
+  reason: User directory, authentication and group/role administration operations realise Identity & Access
+    Management.
 - tag: '#X Amz Target=AWSCognitoIdentityProviderService.DeleteGroup'
   spec_file: amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deletegroup-api-openapi.yml
   capability_id: BC-620.20
