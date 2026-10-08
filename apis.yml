@@ -140,6 +140,10 @@ apis:
     url: >-
       https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-with-identity-pools.html
 common:
+- type: RateLimits
+  url: rate-limits/amazon-cognito-rate-limits.yml
+- type: FinOps
+  url: finops/amazon-cognito-finops.yml
 - type: VendorFacets
   url: vendor-facets/amazon-cognito-vendor-facets.yml
 - type: Plans
