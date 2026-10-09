@@ -1,387 +1,145 @@
-generated: '2026-07-15'
+generated: '2026-09-23'
 method: generated
-source: openapi/amazon-cognito-identity-pools-openapi.yml, openapi/amazon-cognito-user-pools-openapi.yml
+source: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-addcustomattributes-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminaddusertogroup-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminconfirmsignup-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admincreateuser-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuser-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuserattributes-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableproviderforuser-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableuser-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminenableuser-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminforgetdevice-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetdevice-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetuser-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admininitiateauth-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlinkproviderforuser-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistdevices-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistgroupsforuser-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistuserauthevents-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminremoveuserfromgroup-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminresetuserpassword-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminrespondtoauthchallenge-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusermfapreference-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetuserpassword-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusersettings-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateautheventfeedback-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdatedevicestatus-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateuserattributes-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminuserglobalsignout-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-associatesoftwaretoken-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-changepassword-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmdevice-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmforgotpassword-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmsignup-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-creategroup-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createidentityprovider-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createresourceserver-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserimportjob-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpool-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpoolclient-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpooldomain-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deletegroup-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteidentityprovider-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteresourceserver-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuser-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserattributes-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpool-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpoolclient-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpooldomain-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeidentityprovider-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeresourceserver-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeriskconfiguration-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserimportjob-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpool-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpoolclient-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpooldomain-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgetdevice-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgotpassword-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getcsvheader-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getdevice-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getgroup-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getidentityproviderbyidentifier-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getlogdeliveryconfiguration-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getsigningcertificate-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuicustomization-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuser-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserattributeverificationcode-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserpoolmfaconfig-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-globalsignout-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-initiateauth-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listdevices-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listgroups-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listidentityproviders-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listresourceservers-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listtagsforresource-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserimportjobs-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpoolclients-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpools-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusers-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusersingroup-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-resendconfirmationcode-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-respondtoauthchallenge-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-revoketoken-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setlogdeliveryconfiguration-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setriskconfiguration-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuicustomization-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusermfapreference-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuserpoolmfaconfig-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusersettings-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-signup-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-startuserimportjob-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-stopuserimportjob-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-tagresource-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-untagresource-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateautheventfeedback-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updatedevicestatus-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updategroup-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateidentityprovider-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateresourceserver-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserattributes-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpool-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpoolclient-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpooldomain-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifysoftwaretoken-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifyuserattribute-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-createidentitypool-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentities-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentitypool-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentity-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentitypool-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getcredentialsforidentity-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getid-api-openapi.yml, openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getidentitypoolroles-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtoken-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtokenfordeveloperidentity-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getprincipaltagattributemap-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentities-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentitypools-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listtagsforresource-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-lookupdeveloperidentity-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-mergedeveloperidentities-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-setidentitypoolroles-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-setprincipaltagattributemap-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-tagresource-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkdeveloperidentity-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkidentity-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-untagresource-api-openapi.yml,
+  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-updateidentitypool-api-openapi.yml
 description: Recommended x-agentic-access execution contracts, classified heuristically from
   the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
   audience per deployment. See research/curity/agentic-governance/.
 summary:
   operations: 126
   by_action_class:
-    acting: 126
+    acting: 100
+    connected: 26
   by_consequence:
-    write: 120
+    write: 94
     safety-critical: 5
+    read: 26
     physical: 1
   human_in_the_loop_required: 5
 operations:
-- path: /#X-Amz-Target=AWSCognitoIdentityService.CreateIdentityPool
-  method: post
-  operationId: CreateIdentityPool
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.DeleteIdentities
-  method: post
-  operationId: DeleteIdentities
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.DeleteIdentityPool
-  method: post
-  operationId: DeleteIdentityPool
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.DescribeIdentity
-  method: post
-  operationId: DescribeIdentity
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.DescribeIdentityPool
-  method: post
-  operationId: DescribeIdentityPool
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.GetCredentialsForIdentity
-  method: post
-  operationId: GetCredentialsForIdentity
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.GetId
-  method: post
-  operationId: GetId
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.GetIdentityPoolRoles
-  method: post
-  operationId: GetIdentityPoolRoles
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.GetOpenIdToken
-  method: post
-  operationId: GetOpenIdToken
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.GetOpenIdTokenForDeveloperIdentity
-  method: post
-  operationId: GetOpenIdTokenForDeveloperIdentity
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.GetPrincipalTagAttributeMap
-  method: post
-  operationId: GetPrincipalTagAttributeMap
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.ListIdentities
-  method: post
-  operationId: ListIdentities
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.ListIdentityPools
-  method: post
-  operationId: ListIdentityPools
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.ListTagsForResource
-  method: post
-  operationId: ListTagsForResource
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.LookupDeveloperIdentity
-  method: post
-  operationId: LookupDeveloperIdentity
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.MergeDeveloperIdentities
-  method: post
-  operationId: MergeDeveloperIdentities
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.SetIdentityPoolRoles
-  method: post
-  operationId: SetIdentityPoolRoles
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap
-  method: post
-  operationId: SetPrincipalTagAttributeMap
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.TagResource
-  method: post
-  operationId: TagResource
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.UnlinkDeveloperIdentity
-  method: post
-  operationId: UnlinkDeveloperIdentity
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.UnlinkIdentity
-  method: post
-  operationId: UnlinkIdentity
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.UntagResource
-  method: post
-  operationId: UntagResource
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
-- path: /#X-Amz-Target=AWSCognitoIdentityService.UpdateIdentityPool
-  method: post
-  operationId: UpdateIdentityPool
-  x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
-    token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.AddCustomAttributes
   method: post
   operationId: AddCustomAttributes
@@ -1282,162 +1040,102 @@ operations:
   method: post
   operationId: GetCSVHeader
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.GetDevice
   method: post
   operationId: GetDevice
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.GetGroup
   method: post
   operationId: GetGroup
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.GetIdentityProviderByIdentifier
   method: post
   operationId: GetIdentityProviderByIdentifier
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.GetLogDeliveryConfiguration
   method: post
   operationId: GetLogDeliveryConfiguration
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.GetSigningCertificate
   method: post
   operationId: GetSigningCertificate
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.GetUICustomization
   method: post
   operationId: GetUICustomization
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.GetUser
   method: post
   operationId: GetUser
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.GetUserAttributeVerificationCode
   method: post
   operationId: GetUserAttributeVerificationCode
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.GetUserPoolMfaConfig
   method: post
   operationId: GetUserPoolMfaConfig
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.GlobalSignOut
   method: post
   operationId: GlobalSignOut
@@ -1474,82 +1172,52 @@ operations:
   method: post
   operationId: ListDevices
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.ListGroups
   method: post
   operationId: ListGroups
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.ListIdentityProviders
   method: post
   operationId: ListIdentityProviders
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.ListResourceServers
   method: post
   operationId: ListResourceServers
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.ListTagsForResource
   method: post
   operationId: ListTagsForResource
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.ListUserImportJobs
   method: post
   operationId: ListUserImportJobs
@@ -1570,66 +1238,42 @@ operations:
   method: post
   operationId: ListUserPoolClients
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.ListUserPools
   method: post
   operationId: ListUserPools
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.ListUsers
   method: post
   operationId: ListUsers
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.ListUsersInGroup
   method: post
   operationId: ListUsersInGroup
   x-agentic-access:
-    action-class: acting
-    consequence: write
-    subject: required
-    audience: null
+    action-class: connected
+    consequence: read
+    subject: optional
     token:
-      max-ttl: 900
-    escalation:
-      human-in-the-loop: conditional
-      triggers:
-      - abnormal
-      - high-value
-    audit: required
+      max-ttl: 3600
+    audit: none
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.ResendConfirmationCode
   method: post
   operationId: ResendConfirmationCode
@@ -2019,6 +1663,332 @@ operations:
 - path: /#X-Amz-Target=AWSCognitoIdentityProviderService.VerifyUserAttribute
   method: post
   operationId: VerifyUserAttribute
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.CreateIdentityPool
+  method: post
+  operationId: CreateIdentityPool
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.DeleteIdentities
+  method: post
+  operationId: DeleteIdentities
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.DeleteIdentityPool
+  method: post
+  operationId: DeleteIdentityPool
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.DescribeIdentity
+  method: post
+  operationId: DescribeIdentity
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.DescribeIdentityPool
+  method: post
+  operationId: DescribeIdentityPool
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.GetCredentialsForIdentity
+  method: post
+  operationId: GetCredentialsForIdentity
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.GetId
+  method: post
+  operationId: GetId
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /#X-Amz-Target=AWSCognitoIdentityService.GetIdentityPoolRoles
+  method: post
+  operationId: GetIdentityPoolRoles
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /#X-Amz-Target=AWSCognitoIdentityService.GetOpenIdToken
+  method: post
+  operationId: GetOpenIdToken
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.GetOpenIdTokenForDeveloperIdentity
+  method: post
+  operationId: GetOpenIdTokenForDeveloperIdentity
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.GetPrincipalTagAttributeMap
+  method: post
+  operationId: GetPrincipalTagAttributeMap
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /#X-Amz-Target=AWSCognitoIdentityService.ListIdentities
+  method: post
+  operationId: ListIdentities
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /#X-Amz-Target=AWSCognitoIdentityService.ListIdentityPools
+  method: post
+  operationId: ListIdentityPools
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /#X-Amz-Target=AWSCognitoIdentityService.ListTagsForResource
+  method: post
+  operationId: ListTagsForResource
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /#X-Amz-Target=AWSCognitoIdentityService.LookupDeveloperIdentity
+  method: post
+  operationId: LookupDeveloperIdentity
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /#X-Amz-Target=AWSCognitoIdentityService.MergeDeveloperIdentities
+  method: post
+  operationId: MergeDeveloperIdentities
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.SetIdentityPoolRoles
+  method: post
+  operationId: SetIdentityPoolRoles
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.SetPrincipalTagAttributeMap
+  method: post
+  operationId: SetPrincipalTagAttributeMap
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.TagResource
+  method: post
+  operationId: TagResource
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.UnlinkDeveloperIdentity
+  method: post
+  operationId: UnlinkDeveloperIdentity
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.UnlinkIdentity
+  method: post
+  operationId: UnlinkIdentity
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.UntagResource
+  method: post
+  operationId: UntagResource
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /#X-Amz-Target=AWSCognitoIdentityService.UpdateIdentityPool
+  method: post
+  operationId: UpdateIdentityPool
   x-agentic-access:
     action-class: acting
     consequence: write
