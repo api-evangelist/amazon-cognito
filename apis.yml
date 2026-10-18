@@ -38,7 +38,7 @@ tags:
 - Authentication
 - AWS
 - Identity
-- OIDC
+- OpenID Connect
 - SAML
 - User Management
 - Federated Identity
