@@ -25,761 +25,761 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-addcustomattributes-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-addcustomattributes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-addcustomattributes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-addcustomattributes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminaddusertogroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminaddusertogroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminaddusertogroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminaddusertogroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminconfirmsignup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminconfirmsignup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminconfirmsignup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminconfirmsignup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admincreateuser-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admincreateuser-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admincreateuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admincreateuser-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuser-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuser-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuser-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuserattributes-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuserattributes-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuserattributes-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuserattributes-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableproviderforuser-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableproviderforuser-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableproviderforuser-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableproviderforuser-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableuser-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableuser-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableuser-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminenableuser-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminenableuser-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminenableuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminenableuser-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminforgetdevice-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminforgetdevice-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminforgetdevice-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminforgetdevice-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetdevice-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetdevice-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetdevice-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetdevice-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetuser-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetuser-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetuser-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admininitiateauth-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admininitiateauth-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admininitiateauth-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admininitiateauth-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlinkproviderforuser-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlinkproviderforuser-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlinkproviderforuser-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlinkproviderforuser-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistdevices-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistdevices-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistdevices-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistdevices-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistgroupsforuser-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistgroupsforuser-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistgroupsforuser-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistgroupsforuser-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistuserauthevents-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistuserauthevents-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistuserauthevents-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistuserauthevents-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminremoveuserfromgroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminremoveuserfromgroup-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminremoveuserfromgroup-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminremoveuserfromgroup-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminresetuserpassword-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminresetuserpassword-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminresetuserpassword-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminresetuserpassword-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminrespondtoauthchallenge-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminrespondtoauthchallenge-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminrespondtoauthchallenge-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminrespondtoauthchallenge-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusermfapreference-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusermfapreference-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusermfapreference-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusermfapreference-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetuserpassword-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetuserpassword-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetuserpassword-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetuserpassword-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusersettings-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusersettings-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusersettings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusersettings-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateautheventfeedback-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateautheventfeedback-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateautheventfeedback-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateautheventfeedback-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdatedevicestatus-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdatedevicestatus-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdatedevicestatus-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdatedevicestatus-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateuserattributes-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateuserattributes-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateuserattributes-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateuserattributes-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminuserglobalsignout-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminuserglobalsignout-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminuserglobalsignout-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminuserglobalsignout-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-associatesoftwaretoken-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-associatesoftwaretoken-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-associatesoftwaretoken-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-associatesoftwaretoken-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-changepassword-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-changepassword-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-changepassword-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-changepassword-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmdevice-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmdevice-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmdevice-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmdevice-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmforgotpassword-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmforgotpassword-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmforgotpassword-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmforgotpassword-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmsignup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmsignup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmsignup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmsignup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-creategroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-creategroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-creategroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-creategroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createidentityprovider-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createidentityprovider-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createidentityprovider-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createidentityprovider-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createresourceserver-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createresourceserver-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createresourceserver-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createresourceserver-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserimportjob-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserimportjob-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserimportjob-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserimportjob-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpool-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpoolclient-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpoolclient-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpoolclient-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpoolclient-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpooldomain-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpooldomain-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpooldomain-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpooldomain-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deletegroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deletegroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deletegroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deletegroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteidentityprovider-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteidentityprovider-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteidentityprovider-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteidentityprovider-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteresourceserver-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteresourceserver-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteresourceserver-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteresourceserver-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuser-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuser-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuser-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserattributes-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserattributes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserattributes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserattributes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpool-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpoolclient-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpoolclient-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpoolclient-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpoolclient-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpooldomain-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpooldomain-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpooldomain-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpooldomain-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeidentityprovider-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeidentityprovider-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeidentityprovider-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeidentityprovider-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeresourceserver-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeresourceserver-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeresourceserver-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeresourceserver-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeriskconfiguration-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeriskconfiguration-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeriskconfiguration-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeriskconfiguration-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserimportjob-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserimportjob-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserimportjob-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserimportjob-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpool-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpoolclient-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpoolclient-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpoolclient-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpoolclient-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpooldomain-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpooldomain-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpooldomain-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpooldomain-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgetdevice-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgetdevice-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgetdevice-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgetdevice-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgotpassword-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgotpassword-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgotpassword-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgotpassword-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getcsvheader-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getcsvheader-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getcsvheader-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getcsvheader-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getdevice-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getdevice-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getdevice-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getdevice-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getgroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getgroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getgroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getgroup-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getidentityproviderbyidentifier-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getidentityproviderbyidentifier-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getidentityproviderbyidentifier-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getidentityproviderbyidentifier-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getlogdeliveryconfiguration-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getlogdeliveryconfiguration-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getlogdeliveryconfiguration-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getlogdeliveryconfiguration-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getsigningcertificate-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getsigningcertificate-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getsigningcertificate-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getsigningcertificate-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuicustomization-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuicustomization-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuicustomization-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuicustomization-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuser-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuser-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuser-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserattributeverificationcode-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserattributeverificationcode-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserattributeverificationcode-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserattributeverificationcode-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserpoolmfaconfig-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserpoolmfaconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserpoolmfaconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserpoolmfaconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-globalsignout-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-globalsignout-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-globalsignout-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-globalsignout-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-initiateauth-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-initiateauth-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-initiateauth-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-initiateauth-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listdevices-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listdevices-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listdevices-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listdevices-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listgroups-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listgroups-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listgroups-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listgroups-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listidentityproviders-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listidentityproviders-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listidentityproviders-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listidentityproviders-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listresourceservers-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listresourceservers-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listresourceservers-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listresourceservers-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listtagsforresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserimportjobs-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserimportjobs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserimportjobs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserimportjobs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpoolclients-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpoolclients-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpoolclients-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpoolclients-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpools-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpools-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpools-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpools-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusers-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusers-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusers-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusers-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusersingroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusersingroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusersingroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusersingroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-resendconfirmationcode-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-resendconfirmationcode-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-resendconfirmationcode-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-resendconfirmationcode-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-respondtoauthchallenge-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-respondtoauthchallenge-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-respondtoauthchallenge-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-respondtoauthchallenge-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-revoketoken-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-revoketoken-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-revoketoken-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-revoketoken-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setlogdeliveryconfiguration-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setlogdeliveryconfiguration-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setlogdeliveryconfiguration-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setlogdeliveryconfiguration-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setriskconfiguration-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setriskconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setriskconfiguration-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setriskconfiguration-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuicustomization-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuicustomization-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuicustomization-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuicustomization-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusermfapreference-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusermfapreference-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusermfapreference-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusermfapreference-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuserpoolmfaconfig-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuserpoolmfaconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuserpoolmfaconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuserpoolmfaconfig-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusersettings-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusersettings-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusersettings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusersettings-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-signup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-signup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-signup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-signup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-startuserimportjob-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-startuserimportjob-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-startuserimportjob-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-startuserimportjob-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-stopuserimportjob-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-stopuserimportjob-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-stopuserimportjob-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-stopuserimportjob-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-tagresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-tagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-untagresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-untagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateautheventfeedback-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateautheventfeedback-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateautheventfeedback-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateautheventfeedback-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updatedevicestatus-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updatedevicestatus-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updatedevicestatus-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updatedevicestatus-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updategroup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updategroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updategroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updategroup-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateidentityprovider-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateidentityprovider-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateidentityprovider-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateidentityprovider-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateresourceserver-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateresourceserver-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateresourceserver-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateresourceserver-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserattributes-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserattributes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserattributes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserattributes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpool-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpoolclient-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpoolclient-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpoolclient-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpoolclient-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpooldomain-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpooldomain-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpooldomain-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpooldomain-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifysoftwaretoken-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifysoftwaretoken-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifysoftwaretoken-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifysoftwaretoken-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifyuserattribute-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifyuserattribute-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifyuserattribute-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifyuserattribute-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-createidentitypool-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-createidentitypool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-createidentitypool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-createidentitypool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentities-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentities-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentities-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentities-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentitypool-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentitypool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentitypool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentitypool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentity-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentity-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentity-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentity-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentitypool-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentitypool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentitypool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentitypool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-getcredentialsforidentity-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getcredentialsforidentity-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-getcredentialsforidentity-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getcredentialsforidentity-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-getid-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getid-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-getid-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getid-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-getidentitypoolroles-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getidentitypoolroles-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-getidentitypoolroles-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getidentitypoolroles-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtoken-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtoken-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtoken-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtoken-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtokenfordeveloperidentity-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtokenfordeveloperidentity-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtokenfordeveloperidentity-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtokenfordeveloperidentity-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-getprincipaltagattributemap-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getprincipaltagattributemap-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-getprincipaltagattributemap-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getprincipaltagattributemap-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentities-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentities-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentities-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentities-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentitypools-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentitypools-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentitypools-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentitypools-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-listtagsforresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-lookupdeveloperidentity-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-lookupdeveloperidentity-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-lookupdeveloperidentity-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-lookupdeveloperidentity-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-mergedeveloperidentities-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-mergedeveloperidentities-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-mergedeveloperidentities-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-mergedeveloperidentities-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-setidentitypoolroles-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-setidentitypoolroles-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-setidentitypoolroles-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-setidentitypoolroles-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-setprincipaltagattributemap-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-setprincipaltagattributemap-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-setprincipaltagattributemap-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-setprincipaltagattributemap-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-tagresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-tagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkdeveloperidentity-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkdeveloperidentity-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkdeveloperidentity-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkdeveloperidentity-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkidentity-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkidentity-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkidentity-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkidentity-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-untagresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-untagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-updateidentitypool-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-updateidentitypool-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-cognito-x-amz-target-awscognitoidentityservice-updateidentitypool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-updateidentitypool-api
+    method: unknown
+    evidence: no authorship recorded
   examples/amazon-cognito-user-pool-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -2374,8 +2374,8 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   finops/amazon-cognito-finops.yml:
-    method: unknown
-    evidence: no authorship recorded
+    method: generated
+    evidence: declared in the artifact
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
@@ -5583,127 +5583,7 @@ artifacts:
   json-structure/user-pools-wrapped-boolean-type-structure.json:
     method: unknown
     evidence: no authorship recorded
-  kin/checks-2026-09-24T161608.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T125852.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T133943.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T143147.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T154045.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-26T215308.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T094438.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T103455.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T123021.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T132314.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T140727.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-28T221322.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T213958.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T230545.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T203505.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T220315.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-31T223420.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T063623.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T210448.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T222808.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T224043.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T161828.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T174231.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T062714.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T212454.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T224856.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T055819.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T072335.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T144739.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T195450.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T211839.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T011047.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T224210.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T200636.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T213054.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T214843.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T232836.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T204815.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T222408.yml:
+  kin/checks-2026-10-11T110117.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-12T062655.yml:
@@ -5787,6 +5667,21 @@ artifacts:
   kin/score-2026-09-24T161608.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T210408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T232841.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T000835.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T024842.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-11T110117.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   openapi/_original/amazon-cognito-identity-pools-openapi.yml:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
@@ -5795,384 +5690,18 @@ artifacts:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
       to the provider's source is unverified
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-addcustomattributes-api-openapi.yml:
+  openapi/amazon-cognito-amazon-cognito-identity-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminaddusertogroup-api-openapi.yml:
+  openapi/amazon-cognito-amazon-cognito-identity-provider-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminconfirmsignup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admincreateuser-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuser-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuserattributes-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableproviderforuser-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableuser-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminenableuser-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminforgetdevice-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetdevice-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetuser-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admininitiateauth-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlinkproviderforuser-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistdevices-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistgroupsforuser-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistuserauthevents-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminremoveuserfromgroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminresetuserpassword-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminrespondtoauthchallenge-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusermfapreference-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetuserpassword-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusersettings-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateautheventfeedback-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdatedevicestatus-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateuserattributes-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminuserglobalsignout-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-associatesoftwaretoken-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-changepassword-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmdevice-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmforgotpassword-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmsignup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-creategroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createidentityprovider-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createresourceserver-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserimportjob-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpool-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpoolclient-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpooldomain-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deletegroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteidentityprovider-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteresourceserver-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuser-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserattributes-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpool-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpoolclient-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpooldomain-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeidentityprovider-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeresourceserver-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeriskconfiguration-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserimportjob-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpool-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpoolclient-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpooldomain-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgetdevice-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgotpassword-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getcsvheader-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getdevice-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getgroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getidentityproviderbyidentifier-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getlogdeliveryconfiguration-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getsigningcertificate-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuicustomization-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuser-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserattributeverificationcode-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserpoolmfaconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-globalsignout-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-initiateauth-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listdevices-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listgroups-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listidentityproviders-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listresourceservers-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listtagsforresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserimportjobs-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpoolclients-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpools-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusers-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusersingroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-resendconfirmationcode-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-respondtoauthchallenge-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-revoketoken-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setlogdeliveryconfiguration-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setriskconfiguration-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuicustomization-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusermfapreference-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuserpoolmfaconfig-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusersettings-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-signup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-startuserimportjob-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-stopuserimportjob-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-tagresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-untagresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateautheventfeedback-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updatedevicestatus-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updategroup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateidentityprovider-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateresourceserver-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserattributes-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpool-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpoolclient-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpooldomain-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifysoftwaretoken-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifyuserattribute-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-createidentitypool-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentities-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentitypool-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentity-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentitypool-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getcredentialsforidentity-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getid-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getidentitypoolroles-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtoken-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtokenfordeveloperidentity-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getprincipaltagattributemap-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentities-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentitypools-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listtagsforresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-lookupdeveloperidentity-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-mergedeveloperidentities-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-setidentitypoolroles-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-setprincipaltagattributemap-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-tagresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkdeveloperidentity-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkidentity-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-untagresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-updateidentitypool-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+  overlays/amazon-cognito-amazon-cognito-identity-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/amazon-cognito-amazon-cognito-identity-provider-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
   plans/amazon-cognito-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
@@ -6180,386 +5709,386 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-addcustomattributes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-addcustomattributes-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminaddusertogroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminaddusertogroup-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminconfirmsignup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminconfirmsignup-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admincreateuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admincreateuser-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuser-api
-  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuserattributes-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuserattributes-api
-  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableproviderforuser-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableproviderforuser-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableuser-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminenableuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminenableuser-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminforgetdevice-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminforgetdevice-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetdevice-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetdevice-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetuser-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admininitiateauth-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admininitiateauth-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlinkproviderforuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlinkproviderforuser-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistdevices-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistdevices-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistgroupsforuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistgroupsforuser-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistuserauthevents-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistuserauthevents-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminremoveuserfromgroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminremoveuserfromgroup-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminresetuserpassword-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminresetuserpassword-api
-  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminrespondtoauthchallenge-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminrespondtoauthchallenge-api
-  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusermfapreference-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusermfapreference-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetuserpassword-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetuserpassword-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusersettings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusersettings-api
-  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateautheventfeedback-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateautheventfeedback-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdatedevicestatus-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdatedevicestatus-api
-  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateuserattributes-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateuserattributes-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminuserglobalsignout-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminuserglobalsignout-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-associatesoftwaretoken-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-associatesoftwaretoken-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-changepassword-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-changepassword-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmdevice-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmdevice-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmforgotpassword-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmforgotpassword-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmsignup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmsignup-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-creategroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-creategroup-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createidentityprovider-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createidentityprovider-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createresourceserver-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createresourceserver-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserimportjob-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserimportjob-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpool-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpoolclient-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpoolclient-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpooldomain-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpooldomain-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deletegroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deletegroup-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteidentityprovider-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteidentityprovider-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteresourceserver-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteresourceserver-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuser-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserattributes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserattributes-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpool-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpoolclient-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpoolclient-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpooldomain-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpooldomain-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeidentityprovider-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeidentityprovider-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeresourceserver-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeresourceserver-api
-  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeriskconfiguration-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeriskconfiguration-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserimportjob-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserimportjob-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpool-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpoolclient-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpoolclient-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpooldomain-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpooldomain-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgetdevice-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgetdevice-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgotpassword-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgotpassword-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getcsvheader-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getcsvheader-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getdevice-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getdevice-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getgroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getgroup-api
-  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getidentityproviderbyidentifier-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getidentityproviderbyidentifier-api
-  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getlogdeliveryconfiguration-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getlogdeliveryconfiguration-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getsigningcertificate-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getsigningcertificate-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuicustomization-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuicustomization-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuser-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuser-api
-  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserattributeverificationcode-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserattributeverificationcode-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserpoolmfaconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserpoolmfaconfig-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-globalsignout-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-globalsignout-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-initiateauth-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-initiateauth-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listdevices-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listdevices-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listgroups-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listgroups-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listidentityproviders-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listidentityproviders-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listresourceservers-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listresourceservers-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listtagsforresource-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserimportjobs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserimportjobs-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpoolclients-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpoolclients-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpools-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpools-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusers-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusers-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusersingroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusersingroup-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-resendconfirmationcode-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-resendconfirmationcode-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-respondtoauthchallenge-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-respondtoauthchallenge-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-revoketoken-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-revoketoken-api
-  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setlogdeliveryconfiguration-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setlogdeliveryconfiguration-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setriskconfiguration-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setriskconfiguration-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuicustomization-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuicustomization-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusermfapreference-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusermfapreference-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuserpoolmfaconfig-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuserpoolmfaconfig-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusersettings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusersettings-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-signup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-signup-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-startuserimportjob-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-startuserimportjob-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-stopuserimportjob-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-stopuserimportjob-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-tagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-tagresource-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-untagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-untagresource-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateautheventfeedback-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateautheventfeedback-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updatedevicestatus-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updatedevicestatus-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updategroup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updategroup-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateidentityprovider-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateidentityprovider-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateresourceserver-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateresourceserver-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserattributes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserattributes-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpool-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpoolclient-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpoolclient-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpooldomain-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpooldomain-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifysoftwaretoken-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifysoftwaretoken-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifyuserattribute-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifyuserattribute-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-createidentitypool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-createidentitypool-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentities-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentities-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentitypool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentitypool-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentity-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentity-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentitypool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentitypool-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-getcredentialsforidentity-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getcredentialsforidentity-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-getid-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getid-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-getidentitypoolroles-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getidentitypoolroles-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtoken-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtoken-api
-  ? postman/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtokenfordeveloperidentity-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtokenfordeveloperidentity-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-getprincipaltagattributemap-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-getprincipaltagattributemap-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentities-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentities-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentitypools-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentitypools-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-listtagsforresource-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-lookupdeveloperidentity-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-lookupdeveloperidentity-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-mergedeveloperidentities-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-mergedeveloperidentities-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-setidentitypoolroles-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-setidentitypoolroles-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-setprincipaltagattributemap-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-setprincipaltagattributemap-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-tagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-tagresource-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkdeveloperidentity-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkdeveloperidentity-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkidentity-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkidentity-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-untagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-untagresource-api
-  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-updateidentitypool-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-cognito-x-amz-target-awscognitoidentityservice-updateidentitypool-api
-  rate-limits/amazon-cognito-rate-limits.yml:
     method: unknown
     evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminaddusertogroup-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminconfirmsignup-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admincreateuser-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuser-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindeleteuserattributes-api.postman_collection.json
+  : method: unknown
+    evidence: no authorship recorded
+  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableproviderforuser-api.postman_collection.json
+  : method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admindisableuser-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminenableuser-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminforgetdevice-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetdevice-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admingetuser-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-admininitiateauth-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlinkproviderforuser-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistdevices-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistgroupsforuser-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminlistuserauthevents-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminremoveuserfromgroup-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminresetuserpassword-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminrespondtoauthchallenge-api.postman_collection.json
+  : method: unknown
+    evidence: no authorship recorded
+  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusermfapreference-api.postman_collection.json
+  : method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetuserpassword-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminsetusersettings-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateautheventfeedback-api.postman_collection.json
+  : method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdatedevicestatus-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminupdateuserattributes-api.postman_collection.json
+  : method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-adminuserglobalsignout-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-associatesoftwaretoken-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-changepassword-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmdevice-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmforgotpassword-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-confirmsignup-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-creategroup-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createidentityprovider-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createresourceserver-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserimportjob-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpool-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpoolclient-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-createuserpooldomain-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deletegroup-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteidentityprovider-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteresourceserver-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuser-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserattributes-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpool-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpoolclient-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-deleteuserpooldomain-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeidentityprovider-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeresourceserver-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeriskconfiguration-api.postman_collection.json
+  : method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserimportjob-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpool-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpoolclient-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-describeuserpooldomain-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgetdevice-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-forgotpassword-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getcsvheader-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getdevice-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getgroup-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getidentityproviderbyidentifier-api.postman_collection.json
+  : method: unknown
+    evidence: no authorship recorded
+  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getlogdeliveryconfiguration-api.postman_collection.json
+  : method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getsigningcertificate-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuicustomization-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuser-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserattributeverificationcode-api.postman_collection.json
+  : method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-getuserpoolmfaconfig-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-globalsignout-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-initiateauth-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listdevices-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listgroups-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listidentityproviders-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listresourceservers-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listtagsforresource-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserimportjobs-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpoolclients-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listuserpools-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusers-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-listusersingroup-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-resendconfirmationcode-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-respondtoauthchallenge-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-revoketoken-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  ? postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setlogdeliveryconfiguration-api.postman_collection.json
+  : method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setriskconfiguration-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuicustomization-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusermfapreference-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setuserpoolmfaconfig-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-setusersettings-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-signup-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-startuserimportjob-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-stopuserimportjob-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-tagresource-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-untagresource-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateautheventfeedback-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updatedevicestatus-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updategroup-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateidentityprovider-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateresourceserver-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserattributes-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpool-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpoolclient-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-updateuserpooldomain-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifysoftwaretoken-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityproviderservice-verifyuserattribute-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-createidentitypool-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentities-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-deleteidentitypool-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentity-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-describeidentitypool-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-getcredentialsforidentity-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-getid-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-getidentitypoolroles-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtoken-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  ? postman/amazon-cognito-x-amz-target-awscognitoidentityservice-getopenidtokenfordeveloperidentity-api.postman_collection.json
+  : method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-getprincipaltagattributemap-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentities-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-listidentitypools-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-listtagsforresource-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-lookupdeveloperidentity-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-mergedeveloperidentities-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-setidentitypoolroles-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-setprincipaltagattributemap-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-tagresource-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkdeveloperidentity-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-unlinkidentity-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-untagresource-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  postman/amazon-cognito-x-amz-target-awscognitoidentityservice-updateidentitypool-api.postman_collection.json:
+    method: unknown
+    evidence: no authorship recorded
+  rate-limits/amazon-cognito-rate-limits.yml:
+    method: generated
+    evidence: declared in the artifact
   rules/amazon-cognito-jsonschema-spectral-rules.yml:
     method: generated
     evidence: declared in the artifact
